@@ -27,6 +27,13 @@ CREATE TABLE UsuarioManagment(
     Usuario VARCHAR (50) NOT NULL,
     Password VARCHAR (50) NOT NULL
 );
+INSERT INTO UsuarioManagment(
+    Usuario,
+    Password
+) VALUES(
+    'admin',
+    '321'
+);
 
 INSERT INTO UsuarioPageAgentes(
     Usuario,

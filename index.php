@@ -61,6 +61,9 @@
         case 'login':
             $ManagmentController->ControllerManagmentLogin();
             break;
+        case 'validacion-managment-login':
+            $ManagmentController->ControllerManagmentConsultaLogin($_POST['user'],$_POST['pass']);
+            break;
 
         default:
             # code...
