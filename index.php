@@ -69,7 +69,7 @@
             if (empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentLogin();
             }else {
-                $ManagmentController->ControllerManagmentCargaVideos();
+                header('Location:?managment=CargaVideos');
             }
             break;
 

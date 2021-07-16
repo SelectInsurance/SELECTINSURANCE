@@ -728,6 +728,7 @@
                         Testimonios <br>
 
                         Contacto <br>
+                        <a href="?managment=login" style="text-decoration: none;" target="__blank">Administracion</a>
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3">
