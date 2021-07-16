@@ -19,6 +19,11 @@
   background-image: url(../img/BackGroundCargaVideos.png);
 }
 
+/*Imagen fija*/
+.ImagenFija{
+  background-attachment: fixed;
+}
+
 /*Colores Principales y Secundario*/
 .ColorPrincipalTranslucido {
   background-color: rgba(7, 120, 113, 0.7);

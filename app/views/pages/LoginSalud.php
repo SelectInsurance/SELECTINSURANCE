@@ -80,6 +80,6 @@
                 </p>
             </div>
         </div>
-        <h6 class="text-end">Copyright © <?php echo date('Y'); ?> Select Insurance.</h6>
+        <h6 class="text-end">Copyright © <?php echo date('M').' '.date('Y'); ?> Select Insurance.</h6>
     </div>
 </div>

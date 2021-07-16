@@ -1,4 +1,4 @@
-<div class="ImagenCargaVideos img-fluid">
+<div class="ImagenCargaVideos img-fluid ImagenFija">
     <div class="container-fluid ColorSecundarioTranslucido">
         <nav>
             <div class="nav nav-pills" id="nav-tab" role="tablist">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="ColorPrincipal text-white" id="Contacto">
+        <div class="text-white" id="Contacto">
             <div class="container">
                 <hr>
                 <div class="row">
@@ -124,7 +124,7 @@
                         </p>
                     </div>
                 </div>
-                <h6 class="text-end">Copyright © <?php echo date('Y'); ?> Select Insurance.</h6><br>
+                <h6 class="text-end">Copyright © <?php echo date('M').' '.date('Y'); ?> Select Insurance.</h6><br>
             </div>
         </div>
     </div>
