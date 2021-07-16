@@ -11,8 +11,12 @@
 .ImagenBackGround {
   background-image: url(../img/BackGround.jpg);
 }
-.ImagenLogeado{
-  background-image: url(../img/BackGroundLogeado.png);
+.ImagenAgentes{
+  background-image: url(../img/BackGroundAgentes.png);
+}
+
+.ImagenCargaVideos{
+  background-image: url(../img/BackGroundCargaVideos.png);
 }
 
 /*Colores Principales y Secundario*/
