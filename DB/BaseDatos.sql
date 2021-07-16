@@ -22,6 +22,12 @@ CREATE TABLE UsuarioPageAgentes(
     Password VARCHAR (50) NOT NULL
 );
 
+CREATE TABLE UsuarioManagment(
+    idUsuario INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Usuario VARCHAR (50) NOT NULL,
+    Password VARCHAR (50) NOT NULL
+);
+
 INSERT INTO UsuarioPageAgentes(
     Usuario,
     Password
