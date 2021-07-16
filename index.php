@@ -1,10 +1,14 @@
     <?php
+    //require_once 'app/controllers/app_autoload_controller.php'; sin implementacion
 
+    //Controller del Managment
+    require_once 'app/controllers/ControllerManagment.php';
+
+    //Controller principal
     require_once 'app/controllers/ControllerSelectInsurance.php';
+    $ManagmentController = new ControllerManagment();
     $controller = new ControllerPrincipal();
-    if (!isset($_GET['pages'])) {
-        $controller->ControllerInicio();
-    }
+
     switch ($_GET['pages']) {
         case 'inicio':
             $controller->ControllerInicio();
@@ -44,7 +48,7 @@
             }
             break;
         default:
-            # code...
+            $controller->ControllerInicio();
             break;
     }
     ?>
