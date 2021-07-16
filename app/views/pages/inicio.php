@@ -1,5 +1,4 @@
-<div data-bs-spy="scroll" data-bs-target="#paginaSelectInsurance" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-    <div class="container-fluid" id="Inicio">
+<div class="container-fluid" id="Inicio">
         <div class="row">
             <div class="container ImagenBackGround"><br><br>
                 <div class="row">
@@ -746,4 +745,3 @@
             <h6 class="text-end">Copyright © <?php echo date('Y'); ?> Select Insurance.</h6>
         </div>
     </div>
-</div>
