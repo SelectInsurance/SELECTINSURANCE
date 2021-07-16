@@ -1,20 +1,20 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="container-fluid ImagenAgentes img-fluid">
+        <div class="container-fluid ImagenAgentes img-fluid ImagenFija">
             <div class="row ColorSecundarioTranslucido">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
                     <a href="./?pages=Videos-de-salud" class="btn btn-outline-success btn-lg "><i class="fas fa-video fa-6x"></i></a><br><br>
                     <label class="text-white">Galeria de Videos de Salud</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
                     <a href="" class="btn btn-outline-success btn-lg "><i class="fas fa-database fa-6x"></i></a><br><br>
                     <label class="text-white">CRM Select</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
                     <a href="" class="btn btn-outline-success btn-lg "><i class="fas fa-headset fa-6x"></i></a><br><br>
                     <label class="text-white">Contact Center</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
                     <a href="./?pages=Videos-de-Vida" class="btn btn-outline-success btn-lg "><i class="fas fa-film fa-6x"></i></a><br><br>
                     <label class="text-white">Galeria de Videos de Vida</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>

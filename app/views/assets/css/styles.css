@@ -11,16 +11,16 @@
 .ImagenBackGround {
   background-image: url(../img/BackGround.jpg);
 }
-.ImagenAgentes{
+.ImagenAgentes {
   background-image: url(../img/BackGroundAgentes.png);
 }
 
-.ImagenCargaVideos{
+.ImagenCargaVideos {
   background-image: url(../img/BackGroundCargaVideos.png);
 }
 
 /*Imagen fija*/
-.ImagenFija{
+.ImagenFija {
   background-attachment: fixed;
 }
 
@@ -41,14 +41,19 @@
   background-color: rgba(205, 228, 196, 1);
 }
 
-.ColorMenuPrincipalConTexto{
+.ColorMenuPrincipalConTexto {
   background-color: rgba(205, 228, 196, 1);
   color: rgba(44, 62, 80, 1);
 }
-.ColorTextoOscuro{
+.ColorTextoOscuro {
   color: rgba(44, 62, 80, 1);
 }
-
+.ColorTextoClaro {
+  color: white;
+}
+.ColorTextoClaro:hover{
+  color: black;
+}
 
 /*Radio de las esquinas*/
 .RadioDeBordes {
@@ -57,8 +62,6 @@
   border-bottom-right-radius: 50px 50px;
   border-bottom-left-radius: 50px 50px;
 }
-
-
 
 /*Etiqueta videos*/
 video {

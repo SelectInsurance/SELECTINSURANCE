@@ -1,20 +1,36 @@
 <div class="ImagenCargaVideos img-fluid ImagenFija">
     <div class="container-fluid ColorSecundarioTranslucido">
         <nav>
-            <div class="nav nav-pills" id="nav-tab" role="tablist">
-                <button class="nav-link active text-white" id="nav-AmericanNational-tab" data-bs-toggle="tab" data-bs-target="#nav-AmericanNational" type="button" role="tab" aria-controls="nav-AmericanNational" aria-selected="true">American National</button>
-                <button class="nav-link text-white" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                <button class="nav-link text-white" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-Anico-tab" data-bs-toggle="tab" data-bs-target="#nav-Anico" type="button" role="tab" aria-controls="nav-Anico" aria-selected="true">Anico</button>
+                <button class="nav-link" id="nav-Ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-Ameritas" type="button" role="tab" aria-controls="nav-Ameritas" aria-selected="false">Ameritas</button>
+                <button class="nav-link" id="nav-NationalLife-tab" data-bs-toggle="tab" data-bs-target="#nav-NationalLife" type="button" role="tab" aria-controls="nav-NationalLife" aria-selected="false">National Life</button>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-AmericanNational" role="tabpanel" aria-labelledby="nav-AmericanNational-tab">
+            <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
                 <div class="container-fluid">
                     <form action="" method="post">
                         <div class="row text-white">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
                                 <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
+                                <label for="NombreVideo">Ingrese Nombre</label>
+                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
+                                <input type="file" name="Anico" id="Anico" class="form-control">
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-Ameritas" role="tabpanel" aria-labelledby="nav-Ameritas-tab">
+                <div class="container-fluid">
+                    <form action="" method="post">
+                        <div class="row text-white">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
+                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="American National" title="American National"><br><br><br>
                                 <label for="NombreVideo">Ingrese Nombre</label>
                                 <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
                                 <input type="file" name="AmericanNational" id="AmericanNational" class="form-control">
@@ -24,32 +40,16 @@
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tab-pane fade" id="nav-NationalLife" role="tabpanel" aria-labelledby="nav-NationalLife-tab">
                 <div class="container-fluid">
                     <form action="" method="post">
                         <div class="row text-white">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
+                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="American National" title="American National"><br><br><br>
                                 <label for="NombreVideo">Ingrese Nombre</label>
                                 <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="AmericanNational" id="AmericanNational">
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <div class="container-fluid">
-                    <form action="" method="post">
-                        <div class="row text-white">
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
-                                <label for="NombreVideo">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="AmericanNational" id="AmericanNational">
+                                <input type="file" name="AmericanNational" id="AmericanNational" class="form-control">
                             </div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                         </div>
