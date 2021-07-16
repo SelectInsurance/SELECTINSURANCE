@@ -1,0 +1,58 @@
+/*Desenfoque de imagen*/
+.imagendesenfoque {
+  filter: blur(6px);
+}
+.imagendesenfoque:hover {
+  filter: blur(0px);
+  transition: 0.5s, 0.5s, 0.5s, 0.5s;
+}
+
+/*Imagen de fondo*/
+.ImagenBackGround {
+  background-image: url(../img/BackGround.jpg);
+}
+.ImagenLogeado{
+  background-image: url(../img/BackGroundLogeado.png);
+}
+
+/*Colores Principales y Secundario*/
+.ColorPrincipalTranslucido {
+  background-color: rgba(7, 120, 113, 0.7);
+}
+
+.ColorSecundarioTranslucido {
+  background-color: rgba(44, 62, 80, 0.7);
+}
+
+.ColorPrincipal {
+  background-color: rgba(7, 120, 113, 1);
+}
+
+.ColorSecundario {
+  background-color: rgba(205, 228, 196, 1);
+}
+
+.ColorMenuPrincipalConTexto{
+  background-color: rgba(205, 228, 196, 1);
+  color: rgba(44, 62, 80, 1);
+}
+.ColorTextoOscuro{
+  color: rgba(44, 62, 80, 1);
+}
+
+
+/*Radio de las esquinas*/
+.RadioDeBordes {
+  border-top-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+
+
+/*Etiqueta videos*/
+video {
+  width: 100%;
+  height: auto;
+}
