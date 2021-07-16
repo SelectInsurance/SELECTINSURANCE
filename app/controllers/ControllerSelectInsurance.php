@@ -2,8 +2,12 @@
 require_once 'app/views/assets/header.php';
 require_once 'app/models/autoload.php';
 session_start();
-class ControllerPrincipal
+class ControllerPrincipal extends Pather
 {
+
+    public function __construct() {
+        $this->table = "UsuarioPageAgentes";
+    }
     public function ControllerInicio()
     {
         require_once 'app/views/assets/NavPrincipal.php';
@@ -25,7 +29,7 @@ class ControllerPrincipal
     //Validacion Login Salud
     public function ControllerLogeadoSalud($user, $pass)
     {
-        $login = new ConsultaLogin($user, $pass);
+        $login = new ConsultaLogin($user, $pass, $this->table);
         if ($login->Consulta()) {
             $_SESSION['logeado'] = 'admin';
         } else {
@@ -39,7 +43,7 @@ class ControllerPrincipal
     //Validacion Login Vida
     public function ControllerLogeadoVida($user, $pass)
     {
-        $login = new ConsultaLogin($user, $pass);
+        $login = new ConsultaLogin($user, $pass, $this->table);
         if ($login->Consulta()) {
             $_SESSION['logeado'] = 'admin';
         } else {
