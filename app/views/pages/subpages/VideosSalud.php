@@ -1,17 +1,17 @@
 <div class="container-fluid"><br><br><br>
     <div class="row shadow-lg p-3 mb-5 border">
-        <h2 class="text-center animate__animated animate__jackInTheBox">Videos de Salud</h2><br><br><br><br><br>
+        <h1 class="text-center">Videos de Salud</h1><br><br><br><br><br>
         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 class="text-center animate__animated animate__fadeInDown">COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD.mp4" preload="auto" class="animate__animated animate__swing" controls>Lo sentimos, hubo un error</video><br><br>
-            <h4 class="text-center animate__animated animate__fadeInDown">ENTRENAMIENTO CRM</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\ENTRENAMIENTO CRM.mp4" preload="auto" class="animate__animated animate__swing" controls>Lo sentimos, hubo un error</video>
+            <h4 class="text-center ">COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD</h4>
+            <video src="app\views\assets\videos\videos agentes\videos de salud\COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video><br><br>
+            <h4 class="text-center ">ENTRENAMIENTO CRM</h4>
+            <video src="app\views\assets\videos\videos agentes\videos de salud\ENTRENAMIENTO CRM.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 class="text-center animate__animated animate__fadeInDown">PLAN DENTAL</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DENTAL.mp4" preload="auto" class="animate__animated animate__swing" controls>Lo sentimos, hubo un error</video><br><br>
-            <h4 class="text-center animate__animated animate__fadeInDown">PLAN DE RESCATE ESTADOUNIDENSE</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DE RESCATE ESTADOUNIDENSE (OSCAR).mp4" preload="auto" class="animate__animated animate__swing" controls>Lo sentimos, hubo un error</video>
+            <h4 class="text-center ">PLAN DENTAL</h4>
+            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DENTAL.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video><br><br>
+            <h4 class="text-center ">PLAN DE RESCATE ESTADOUNIDENSE</h4>
+            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DE RESCATE ESTADOUNIDENSE (OSCAR).mp4" preload="auto"  controls>Lo sentimos, hubo un error</video>
         </div>
     </div><br><br><br>
     <div class="row ColorPrincipal text-white">
