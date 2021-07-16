@@ -1,14 +1,11 @@
     <?php
     //require_once 'app/controllers/app_autoload_controller.php'; sin implementacion
 
-    //Controller del Managment
-    require_once 'app/controllers/ControllerManagment.php';
+
 
     //Controller principal
     require_once 'app/controllers/ControllerSelectInsurance.php';
-    $ManagmentController = new ControllerManagment();
     $controller = new ControllerPrincipal();
-
     switch ($_GET['pages']) {
         case 'inicio':
             $controller->ControllerInicio();
@@ -47,8 +44,26 @@
                 header('./?pages=Videos-de-Vida');
             }
             break;
+
+            //si no ingresa en ninguna de las condiciones anteriores
         default:
-            $controller->ControllerInicio();
+            if (!isset($_GET['pages']) && empty($_GET['managment'])) {
+                $controller->ControllerInicio();
+            }
+            break;
+    }
+
+    //Controller del Managment
+    require_once 'app/controllers/ControllerManagment.php';
+    $ManagmentController = new ControllerManagment();
+
+    switch ($_GET['managment']) {
+        case 'login':
+            $ManagmentController->ControllerManagmentLogin();
+            break;
+
+        default:
+            # code...
             break;
     }
     ?>
