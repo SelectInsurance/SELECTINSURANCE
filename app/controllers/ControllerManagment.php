@@ -16,11 +16,17 @@ class ControllerManagment extends Pather
     public function ControllerManagmentConsultaLogin($user, $pass){
         $consultar = new ConsultaLogin($user, $pass, $this->table);
         if ($consultar->Consulta()) {
-            $_SESSION['logeado'] = 'admin';
+            $_SESSION['managment'] = 'admin';
         }else {
             require_once 'app/views/assets/NavAgente.php';
             require_once 'app/views/pages/managment/login.php';
         }
+    }
+
+    public function ControllerManagmentCargaVideos()
+    {
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/managment/modulos/CargaVideos.php';
     }
 }
 
