@@ -41,6 +41,10 @@
   background-color: rgba(205, 228, 196, 1);
 }
 
+.ColorSecundarioFondoTranslucido{
+  background-color: rgba(205, 228, 196, 0.9);
+}
+
 .ColorMenuPrincipalConTexto {
   background-color: rgba(205, 228, 196, 1);
   color: rgba(44, 62, 80, 1);

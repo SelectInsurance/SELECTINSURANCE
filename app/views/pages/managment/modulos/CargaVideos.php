@@ -1,5 +1,5 @@
 <div class="ImagenCargaVideos img-fluid ImagenFija">
-    <div class="container-fluid ColorSecundarioTranslucido">
+    <div class="container-fluid ColorSecundarioFondoTranslucido">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-Anico-tab" data-bs-toggle="tab" data-bs-target="#nav-Anico" type="button" role="tab" aria-controls="nav-Anico" aria-selected="true">Anico</button>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-white" id="Contacto">
+        <div class="text-white ColorPrincipalTranslucido" id="Contacto">
             <div class="container">
                 <hr>
                 <div class="row">
@@ -124,7 +124,7 @@
                         </p>
                     </div>
                 </div>
-                <h6 class="text-end">Copyright © <?php echo date('M').' '.date('Y'); ?> Select Insurance.</h6><br>
+                <h6 class="text-end">Copyright © <?php echo date('M') . ' ' . date('Y'); ?> Select Insurance.</h6><br>
             </div>
         </div>
     </div>
