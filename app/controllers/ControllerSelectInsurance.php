@@ -64,6 +64,8 @@ class ControllerPrincipal extends Pather
     public function ControllerVideosDeVida()
     {
         require_once 'app/views/assets/NavAgente.php';
+
+        
         require_once 'app/views/pages/subpages/VideosVida.php';
     }
 }

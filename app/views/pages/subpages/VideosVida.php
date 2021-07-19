@@ -3,7 +3,6 @@
         <div class="d-flex align-items-start">
             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active" id="v-pills-Anico-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Anico" type="button" role="tab" aria-controls="v-pills-Anico" aria-selected="true">Anico</button>
-                <button class="nav-link" id="v-pills-Transamerica-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Transamerica" type="button" role="tab" aria-controls="v-pills-Transamerica" aria-selected="false">Transamerica</button>
                 <button class="nav-link" id="v-pills-NationalLifeGroup-tab" data-bs-toggle="pill" data-bs-target="#v-pills-NationalLifeGroup" type="button" role="tab" aria-controls="v-pills-NationalLifeGroup" aria-selected="false">NationalLifeGroup</button>
                 <button class="nav-link" id="v-pills-Ameritas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Ameritas" type="button" role="tab" aria-controls="v-pills-Ameritas" aria-selected="false">Ameritas</button>
             </div>
@@ -11,24 +10,16 @@
                 <div class="tab-pane fade show active" id="v-pills-Anico" role="tabpanel" aria-labelledby="v-pills-Anico-tab">
                     <div class="container-fluid">
                         <div class="row">
+                            <?php 
+                            $ConsultaAnico = new crudVideos("SELECT URL FROM videosanico");
+                            $resultados = $ConsultaAnico->Read();
+                                while ($rows = mysqli_fetch_assoc($resultados)) :
+                                    
+                            ?>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <video src="" controls></video>
+                                <video src="<?= $rows['URL']; ?>" controls></video>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <video src="" controls></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-Transamerica" role="tabpanel" aria-labelledby="v-pills-Transamerica-tab">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <video src="" controls></video>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <video src="" controls></video>
-                            </div>
+                            <?php  endwhile;?>
                         </div>
                     </div>
                 </div>
