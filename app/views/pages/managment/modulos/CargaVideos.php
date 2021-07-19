@@ -11,30 +11,42 @@
             <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
                 <div class="container-fluid">
                     <form action="./?managment=CargaVideos" method="post" enctype="multipart/form-data">
-                        <div class="row text-white">
+                        <div class="row text-black">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
                                 <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
-                                <label for="NombreVideo">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
+                                <label for="Anico">Ingrese Nombre</label>
+                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="Anico" placeholder="Nombre Video"><br><br>
                                 <input type="file" name="Anico" id="Anico" class="form-control"><br>
                                 <input type="submit" value="Guardar" name="btnUploadVideoAnico" class="btn btn-outline-success">
+                                <label> <?php
+                                        if (isset($mensaje)) {
+                                            echo ' ' . $mensaje;
+                                        }
+                                        ?></label>
                             </div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-Ameritas" role="tabpanel" aria-labelledby="nav-Ameritas-tab">
                 <div class="container-fluid">
-                    <form action="" method="post">
-                        <div class="row text-white">
+                    <form action="./?managment=CargaVideos" method="post" enctype="multipart/form-data">
+                        <div class="row text-black">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="American National" title="American National"><br><br><br>
-                                <label for="NombreVideo">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="AmericanNational" id="AmericanNational" class="form-control">
+                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="Ameritas" title="Ameritas"><br><br><br>
+                                <label for="Ameritas">Ingrese Nombre</label>
+                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="Ameritas" placeholder="Nombre Video"><br><br>
+                                <input type="file" name="Ameritas" id="Ameritas" class="form-control"><br>
+                                <input type="submit" value="Guardar" name="btnUploadVideoAmeritas" class="btn btn-outline-success">
+                                <label> <?php
+                                        if (isset($mensaje)) {
+                                            echo ' ' . $mensaje;
+                                        }
+                                        ?></label>
                             </div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                         </div>
@@ -43,14 +55,20 @@
             </div>
             <div class="tab-pane fade" id="nav-NationalLife" role="tabpanel" aria-labelledby="nav-NationalLife-tab">
                 <div class="container-fluid">
-                    <form action="" method="post">
-                        <div class="row text-white">
+                    <form action="./?managment=CargaVideos" method="post" enctype="multipart/form-data">
+                        <div class="row text-black">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="American National" title="American National"><br><br><br>
-                                <label for="NombreVideo">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="AmericanNational" id="AmericanNational" class="form-control">
+                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="National Life" title="National Life"><br><br><br>
+                                <label for="NationalLife">Ingrese Nombre</label>
+                                <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NationalLife" placeholder="Nombre Video"><br><br>
+                                <input type="file" name="NationalLife" id="NationalLife" class="form-control"><br>
+                                <input type="submit" value="Guardar" name="btnUploadVideoNationalLife" class="btn btn-outline-success">
+                                <label> <?php
+                                        if (isset($mensaje)) {
+                                            echo ' ' . $mensaje;
+                                        }
+                                        ?></label>
                             </div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                         </div>

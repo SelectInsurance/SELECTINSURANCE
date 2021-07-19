@@ -22,7 +22,7 @@ class SubidaArchivos extends Pather
     }
 
     //Metodo para subir archivo validando la extencion y insertando en la base de datos la url
-    public function SubidaValidando()
+    public function SubidaValidando($DirectorioDeSubida)
     {
 
 
@@ -38,12 +38,11 @@ class SubidaArchivos extends Pather
 
         if (in_array($ExtencionMinuscula, $ExtencionesPermitidas)) {
 
-            $DirectorioDeSubida = 'app/views/assets/videos/videos_vida/anico/';
             $DirectorioYNombre = $DirectorioDeSubida . $this->NombreArchivo;
             $table = $this->table;
 
             $conexion->EstablecerConexion()->query("INSERT INTO $table(Nombre, URL) VALUES('$Nombre','$DirectorioYNombre')");
-            if (move_uploaded_file($this->RutaTemporal, $DirectorioYNombre)) {
+            if (!empty(move_uploaded_file($this->RutaTemporal, $DirectorioYNombre))) {
                 $menssage = 'Subido con Exito';
             } else {
                 $menssage = 'Error al subirse';
