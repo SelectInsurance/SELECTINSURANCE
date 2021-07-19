@@ -1,22 +1,21 @@
-<?php 
+<?php
 //Conexion a la base de datos 
-    class Conexion  
+class Conexion
+{
+    public function EstablecerConexion()
     {
-        public function EstablecerConexion(){
-            $conexion = new mysqli('localhost','root','','crm_select');
+        $conexion = new mysqli('localhost', 'root', '', 'crm_select');
 
-            error_reporting(0);
+        error_reporting(0);
 
-            if ($conexion->connect_errno) {
-                echo 'Lo sentimos, estamos solucionando el error';
-            }
-            return $conexion;
+        if ($conexion->connect_errno) {
+            echo 'Lo sentimos, estamos solucionando el error';
         }
-
-        public function __destruct()
-        {
-            mysqli_close($this->EstablecerConexion());
-        }
+        return $conexion;
     }
-    
-?>
+
+    public function __destruct()
+    {
+        mysqli_close($this->EstablecerConexion());
+    }
+}

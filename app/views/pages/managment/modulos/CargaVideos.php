@@ -10,14 +10,15 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
                 <div class="container-fluid">
-                    <form action="" method="post">
+                    <form action="./?managment=CargaVideos" method="post" enctype="multipart/form-data">
                         <div class="row text-white">
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
                                 <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
                                 <label for="NombreVideo">Ingrese Nombre</label>
                                 <input type="text" name="NombreVideo" class="form-control rounded-pill" id="NombreVideo" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="Anico" id="Anico" class="form-control">
+                                <input type="file" name="Anico" id="Anico" class="form-control"><br>
+                                <input type="submit" value="Guardar" name="btnUploadVideoAnico" class="btn btn-outline-success">
                             </div>
                             <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                         </div>

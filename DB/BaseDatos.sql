@@ -27,6 +27,31 @@ CREATE TABLE UsuarioManagment(
     Usuario VARCHAR (50) NOT NULL,
     Password VARCHAR (50) NOT NULL
 );
+
+CREATE TABLE VideosDeSalud(
+    idVideo INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR (50) NOT NULL,
+    URL VARCHAR (255) NOT NULL
+);
+
+CREATE TABLE VideosAnico(
+    idVideo INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR (50) NOT NULL,
+    URL VARCHAR (255) NOT NULL
+);
+
+CREATE TABLE VideosAmeritas(
+    idVideo INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR (50) NOT NULL,
+    URL VARCHAR (255) NOT NULL
+);
+
+CREATE TABLE NationalLife(
+    idVideo INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR (50) NOT NULL,
+    URL VARCHAR (255) NOT NULL
+);
+
 INSERT INTO UsuarioManagment(
     Usuario,
     Password

@@ -1,12 +1,54 @@
 <?php
-//Convertir esto en un objeto para reutilizar
-        $directorio = 'archivos/';
-        $subir_archivo = $directorio . basename($_FILES['subir_archivo']['name']);
-        echo "<div>";
-        if (move_uploaded_file($_FILES['subir_archivo']['tmp_name'], $subir_archivo)) {
-            echo "El archivo es válido y se cargó correctamente.<br><br>";
-            echo "<a href='" . $subir_archivo . "' target='_blank'><img src='" . $subir_archivo . "' width='150'></a>";
-        } else {
-            echo "La subida ha fallado";
+require_once 'Conexion.php';
+class SubidaArchivos extends Pather
+{
+    private $Nombre;
+
+    private $RutaTemporal;
+    private $NombreArchivo;
+    private $TamañoArchivo;
+    private $TipoArchivo;
+
+    public function __construct($Nombre, $RutaTemporal, $NombreArchivo, $TamañoArchivo, $TipoArchivo, $table)
+    {
+        $this->Nombre = $Nombre;
+
+        $this->RutaTemporal = $RutaTemporal;
+        $this->NombreArchivo = $NombreArchivo;
+        $this->TamañoArchivo = $TamañoArchivo;
+        $this->TipoArchivo = $TipoArchivo;
+
+        $this->table = $table;
+    }
+
+    //Metodo para subir archivo validando la extencion y insertando en la base de datos la url
+    public function SubidaValidando()
+    {
+
+
+
+        //Aplicando extencion y forzando minusculas
+        $Extencion = explode(".", $this->NombreArchivo);
+        $ExtencionMinuscula = strtolower(end($Extencion));
+
+        $conexion = new Conexion();
+        $Nombre = $this->Nombre;
+
+        $ExtencionesPermitidas = array('mp4');
+
+        if (in_array($ExtencionMinuscula, $ExtencionesPermitidas)) {
+
+            $DirectorioDeSubida = 'app/views/assets/videos/videos_vida/anico/';
+            $DirectorioYNombre = $DirectorioDeSubida . $this->NombreArchivo;
+            $table = $this->table;
+
+            $conexion->EstablecerConexion()->query("INSERT INTO $table(Nombre, URL) VALUES('$Nombre','$DirectorioYNombre')");
+            if (move_uploaded_file($this->RutaTemporal, $DirectorioYNombre)) {
+                $menssage = 'Subido con Exito';
+            } else {
+                $menssage = 'Error al subirse';
+            }
         }
-        echo "</div>";
+        return $menssage;
+    }
+}
