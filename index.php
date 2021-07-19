@@ -68,7 +68,7 @@
         case 'login':
             if (empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentLogin();
-            }else {
+            } else {
                 header('Location:?managment=CargaVideos');
             }
             break;
@@ -87,7 +87,36 @@
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+
+            //Recibiendo Videos para subida al servidor
+        case 'CargandoVideosAnico':
+            if (!empty($_SESSION['managment'])) {
+                if (isset($_POST['btnUploadVideoAnico'])) {
+                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAnico'], $_FILES['Anico']['tmp_name'], $_FILES['Anico']['name'], $_FILES['Anico']['size'], $_FILES['Anico']['type'], 'VideosAnico', 'app/views/assets/videos/videos_vida/anico/');
+                }
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
+        case 'CargandoVideosAmeritas':
+            if (!empty($_SESSION['managment'])) {
+                if (isset($_POST['btnUploadVideoAmeritas'])) {
+                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAmeritas'], $_FILES['Ameritas']['tmp_name'], $_FILES['Ameritas']['name'], $_FILES['Ameritas']['size'], $_FILES['Ameritas']['type'], 'VideosAmeritas', 'app/views/assets/videos/videos_vida/ameritas/');
+                } else {
+                    $ManagmentController->ControllerManagmentLogin();
+                }
+                break;
+            }
         default:
+        case 'CargandoVideosNationalLife':
+            if (!empty($_SESSION['managment'])) {
+                if (isset($_POST['btnUploadVideoNationalLife'])) {
+                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoNationalLife'], $_FILES['NationalLife']['tmp_name'], $_FILES['NationalLife']['name'], $_FILES['NationalLife']['size'], $_FILES['NationalLife']['type'], 'VideosNationalLife', 'app/views/assets/videos/videos_vida/national_life/');
+                }
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
             # code...
             break;
     }
