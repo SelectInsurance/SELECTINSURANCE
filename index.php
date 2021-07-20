@@ -105,7 +105,7 @@
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAmeritas'], $_FILES['Ameritas']['tmp_name'], $_FILES['Ameritas']['name'], $_FILES['Ameritas']['size'], $_FILES['Ameritas']['type'], 'VideosAmeritas', 'app/views/assets/videos/videos_vida/ameritas/');
                     header('Location:./?managment=CargaVideos');
                 } else {
-                    $ManagmentController->ControllerManagmentLogin();
+                    $controller->ControllerInicio();
                 }
                 break;
             }
@@ -117,7 +117,7 @@
                     header('Location:./?managment=CargaVideos');
                 }
             } else {
-                $ManagmentController->ControllerManagmentLogin();
+                $controller->ControllerInicio();
             }
             break;
             # code...
