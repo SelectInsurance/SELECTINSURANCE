@@ -1,9 +1,20 @@
-<div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active" id="v-pills-Anico-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Anico" type="button" role="tab" aria-controls="v-pills-Anico" aria-selected="true">Anico</button>
-        <button class="nav-link" id="v-pills-NationalLifeGroup-tab" data-bs-toggle="pill" data-bs-target="#v-pills-NationalLifeGroup" type="button" role="tab" aria-controls="v-pills-NationalLifeGroup" aria-selected="false">NationalLifeGroup</button>
-        <button class="nav-link" id="v-pills-Ameritas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Ameritas" type="button" role="tab" aria-controls="v-pills-Ameritas" aria-selected="false">Ameritas</button>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt"></i></button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header ColorPrincipal text-white">
+            <h5 id="offcanvasRightLabel">Compañias</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ColorSecundario">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-Anico-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Anico" type="button" role="tab" aria-controls="v-pills-Anico" aria-selected="true">Anico</button>
+                <button class="nav-link" id="v-pills-NationalLifeGroup-tab" data-bs-toggle="pill" data-bs-target="#v-pills-NationalLifeGroup" type="button" role="tab" aria-controls="v-pills-NationalLifeGroup" aria-selected="false">NationalLifeGroup</button>
+                <button class="nav-link" id="v-pills-Ameritas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Ameritas" type="button" role="tab" aria-controls="v-pills-Ameritas" aria-selected="false">Ameritas</button>
+            </div>
+        </div>
     </div>
+
     <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-Anico" role="tabpanel" aria-labelledby="v-pills-Anico-tab">
             <div class="container-fluid">
@@ -60,7 +71,6 @@
             </div>
         </div>
     </div>
-</div>
 </div><br><br><br>
 
 <div class="container-fluid ColorPrincipal text-white"><br>
