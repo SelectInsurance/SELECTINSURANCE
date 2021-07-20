@@ -25,6 +25,8 @@ class ControllerManagment extends Pather
         }
     }
 
+
+    //Controlador para carga de videos de Vida
     public function ControllerManagmentCargaVideosVida()
     {
         require_once 'app/views/assets/NavAgente.php';
@@ -40,6 +42,15 @@ class ControllerManagment extends Pather
     public function ControllerPrincipalManagment(){
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/InicioManagment.php';
+    }
+
+
+
+
+    //Controlador para carga de videos de Salud
+    public function ControllerManagmentCargaVideosSalud(){
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/managment/modulos/CargaVideosSalud.php';
     }
 }
 

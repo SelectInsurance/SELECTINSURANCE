@@ -88,7 +88,7 @@
             }
             break;
 
-            //Carga Video
+            //Carga Video de Vida
         case 'CargaVideosLife':
             if (!empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentCargaVideosVida();
@@ -118,7 +118,6 @@
                 }
                 break;
             }
-        default:
         case 'CargandoVideosNationalLife':
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoNationalLife'])) {
@@ -128,7 +127,20 @@
             } else {
                 $controller->ControllerInicio();
             }
+
+
+
+
+            //Carga Video de Salud
+        case 'CargaVideosSalud':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentCargaVideosSalud();
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
             break;
+
+        default:
             # code...
             break;
     }

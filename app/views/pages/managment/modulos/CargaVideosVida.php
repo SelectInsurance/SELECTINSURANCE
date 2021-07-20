@@ -1,78 +1,81 @@
 <div class="ImagenCargaVideos img-fluid ImagenFija">
-    <div class="container-fluid ColorSecundarioFondoTranslucido">
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-Anico-tab" data-bs-toggle="tab" data-bs-target="#nav-Anico" type="button" role="tab" aria-controls="nav-Anico" aria-selected="true">Anico</button>
-                <button class="nav-link" id="nav-Ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-Ameritas" type="button" role="tab" aria-controls="nav-Ameritas" aria-selected="false">Ameritas</button>
-                <button class="nav-link" id="nav-NationalLife-tab" data-bs-toggle="tab" data-bs-target="#nav-NationalLife" type="button" role="tab" aria-controls="nav-NationalLife" aria-selected="false">National Life</button>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
-                <div class="container-fluid">
-                    <form action="./?managment=CargandoVideosAnico" method="post" enctype="multipart/form-data">
-                        <div class="row text-black">
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
-                                <label for="Anico">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideoAnico" class="form-control rounded-pill" id="Anico" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="Anico" id="Anico" class="form-control"><br>
-                                <input type="submit" value="Guardar Anico" name="btnUploadVideoAnico" class="btn btn-outline-success">
-                                <label> <?php
-                                        if (isset($mensaje)) {
-                                            echo ' ' . $mensaje;
-                                        }
-                                        ?></label>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                            </div>
-                        </div>
-                    </form>
+    <div class="row">
+
+        <div class="container-fluid ColorSecundarioFondoTranslucido">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-Anico-tab" data-bs-toggle="tab" data-bs-target="#nav-Anico" type="button" role="tab" aria-controls="nav-Anico" aria-selected="true">Anico</button>
+                    <button class="nav-link" id="nav-Ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-Ameritas" type="button" role="tab" aria-controls="nav-Ameritas" aria-selected="false">Ameritas</button>
+                    <button class="nav-link" id="nav-NationalLife-tab" data-bs-toggle="tab" data-bs-target="#nav-NationalLife" type="button" role="tab" aria-controls="nav-NationalLife" aria-selected="false">National Life</button>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="nav-Ameritas" role="tabpanel" aria-labelledby="nav-Ameritas-tab">
-                <div class="container-fluid">
-                    <form action="./?managment=CargandoVideosAmeritas" method="post" enctype="multipart/form-data">
-                        <div class="row text-black">
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="Ameritas" title="Ameritas"><br><br><br>
-                                <label for="Ameritas">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideoAmeritas" class="form-control rounded-pill" id="Ameritas" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="Ameritas" id="Ameritas" class="form-control"><br>
-                                <input type="submit" value="Guardar Ameritas" name="btnUploadVideoAmeritas" class="btn btn-outline-success">
-                                <label> <?php
-                                        if (isset($mensaje)) {
-                                            echo ' ' . $mensaje;
-                                        }
-                                        ?></label>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
+                    <div class="container-fluid">
+                        <form action="./?managment=CargandoVideosAnico" method="post" enctype="multipart/form-data">
+                            <div class="row text-black">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
+                                    <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
+                                    <label for="Anico">Ingrese Nombre</label>
+                                    <input type="text" name="NombreVideoAnico" class="form-control rounded-pill" id="Anico" placeholder="Nombre Video"><br><br>
+                                    <input type="file" name="Anico" id="Anico" class="form-control"><br>
+                                    <input type="submit" value="Guardar Anico" name="btnUploadVideoAnico" class="btn btn-outline-success">
+                                    <label> <?php
+                                            if (isset($mensaje)) {
+                                                echo ' ' . $mensaje;
+                                            }
+                                            ?></label>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="nav-NationalLife" role="tabpanel" aria-labelledby="nav-NationalLife-tab">
-                <div class="container-fluid">
-                    <form action="./?managment=CargandoVideosNationalLife" method="post" enctype="multipart/form-data">
-                        <div class="row text-black">
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
-                                <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="National Life" title="National Life"><br><br><br>
-                                <label for="NationalLife">Ingrese Nombre</label>
-                                <input type="text" name="NombreVideoNationalLife" class="form-control rounded-pill" id="NationalLife" placeholder="Nombre Video"><br><br>
-                                <input type="file" name="NationalLife" id="NationalLife" class="form-control"><br>
-                                <input type="submit" value="Guardar National Life" name="btnUploadVideoNationalLife" class="btn btn-outline-success">
-                                <label> <?php
-                                        if (isset($mensaje)) {
-                                            echo ' ' . $mensaje;
-                                        }
-                                        ?></label>
+                <div class="tab-pane fade" id="nav-Ameritas" role="tabpanel" aria-labelledby="nav-Ameritas-tab">
+                    <div class="container-fluid">
+                        <form action="./?managment=CargandoVideosAmeritas" method="post" enctype="multipart/form-data">
+                            <div class="row text-black">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
+                                    <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="Ameritas" title="Ameritas"><br><br><br>
+                                    <label for="Ameritas">Ingrese Nombre</label>
+                                    <input type="text" name="NombreVideoAmeritas" class="form-control rounded-pill" id="Ameritas" placeholder="Nombre Video"><br><br>
+                                    <input type="file" name="Ameritas" id="Ameritas" class="form-control"><br>
+                                    <input type="submit" value="Guardar Ameritas" name="btnUploadVideoAmeritas" class="btn btn-outline-success">
+                                    <label> <?php
+                                            if (isset($mensaje)) {
+                                                echo ' ' . $mensaje;
+                                            }
+                                            ?></label>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                             </div>
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-NationalLife" role="tabpanel" aria-labelledby="nav-NationalLife-tab">
+                    <div class="container-fluid">
+                        <form action="./?managment=CargandoVideosNationalLife" method="post" enctype="multipart/form-data">
+                            <div class="row text-black">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
+                                    <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="National Life" title="National Life"><br><br><br>
+                                    <label for="NationalLife">Ingrese Nombre</label>
+                                    <input type="text" name="NombreVideoNationalLife" class="form-control rounded-pill" id="NationalLife" placeholder="Nombre Video"><br><br>
+                                    <input type="file" name="NationalLife" id="NationalLife" class="form-control"><br>
+                                    <input type="submit" value="Guardar National Life" name="btnUploadVideoNationalLife" class="btn btn-outline-success">
+                                    <label> <?php
+                                            if (isset($mensaje)) {
+                                                echo ' ' . $mensaje;
+                                            }
+                                            ?></label>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
