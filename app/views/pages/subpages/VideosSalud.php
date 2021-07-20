@@ -1,18 +1,16 @@
-<div class="container-fluid"><br><br><br>
+<div class="container-fluid">
     <div class="row shadow-lg p-3 mb-5 border">
-        <h1 class="text-center">Videos de Salud</h1><br><br><br><br><br>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 class="text-center ">COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\COTIZACIÓN Y SOMETIMIENTO SEGURO DE SALUD.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video><br><br>
-            <h4 class="text-center ">ENTRENAMIENTO CRM</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\ENTRENAMIENTO CRM.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <h4 class="text-center ">PLAN DENTAL</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DENTAL.mp4" preload="auto"  controls>Lo sentimos, hubo un error</video><br><br>
-            <h4 class="text-center ">PLAN DE RESCATE ESTADOUNIDENSE</h4>
-            <video src="app\views\assets\videos\videos agentes\videos de salud\PLAN DE RESCATE ESTADOUNIDENSE (OSCAR).mp4" preload="auto"  controls>Lo sentimos, hubo un error</video>
-        </div>
+        <center><h2>Videos de Salud</h2></center>
+        <?php
+        $ConsultaAnico = new crudVideos("SELECT Nombre, URL FROM videosdesalud");
+        $resultados = $ConsultaAnico->Read();
+        while ($rows = mysqli_fetch_assoc($resultados)) :
+        ?>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
+                <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
+                <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+            </div>
+        <?php endwhile; ?>
     </div><br><br><br>
     <div class="row ColorPrincipal text-white">
         <div class="container"><br>
