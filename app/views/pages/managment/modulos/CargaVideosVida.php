@@ -19,7 +19,7 @@
                                     <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\AmericanNational.png" alt="American National" title="American National"><br><br><br>
                                     <label for="Anico">Ingrese Nombre</label>
                                     <input type="text" name="NombreVideoAnico" class="form-control rounded-pill" id="Anico" placeholder="Nombre Video"><br><br>
-                                    <input type="file" name="Anico" id="Anico" class="form-control"><br>
+                                    <input type="file" name="Anico" id="Anico" class="form-control rounded-pill"><br>
                                     <input type="submit" value="Guardar Anico" name="btnUploadVideoAnico" class="btn btn-outline-success">
                                     <label> <?php
                                             if (isset($mensaje)) {
@@ -42,7 +42,7 @@
                                     <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\Ameritas.png" alt="Ameritas" title="Ameritas"><br><br><br>
                                     <label for="Ameritas">Ingrese Nombre</label>
                                     <input type="text" name="NombreVideoAmeritas" class="form-control rounded-pill" id="Ameritas" placeholder="Nombre Video"><br><br>
-                                    <input type="file" name="Ameritas" id="Ameritas" class="form-control"><br>
+                                    <input type="file" name="Ameritas" id="Ameritas" class="form-control rounded-pill"><br>
                                     <input type="submit" value="Guardar Ameritas" name="btnUploadVideoAmeritas" class="btn btn-outline-success">
                                     <label> <?php
                                             if (isset($mensaje)) {
@@ -64,7 +64,7 @@
                                     <img class="img-fluid rounded mx-auto d-block" src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" alt="National Life" title="National Life"><br><br><br>
                                     <label for="NationalLife">Ingrese Nombre</label>
                                     <input type="text" name="NombreVideoNationalLife" class="form-control rounded-pill" id="NationalLife" placeholder="Nombre Video"><br><br>
-                                    <input type="file" name="NationalLife" id="NationalLife" class="form-control"><br>
+                                    <input type="file" name="NationalLife" id="NationalLife" class="form-control rounded-pill"><br>
                                     <input type="submit" value="Guardar National Life" name="btnUploadVideoNationalLife" class="btn btn-outline-success">
                                     <label> <?php
                                             if (isset($mensaje)) {

@@ -9,11 +9,11 @@
                         <img src="app/views/assets/img/Salud/Salud.png" class="img-fluid" height="250px" width="250px" alt="Salud" title="Salud">
                         <h2>Videos Salud</h2><br>
                     </center>
-                    <form action="" method="post">
+                    <form action="?managment=CargandoVideosSalud" method="post" enctype="multipart/form-data">
                         <label for="Nombre">Nombre:</label>
-                        <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Nombre Video"><br><br>
-                        <input type="file" name="VideoSalud" id="VideoSalud" class="form-control"><br><br>
-                        <input type="submit" value="Guardar" class="btn btn-outline-success">
+                        <input type="text" name="NombreVideoDeSalud" id="Nombre" class="form-control rounded-pill" placeholder="Nombre Video"><br><br>
+                        <input type="file" name="VideoSalud" id="VideoSalud" class="form-control rounded-pill"><br>
+                        <input type="submit" value="Guardar" name="btnUploadVideoSalud" class="btn btn-outline-success">
                     </form>
                 </div>
                 <div class="col-12 col-sm-3 col-md-3 col-lg-4"></div>

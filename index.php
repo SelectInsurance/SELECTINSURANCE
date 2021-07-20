@@ -140,6 +140,17 @@
             }
             break;
 
+        case 'CargandoVideosSalud':
+            if (!empty($_SESSION['managment'])) {
+                if (isset($_POST['btnUploadVideoSalud'])) {
+                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/');
+                    header('Location:./?managment=CargaVideosSalud');
+                }
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
+
         default:
             # code...
             break;
