@@ -91,7 +91,7 @@
             //Carga Video
         case 'CargaVideosLife':
             if (!empty($_SESSION['managment'])) {
-                $ManagmentController->ControllerManagmentCargaVideos();
+                $ManagmentController->ControllerManagmentCargaVideosVida();
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }

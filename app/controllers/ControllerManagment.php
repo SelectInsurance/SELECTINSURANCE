@@ -25,10 +25,10 @@ class ControllerManagment extends Pather
         }
     }
 
-    public function ControllerManagmentCargaVideos()
+    public function ControllerManagmentCargaVideosVida()
     {
         require_once 'app/views/assets/NavAgente.php';
-        require_once 'app/views/pages/managment/modulos/CargaVideos.php';
+        require_once 'app/views/pages/managment/modulos/CargaVideosVida.php';
     }
 
     public function ControllerCargandoVideos($nombre, $RutaTemporal, $NombreArchivo, $TamañoArchivo, $TipoArchivo, $table, $ruta)
