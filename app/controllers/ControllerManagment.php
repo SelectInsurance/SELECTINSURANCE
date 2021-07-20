@@ -36,6 +36,11 @@ class ControllerManagment extends Pather
         $subirVideos = new SubidaArchivos($nombre, $RutaTemporal, $NombreArchivo, $TamañoArchivo, $TipoArchivo, $table);
         $mensaje = $subirVideos->SubidaValidando($ruta);
     }
+
+    public function ControllerPrincipalManagment(){
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/managment/InicioManagment.php';
+    }
 }
 
 require_once 'app/views/assets/footer.php';

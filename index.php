@@ -69,18 +69,27 @@
             if (empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentLogin();
             } else {
-                header('Location:?managment=CargaVideos');
+                header('Location:?managment=Inicio');
             }
             break;
 
             //Validacion para conseguir el refresco de la pagina ya que se quedaba en blanco si no aplicaba header
         case 'validacion-managment-login':
             $ManagmentController->ControllerManagmentConsultaLogin($_POST['user'], $_POST['pass']);
-            header('Location:?managment=CargaVideos');
+            header('Location:?managment=Inicio');
+            break;
+
+            //Inicio para ingresar a los modulos
+        case 'Inicio':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerPrincipalManagment();
+            } else {
+                header('Location:?managment=login');
+            }
             break;
 
             //Carga Video
-        case 'CargaVideos':
+        case 'CargaVideosLife':
             if (!empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentCargaVideos();
             } else {

@@ -21,7 +21,7 @@ class ControllerPrincipal extends Pather
 
     public function ControllerAgentes()
     {
-        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/assets/NavPrincipal.php';
         require_once 'app/views/pages/Agentes.php';
     }
 
@@ -33,7 +33,7 @@ class ControllerPrincipal extends Pather
         if ($login->Consulta()) {
             $_SESSION['logeado'] = 'admin';
         } else {
-            require_once 'app/views/assets/NavAgente.php';
+            require_once 'app/views/assets/NavPrincipal.php';
             $mensajeError = '<center>Error al iniciar Sesion</center>';
             require_once 'app/views/pages/ErrorLogin.php';
             require_once 'app/views/pages/LoginSalud.php';
@@ -47,7 +47,7 @@ class ControllerPrincipal extends Pather
         if ($login->Consulta()) {
             $_SESSION['logeado'] = 'admin';
         } else {
-            require_once 'app/views/assets/NavAgente.php';
+            require_once 'app/views/assets/NavPrincipal.php';
             $mensajeError = '<center>Error al iniciar Sesion</center>';
             require_once 'app/views/pages/ErrorLogin.php';
             require_once 'app/views/pages/LoginVida.php';

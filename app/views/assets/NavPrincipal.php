@@ -2,11 +2,11 @@
     <div class="container-fluid ColorTextoOscuro">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="#Inicio">INICIO</a>
-                <a class="nav-link" href="#Cotizador">COTIZADOR ONLINE</a>
-                <a class="nav-link" href="#Servicios">SERVICIOS</a>
-                <a class="nav-link" href="#Testimonios">TESTIMONIOS</a>
-                <a class="nav-link" href="#Contacto">CONTACTO</a>
+            <a class="nav-link" href="./">INICIO</a>
+                <a class="nav-link" href="./#Cotizador">COTIZADOR ONLINE</a>
+                <a class="nav-link" href="./#Servicios">SERVICIOS</a>
+                <a class="nav-link" href="./#Testimonios">TESTIMONIOS</a>
+                <a class="nav-link" href="./#Contacto">CONTACTO</a>
                 <a class="nav-link" href="agentes">AGENTES</a>
             </div>
         </div>
