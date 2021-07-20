@@ -11,7 +11,7 @@
 
                 <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fas fa-align-center"></i></button>
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header ColorPrincipal text-white">
+                    <div class="offcanvas-header bg-light text-black">
                         <h5 class="offcanvas-title" id="offcanvasBottomLabel">Modulos</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>

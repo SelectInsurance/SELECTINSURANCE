@@ -102,7 +102,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoAnico'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAnico'], $_FILES['Anico']['tmp_name'], $_FILES['Anico']['name'], $_FILES['Anico']['size'], $_FILES['Anico']['type'], 'VideosAnico', 'app/views/assets/videos/videos_vida/anico/');
-                    header('Location:./?managment=CargaVideos');
+                    header('Location:./?managment=CargaVideosLife');
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();
@@ -112,7 +112,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoAmeritas'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAmeritas'], $_FILES['Ameritas']['tmp_name'], $_FILES['Ameritas']['name'], $_FILES['Ameritas']['size'], $_FILES['Ameritas']['type'], 'VideosAmeritas', 'app/views/assets/videos/videos_vida/ameritas/');
-                    header('Location:./?managment=CargaVideos');
+                    header('Location:./?managment=CargaVideosLife');
                 } else {
                     $controller->ControllerInicio();
                 }
@@ -123,7 +123,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoNationalLife'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoNationalLife'], $_FILES['NationalLife']['tmp_name'], $_FILES['NationalLife']['name'], $_FILES['NationalLife']['size'], $_FILES['NationalLife']['type'], 'VideosNationalLife', 'app/views/assets/videos/videos_vida/national_life/');
-                    header('Location:./?managment=CargaVideos');
+                    header('Location:./?managment=CargaVideosLife');
                 }
             } else {
                 $controller->ControllerInicio();

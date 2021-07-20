@@ -10,7 +10,7 @@ class ControllerManagment extends Pather
     }
     public function ControllerManagmentLogin()
     {
-        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/assets/NavPrincipal.php';
         require_once 'app/views/pages/managment/login.php';
     }
 
