@@ -152,7 +152,9 @@
             break;
 
         default:
-            # code...
+            if (!isset($_GET['pages']) && empty($_GET['managment'])) {
+                $controller->ControllerInicio();
+            }
             break;
     }
     ?>

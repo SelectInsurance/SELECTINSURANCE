@@ -1,5 +1,5 @@
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt fa-2x"></i></button>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt fa-2x"></i></button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header ColorPrincipal text-white">
             <h5 id="offcanvasRightLabel">Compañias</h5>
