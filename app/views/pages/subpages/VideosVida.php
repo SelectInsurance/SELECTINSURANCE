@@ -1,6 +1,5 @@
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt"></i></button>
-
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt fa-2x"></i></button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header ColorPrincipal text-white">
             <h5 id="offcanvasRightLabel">Compañias</h5>
@@ -14,7 +13,6 @@
             </div>
         </div>
     </div>
-
     <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-Anico" role="tabpanel" aria-labelledby="v-pills-Anico-tab">
             <div class="container-fluid">
