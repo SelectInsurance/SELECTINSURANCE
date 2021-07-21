@@ -64,6 +64,7 @@
     $ManagmentController = new ControllerManagment();
 
     switch ($_GET['managment']) {
+
             //login de managment
         case 'login':
             if (empty($_SESSION['managment'])) {
@@ -88,6 +89,8 @@
             }
             break;
 
+
+
             //Carga Video de Vida
         case 'CargaVideosLife':
             if (!empty($_SESSION['managment'])) {
@@ -96,6 +99,8 @@
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+
+
 
             //Recibiendo Videos para subida al servidor
         case 'CargandoVideosAnico':
@@ -116,8 +121,8 @@
                 } else {
                     $controller->ControllerInicio();
                 }
-                break;
             }
+            break;
         case 'CargandoVideosNationalLife':
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoNationalLife'])) {
@@ -150,8 +155,16 @@
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+
+
+
+            //Modulo Editar o Eliminar Videos 
         case 'EliminarEditarVideosSalud':
-            $ManagmentController->ControllerManagmentEditarEliminarVideoSalud();
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentEditarEliminarVideoSalud();
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
             break;
 
         default:
