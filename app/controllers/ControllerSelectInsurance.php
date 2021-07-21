@@ -12,6 +12,12 @@ class ControllerPrincipal extends Pather
     {
         require_once 'app/views/assets/NavPrincipal.php';
         session_start();
+        $query = "SELECT * FROM Calendario";
+        $consulta = new Eventos();
+        $resultados = $consulta->Consulta($query);
+
+
+
         require_once 'app/views/pages/inicio.php';
         if (isset($_POST['btnform1enviar'])) {
             $InsertarCliente = new InsertClientes($_POST['nombre'], $_POST['apellido'], $_POST['correo'], $_POST['telefono'], $_POST['estado'], $_POST['servicio']);
