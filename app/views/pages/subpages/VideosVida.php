@@ -1,8 +1,8 @@
 <nav>
-    <div class="nav nav-pills" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-anico-tab" data-bs-toggle="tab" data-bs-target="#nav-anico" type="button" role="tab" aria-controls="nav-anico" aria-selected="true">Anico</button>
-        <button class="nav-link" id="nav-ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-ameritas" type="button" role="tab" aria-controls="nav-ameritas" aria-selected="false">Ameritas</button>
-        <button class="nav-link" id="nav-nationallife-tab" data-bs-toggle="tab" data-bs-target="#nav-nationallife" type="button" role="tab" aria-controls="nav-nationallife" aria-selected="false">National Life</button>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-anico-tab" data-bs-toggle="tab" data-bs-target="#nav-anico" type="button" role="tab" aria-controls="nav-anico" aria-selected="true" style="color: #000;">Anico</button>
+        <button class="nav-link" id="nav-ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-ameritas" type="button" role="tab" aria-controls="nav-ameritas" aria-selected="false" style="color: #000;">Ameritas</button>
+        <button class="nav-link" id="nav-nationallife-tab" data-bs-toggle="tab" data-bs-target="#nav-nationallife" type="button" role="tab" aria-controls="nav-nationallife" aria-selected="false" style="color: #000;">National Life</button>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">

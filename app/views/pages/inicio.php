@@ -289,13 +289,13 @@
                 <div class="modal fade" id="SegurosDeVida" tabindex="-1" aria-labelledby="TituloSegurosDeVida" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloSegurosDeVida">Seguros de Vida</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);" width="100" height="100">
+                            <div class="modal-body ColorSecundario" width="100" height="100">
                                 <div class="shadow p-3 mb-5">
-                                    <p class="text-white fs-5 animate__animated animate__slideInUp" style="text-align: justify;">
+                                    <p class="black-dark fs-5 animate__animated animate__slideInUp" style="text-align: justify;">
                                         El seguro de vida fue creado como un apoyo para ayudar a
                                         garantizar la seguridad de las personas que mas amamos,
                                         en caso de que por alguna circunstancia se presente su muerte
@@ -322,13 +322,13 @@
                 <div class="modal fade" id="SegurosFamiliares" tabindex="-1" aria-labelledby="TituloSegurosFamiliares" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloSegurosFamiliares">Seguros Familiares</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);">
+                            <div class="modal-body ColorSecundario">
                                 <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                    <p class="text-white fs-5" style="text-align: justify;">
+                                    <p class="text-black fs-5" style="text-align: justify;">
                                         El seguro de vida fue creado como un apoyo para ayudar a
                                         garantizar la seguridad de las personas que mas amamos,
                                         en caso de que por alguna circunstancia se presente su muerte
@@ -354,13 +354,13 @@
                 <div class="modal fade" id="SegurosCompañias" tabindex="-1" aria-labelledby="TituloSegurosCompañias" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloSegurosCompañias">Seguros para Compañias</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);">
+                            <div class="modal-body ColorSecundario">
                                 <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                    <p class="text-white fs-5" style="text-align: justify;">
+                                    <p class="text-black fs-5" style="text-align: justify;">
                                         Aseguramos su equipo de trabajo a muy bajo costo de riesgos
                                         profesionales y familiares.
                                     </p>
@@ -384,13 +384,13 @@
                 <div class="modal fade" id="SegurosSalud" tabindex="-1" aria-labelledby="TituloSegurosSalud" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloSegurosSalud">Seguros de Salud</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);">
+                            <div class="modal-body ColorSecundario">
                                 <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                    <p class="text-white fs-5" style="text-align: justify;">
+                                    <p class="text-black fs-5" style="text-align: justify;">
                                         Un seguro de salud es un beneficio para usted y para su familia donde puede
                                         obtener una muy buena cobertura y recibir el subsidio del gobierno mas conocido
                                         como el Obamacare.
@@ -424,13 +424,13 @@
                 <div class="modal fade" id="PlanesRetiro" tabindex="-1" aria-labelledby="TituloPlanesRetiro" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloPlanesRetiro">Planes de Retiro</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);">
+                            <div class="modal-body ColorSecundario">
                                 <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                    <p class="text-white fs-5" style="text-align: justify;">
+                                    <p class="text-black fs-5" style="text-align: justify;">
                                         Un plan de retiro es un plan de ahorro programado a largo
                                         plazo que consiste en depositar periódicamente una suma de
                                         dinero que se puede hacer a traves de debito directo o pagos
@@ -457,13 +457,13 @@
                 <div class="modal fade" id="SolucionesFinancieras" tabindex="-1" aria-labelledby="TituloSolucionesFinancieras" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="modal-header bg-light ColorTextoOscuro">
+                            <div class="modal-header ColorPrincipal text-white">
                                 <h5 class="modal-title animate__animated animate__zoomIn" id="TituloSolucionesFinancieras">Planes de Retiro</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" style="background-color:rgba(7, 120, 113, 0.8);">
+                            <div class="modal-body ColorSecundario">
                                 <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                    <p class="text-white fs-5" style="text-align: justify;">
+                                    <p class="text-black fs-5" style="text-align: justify;">
                                         Un plan de retiro es un plan de ahorro programado a largo
                                         plazo que consiste en depositar periódicamente una suma de
                                         dinero que se puede hacer a traves de debito directo o pagos
