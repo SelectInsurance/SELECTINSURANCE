@@ -5,7 +5,7 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3"></div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6"><br><br>
                     <center>
-                        <h2>Edita o Elimina Videos</h2>
+                        <h2>Edita o Elimina Videos de Salud</h2>
                     </center><br><br>
                     <form action="" method="post">
                         <table class="table table-hover table-success text-center text-dark table-responsive shadow p-3 mb-5">
