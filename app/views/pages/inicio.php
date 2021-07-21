@@ -602,7 +602,7 @@
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 ColorTextoOscuro">
                 <h5 class="text-center">A SU SERVICIO</h5>
-                <p class="text-center">
+                <p style="text-align: justify;">
                     Si tiene alguna pregunta específica, estamos aquí para ayudarle.
                     Correo electrónico, chat o teléfono. Tu eliges.
                 </p>
@@ -636,19 +636,19 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                 <h3>Nuestro Objetivo</h3>
-                <p>
+                <p style="text-align: justify;">
                     Transformamos riesgos en soluciones de protección para familias, empleados o activos, mediante herramientas tecnológicas que le brinden a nuestros clientes la facilidad de analizar, manejar y obtener soluciones que ayuden a minimizar sus riesgos.
                 </p>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                 <h3>A futuro</h3>
-                <p>
+                <p style="text-align: justify;">
                     Seremos intermediarios líderes en soluciones de protección, por medios digitales facilitando la suscripción, comprensión y atención tanto de nuestro clientes al momento de obtener una solución, como al momento de un siniestro.
                 </p>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                 <h3>Nuestros Principios</h3>
-                <p>
+                <p style="text-align: justify;">
                     Confianza, respaldo, acompañamiento, actitud permanente de servicio, ética como pilar de nuestras actividades, respeto por los grupos de personas con los que interactuamos y por nosotros mismos.
                 </p>
             </div>
@@ -695,7 +695,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <p class="fs-7">
+                    <p class="fs-7" style="text-align: justify;">
                         Select Insurance And Financial
                         Services nace en el año 2009 teniendo
                         en cuenta la necesidad de las personas
