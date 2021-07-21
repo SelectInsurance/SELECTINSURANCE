@@ -1,6 +1,6 @@
 <div class="container-fluid" id="Inicio">
         <div class="row">
-            <div class="container ImagenBackGround"><br><br>
+            <div class="container ImagenBackGround ImagenFija"><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
                     <div class="col-12 col-sm-12 col-md-10 col-lg-10">
@@ -612,6 +612,8 @@
             </div>
         </div>
     </div><br><br><br><br><br><br>
+    <?php //Testimonios 
+    ?>
     <div class="container-fluid text-white text-center ColorPrincipal" id="Testimonios">
         <div class="row">
             <h2>Testimonios</h2>
