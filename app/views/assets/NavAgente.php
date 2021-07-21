@@ -20,6 +20,7 @@
                             <a href="?managment=Inicio" title="Inicio"><button class="btn btn-success"><i class="fas fa-home fa-4x"></i></button></a>
                             <a href="?managment=CargaVideosLife" title="Cargar Videos De Vida"><button class="btn btn-success"><i class="fas fa-heart fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a>
                             <a href="?managment=CargaVideosSalud" title="Cargar Videos De Salud"><button class="btn btn-success"><i class="fas fa-user-md fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a>
+                            <a href="?managment=EliminarEditarVideosSalud" title="Editar y Eliminar Videos Salud"><button class="btn btn-success"> <i class="fas fa-pencil-alt fa-4x"></i> <i class="fas fa-trash-alt fa-1x"></i></button></a>
                         </p>
                     </div>
                 </div>

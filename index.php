@@ -150,6 +150,9 @@
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+        case 'EliminarEditarVideosSalud':
+            $ManagmentController->ControllerManagmentEditarEliminarVideoSalud();
+            break;
 
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {

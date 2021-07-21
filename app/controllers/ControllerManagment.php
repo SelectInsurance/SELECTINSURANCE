@@ -52,6 +52,13 @@ class ControllerManagment extends Pather
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/modulos/CargaVideosSalud.php';
     }
+
+
+    //Controlador para editar o eliminar Videos de Salud
+    public function ControllerManagmentEditarEliminarVideoSalud(){
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/managment/modulos/EliminarVideosSalud.php';    
+    }
 }
 
 require_once 'app/views/assets/footer.php';
