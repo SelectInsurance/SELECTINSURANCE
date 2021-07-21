@@ -1,76 +1,66 @@
+<nav>
+    <div class="nav nav-pills" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-anico-tab" data-bs-toggle="tab" data-bs-target="#nav-anico" type="button" role="tab" aria-controls="nav-anico" aria-selected="true">Anico</button>
+        <button class="nav-link" id="nav-ameritas-tab" data-bs-toggle="tab" data-bs-target="#nav-ameritas" type="button" role="tab" aria-controls="nav-ameritas" aria-selected="false">Ameritas</button>
+        <button class="nav-link" id="nav-nationallife-tab" data-bs-toggle="tab" data-bs-target="#nav-nationallife" type="button" role="tab" aria-controls="nav-nationallife" aria-selected="false">National Life</button>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-anico" role="tabpanel" aria-labelledby="nav-anico-tab">
+        <div class="container-fluid">
+            <center><img src="app\views\assets\img\Aseguradoras\AmericanNational.png" class="img-fluid" width="300px" height="300px" alt="Anico" title="Anico"></center>
+            <div class="row">
+                <?php
+                $ConsultaAnico = new crudVideos();
+                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosanico");
+                while ($rows = mysqli_fetch_assoc($resultados)) :
 
-    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-expand-arrows-alt fa-2x"></i></button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header ColorPrincipal text-white">
-            <h5 id="offcanvasRightLabel">Compañias</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body ColorSecundario">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active" id="v-pills-Anico-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Anico" type="button" role="tab" aria-controls="v-pills-Anico" aria-selected="true">Anico</button>
-                <button class="nav-link" id="v-pills-NationalLifeGroup-tab" data-bs-toggle="pill" data-bs-target="#v-pills-NationalLifeGroup" type="button" role="tab" aria-controls="v-pills-NationalLifeGroup" aria-selected="false">NationalLifeGroup</button>
-                <button class="nav-link" id="v-pills-Ameritas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Ameritas" type="button" role="tab" aria-controls="v-pills-Ameritas" aria-selected="false">Ameritas</button>
+                ?>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
+                        <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
+                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                    </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
-    <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-Anico" role="tabpanel" aria-labelledby="v-pills-Anico-tab">
-            <div class="container-fluid">
-                <center><img src="app\views\assets\img\Aseguradoras\AmericanNational.png" height="200px" alt="Anico" title="Anico"></center>
-                <div class="row">
-                    <?php
-                    $ConsultaAnico = new crudVideos();
-                    $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosanico");
-                    while ($rows = mysqli_fetch_assoc($resultados)) :
-
-                    ?>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
-                            <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                            <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
-                        </div>
-                    <?php endwhile; ?>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="v-pills-NationalLifeGroup" role="tabpanel" aria-labelledby="v-pills-NationalLifeGroup-tab">
-            <div class="container-fluid">
-                <center><img src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" height="200px" alt="Ameritas" title="National Life"></center>
-                <div class="row">
-                    <?php
-                    $ConsultaAnico = new crudVideos();
-                    $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosnationallife");
-                    while ($rows = mysqli_fetch_assoc($resultados)) :
-
-                    ?>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
-                            <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                            <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
-                        </div>
-                    <?php endwhile; ?>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="v-pills-Ameritas" role="tabpanel" aria-labelledby="v-pills-Ameritas-tab">
-            <div class="container-fluid">
-                <center><img src="app\views\assets\img\Aseguradoras\Ameritas.png" height="200px" alt="Ameritas" title="Ameritas"></center>
-                <div class="row">
-                    <?php
-                    $ConsultaAnico = new crudVideos();
-                    $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosameritas");
-                    while ($rows = mysqli_fetch_assoc($resultados)) :
-
-                    ?>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
-                            <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                            <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
-                        </div>
-                    <?php endwhile; ?>
-                </div>
+    <div class="tab-pane fade" id="nav-ameritas" role="tabpanel" aria-labelledby="nav-ameritas-tab">
+        <div class="container-fluid">
+            <center><img src="app\views\assets\img\Aseguradoras\Ameritas.png" class="img-fluid" width="300px" height="300px" alt="Ameritas" title="Ameritas"></center>
+            <div class="row">
+                <?php
+                $ConsultaAnico = new crudVideos();
+                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosameritas");
+                while ($rows = mysqli_fetch_assoc($resultados)) :
+                ?>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
+                        <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
+                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                    </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
-</div><br><br><br>
+    <div class="tab-pane fade" id="nav-nationallife" role="tabpanel" aria-labelledby="nav-nationallife-tab">
+        <div class="container-fluid">
+            <center><img src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" class="img-fluid" width="300px" height="300px" alt="National Life" title="National Life"></center>
+            <div class="row">
+                <?php
+                $ConsultaAnico = new crudVideos();
+                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosnationallife");
+                while ($rows = mysqli_fetch_assoc($resultados)) :
 
+                ?>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
+                        <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
+                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </div>
+
+</div>
 <div class="container-fluid ColorPrincipal text-white"><br>
     <h4 class="text-white text-center">Contactenos</h4>
     <hr>
@@ -138,3 +128,4 @@
         </div>
     </div>
     <h6 class="text-end">Copyright © <?php echo date('Y'); ?> Select Insurance.</h6>
+</div>
