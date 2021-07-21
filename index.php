@@ -167,6 +167,18 @@
             }
             break;
 
+            //Recibiendo ID para Eliminar o Editar
+        case 'ProcesoVideosSalud':
+            if (!empty($_POST['btnEditar']) && $_POST['btnEditar'] == 'Editar') {
+                $ManagmentController->ControllerManagmentProcesoEditarVideoSalud($_POST['id'], $_POST['EditarNombreVideos']); // ingresar id  si aplica para Editar
+                header('Location:./?managment=EliminarEditarVideosSalud');
+            } elseif (!empty($_POST['btnEliminar']) && $_POST['btnEliminar'] == 'Eliminar') {
+                $ManagmentController->ControllerManagmentProcesoEliminarVideoSalud($_POST['id']);  // ingresar id  si aplica para Eliminar
+
+                header('Location:./?managment=EliminarEditarVideosSalud');
+            }
+            break;
+
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();

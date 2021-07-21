@@ -2,35 +2,28 @@
 require_once 'Conexion.php';
     class crudVideos
     {
-        private $query;
-        public function __construct($query) {
-            $this->query = $query;
-        }
 
         private function Conexion(){
             $conexion = new Conexion();
             return $conexion->EstablecerConexion();
         }
 
-        public function Create()
+        public function Create($query)
         {
-            $query = $this->query;
-            $this->Conexion()->query("$query");
-        }
-
-        public function Read(){
-            $consulta = mysqli_query($this->Conexion(), $this->query);
-            return $consulta;
-        }
-
-        public function Update(){
-            $query = $this->query;
             $this->Conexion()->query($query);
         }
 
-        public function Delete()
+        public function Read($query){
+            $consulta = mysqli_query($this->Conexion(), $query);
+            return $consulta;
+        }
+
+        public function Update($query){
+            $this->Conexion()->query($query);
+        }
+
+        public function Delete($query)
         {
-            $query = $this->query;
             $this->Conexion()->query($query);
         }
     }

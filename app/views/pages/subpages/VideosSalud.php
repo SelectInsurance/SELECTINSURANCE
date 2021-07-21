@@ -2,8 +2,8 @@
     <div class="row shadow-lg p-3 mb-5 border">
         <center><h2>Videos de Salud</h2></center>
         <?php
-        $ConsultaAnico = new crudVideos("SELECT Nombre, URL FROM videosdesalud");
-        $resultados = $ConsultaAnico->Read();
+        $ConsultaAnico = new crudVideos();
+        $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosdesalud");
         while ($rows = mysqli_fetch_assoc($resultados)) :
         ?>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">

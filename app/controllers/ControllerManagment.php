@@ -39,7 +39,8 @@ class ControllerManagment extends Pather
         $mensaje = $subirVideos->SubidaValidando($ruta);
     }
 
-    public function ControllerPrincipalManagment(){
+    public function ControllerPrincipalManagment()
+    {
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/InicioManagment.php';
     }
@@ -48,16 +49,45 @@ class ControllerManagment extends Pather
 
 
     //Controlador para carga de videos de Salud
-    public function ControllerManagmentCargaVideosSalud(){
+    public function ControllerManagmentCargaVideosSalud()
+    {
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/modulos/CargaVideosSalud.php';
     }
 
 
     //Controlador para editar o eliminar Videos de Salud
-    public function ControllerManagmentEditarEliminarVideoSalud(){
+    public function ControllerManagmentEditarEliminarVideoSalud()
+    {
         require_once 'app/views/assets/NavAgente.php';
-        require_once 'app/views/pages/managment/modulos/EliminarVideosSalud.php';    
+        $Select = "SELECT * FROM videosdesalud";
+        $Query = new crudVideos();
+        require_once 'app/views/pages/managment/modulos/EliminarEditarVideosSalud.php';
+    }
+
+    //Controladores para recibir ID y procesarlo en el Crud
+    public function ControllerManagmentProcesoEditarVideoSalud($id, $nombre)
+    {
+        foreach ($id as $IdVideo) {
+            $Update = "UPDATE videosdesalud SET Nombre = '$nombre' WHERE idVideo = '$IdVideo'";
+            $Query = new crudVideos();
+            $Query->Update($Update);
+        }
+    }
+    public function ControllerManagmentProcesoEliminarVideoSalud($id)
+    {
+
+        foreach ($id as $IdVideo) {
+            $Select = "SELECT URL FROM videosdesalud WHERE idVideo = '$IdVideo'";
+            $Delete = "DELETE FROM videosdesalud WHERE idVideo = '$IdVideo'";
+            $Query = new crudVideos();
+            $resultado = $Query->Read($Select);
+            $Query->Delete($Delete);
+
+            $row = mysqli_fetch_assoc($resultado);
+            $Eliminar = new EliminarArchivos($row['URL']);
+            $Eliminar->Eliminar();
+        }
     }
 }
 
