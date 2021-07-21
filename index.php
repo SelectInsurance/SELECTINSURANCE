@@ -158,7 +158,7 @@
 
 
 
-            //Modulo Editar o Eliminar Videos 
+            //Modulo Editar o Eliminar Videos de Salud
         case 'EliminarEditarVideosSalud':
             if (!empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentEditarEliminarVideoSalud();
@@ -174,8 +174,18 @@
                 header('Location:./?managment=EliminarEditarVideosSalud');
             } elseif (!empty($_POST['btnEliminar']) && $_POST['btnEliminar'] == 'Eliminar') {
                 $ManagmentController->ControllerManagmentProcesoEliminarVideoSalud($_POST['id']);  // ingresar id  si aplica para Eliminar
-
                 header('Location:./?managment=EliminarEditarVideosSalud');
+            }
+            break;
+
+
+
+            //Modulo Editar o Eliminar Videos de Salud
+        case 'EliminarEditarVideosVida':
+            if (!empty($_SESSION['managment'])) {
+                
+            } else {
+                
             }
             break;
 

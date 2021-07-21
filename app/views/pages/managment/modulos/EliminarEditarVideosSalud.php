@@ -5,6 +5,7 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3"></div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6"><br><br>
                     <center>
+                        <img src="app/views/assets/img/Salud/Salud.png" class="img-fluid" height="150px" width="150px" alt="Salud" title="Salud">
                         <h2>Edita o Elimina Videos de Salud</h2>
                     </center><br><br>
                     <form action="./?managment=ProcesoVideosSalud" method="post">
@@ -19,8 +20,7 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
-
+                            <tbo150
                                 <?php
                                 $resultado = $Query->Read($Select);
                                 while ($rows = mysqli_fetch_assoc($resultado)) :
@@ -30,7 +30,7 @@
                                             <input type="checkbox" name="id[]" value="<?= $rows['idVideo']; ?>" class="form-check-input">
                                         </td>
                                         <td>
-                                        <?= $rows['Nombre']; ?>
+                                            <?= $rows['Nombre']; ?>
                                         </td>
                                     </tr>
                                 <?php
