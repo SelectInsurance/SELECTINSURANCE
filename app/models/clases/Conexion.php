@@ -10,8 +10,9 @@ class Conexion
 
         if ($conexion->connect_errno) {
             echo 'Lo sentimos, estamos solucionando el error';
+        }elseif ($conexion->set_charset("utf8")) {
+            return $conexion;
         }
-        return $conexion;
     }
 
     public function __destruct()
