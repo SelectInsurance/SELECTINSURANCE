@@ -19,12 +19,19 @@ class ControllerPrincipal extends Pather
         $query = "SELECT * FROM Calendario"; //Query traer Datos de la tabla calendario
         $consulta = new Eventos();
         $resultados = $consulta->Consulta($query);
+        
+        $i=0;
         while ($rows = mysqli_fetch_assoc($resultados)) {
-            $datos = $rows;
+            $datos[$i]['id'] = $rows['id'];
+            $datos[$i]['name'] = $rows['name'];
+            $datos[$i]['date'] = $rows['date'];
+            $datos[$i]['description'] = $rows['description'];
+            $datos[$i]['type'] = $rows['type'];
+            $datos[$i]['everyYear'] = $rows['everyYear'];
+            $datos[$i]['badge'] = $rows['badge'];
+            $datos[$i]['color'] = $rows['color'];
+            $i++;
         }
-
-
-
         require_once 'app/views/pages/inicio.php';
         if (isset($_POST['btnform1enviar'])) {
             $InsertarCliente = new InsertClientes($_POST['nombre'], $_POST['apellido'], $_POST['correo'], $_POST['telefono'], $_POST['estado'], $_POST['servicio']);
