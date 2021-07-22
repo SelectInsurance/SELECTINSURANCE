@@ -53,12 +53,12 @@ CREATE TABLE VideosNationalLife(
 );
 
 CREATE TABLE Calendario(
-    id VARCHAR (50) PRIMARY KEY NOT NULL,
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR (255) NOT NULL,
     date VARCHAR (50) NOT NULL,
     descripcion VARCHAR (255) NOT NULL,
     type VARCHAR (50) NOT NULL,
-    everyYear VARCHAR (50) NOT NULL
+    everyYear BOOLEAN NOT NULL
 );
 
 INSERT INTO UsuarioManagment(

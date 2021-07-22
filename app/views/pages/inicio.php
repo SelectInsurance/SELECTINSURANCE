@@ -171,6 +171,19 @@
         <script>
             $(document).ready(function() {
                 $('#calendar').evoCalendar({
+                /*  Settings	            Type	    Default	        Description	                                        Options
+                    theme	                string	    Default	        Define calendar's theme	                            Default, Midnight Blue, Orange Coral, Royal Navy
+                    format	                string	    'mm/dd/yyyy'	Date format	                                        Date string format
+                    titleFormat	string	    'MM yyyy'	Date            format for calendar title	                        Date string format
+                    eventHeaderFormat	    string	    'MM d, yyyy'	Date format for calendar event's title	            Date string format
+                    firstDayOfWeek	        number	    0	            Displayed first day of the week	                    0 (Sunday) - 6 (Saturday)
+                    language	            string	    'en'	        Calendar's language	                                en, es, de, pt, fr, nl
+                    todayHighlight	        boolean	    false	        Highlight today's date in calendar	                true, false
+                    sidebarDisplayDefault	boolean	    true	        Set default visibility of sidebar	                true, false
+                    sidebarToggler	        boolean	    true	        Display the button for toggling the sidebar	        true, false
+                    eventDisplayDefault	    boolean	    true	        Set default visibility of event lists	            true, false
+                    eventListToggler	    boolean	    true	        Display the button for toggling the event lists	    true, false
+                    calendarEvents	        array	    null	        Defined events for calendar to show	                Array of events */
                     theme: "Midnight Blue",
                     language: "es",
                     calendarEvents: [
