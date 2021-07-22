@@ -70,22 +70,22 @@
             if (empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerManagmentLogin();
             } else {
-                header('Location:?managment=Inicio');
+                header('Location:./InicioManagment');
             }
             break;
 
             //Validacion para conseguir el refresco de la pagina ya que se quedaba en blanco si no aplicaba header
         case 'validacion-managment-login':
             $ManagmentController->ControllerManagmentConsultaLogin($_POST['user'], $_POST['pass']);
-            header('Location:?managment=Inicio');
+            header('Location:./InicioManagment');
             break;
 
             //Inicio para ingresar a los modulos
-        case 'Inicio':
+        case 'InicioManagment':
             if (!empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerPrincipalManagment();
             } else {
-                header('Location:?managment=login');
+                header('Location:./InicioManagment');
             }
             break;
 
@@ -107,7 +107,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoAnico'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAnico'], $_FILES['Anico']['tmp_name'], $_FILES['Anico']['name'], $_FILES['Anico']['size'], $_FILES['Anico']['type'], 'VideosAnico', 'app/views/assets/videos/videos_vida/anico/');
-                    header('Location:./?managment=CargaVideosLife');
+                    header('Location:./CargaVideosLife');
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();
@@ -117,7 +117,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoAmeritas'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoAmeritas'], $_FILES['Ameritas']['tmp_name'], $_FILES['Ameritas']['name'], $_FILES['Ameritas']['size'], $_FILES['Ameritas']['type'], 'VideosAmeritas', 'app/views/assets/videos/videos_vida/ameritas/');
-                    header('Location:./?managment=CargaVideosLife');
+                    header('Location:./CargaVideosLife');
                 } else {
                     $controller->ControllerInicio();
                 }
@@ -127,7 +127,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoNationalLife'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoNationalLife'], $_FILES['NationalLife']['tmp_name'], $_FILES['NationalLife']['name'], $_FILES['NationalLife']['size'], $_FILES['NationalLife']['type'], 'VideosNationalLife', 'app/views/assets/videos/videos_vida/national_life/');
-                    header('Location:./?managment=CargaVideosLife');
+                    header('Location:./CargaVideosLife');
                 }
             } else {
                 $controller->ControllerInicio();
@@ -149,7 +149,7 @@
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoSalud'])) {
                     $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/');
-                    header('Location:./?managment=CargaVideosSalud');
+                    header('Location:./CargaVideosSalud');
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();
@@ -171,10 +171,10 @@
         case 'ProcesoVideosSalud':
             if (!empty($_POST['btnEditar']) && $_POST['btnEditar'] == 'Editar') {
                 $ManagmentController->ControllerManagmentProcesoEditarVideoSalud($_POST['id'], $_POST['EditarNombreVideos']); // ingresar id  si aplica para Editar
-                header('Location:./?managment=EliminarEditarVideosSalud');
+                header('Location:./EliminarEditarVideosSalud');
             } elseif (!empty($_POST['btnEliminar']) && $_POST['btnEliminar'] == 'Eliminar') {
                 $ManagmentController->ControllerManagmentProcesoEliminarVideoSalud($_POST['id']);  // ingresar id  si aplica para Eliminar
-                header('Location:./?managment=EliminarEditarVideosSalud');
+                header('Location:./EliminarEditarVideosSalud');
             }
             break;
 

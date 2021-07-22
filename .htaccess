@@ -3,5 +3,4 @@ Options -Indexes
 
 RewriteEngine On
 
-RewriteRule ^(\w+)/?$ index.php?pages=$1
-RewriteRule ^(\w+)/?$ index.php?managment=$1
+RewriteRule ^(\w+)/?$ index.php?pages=$1&managment=$1

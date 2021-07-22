@@ -19,6 +19,16 @@
   background-image: url(../img/BackGroundCargaVideos.png);
 }
 
+.ImagenManagment{
+  background-image: url(../img/BackGroundManagment.png);
+  background-size: 100% 100%;
+}
+
+.ImagenEventos{
+  background-image: url(../img/EventosBackGround.png);
+  background-size: 100% 100%;
+}
+
 /*Imagen fija*/
 .ImagenFija {
   background-attachment: fixed;

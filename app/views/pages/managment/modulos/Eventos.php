@@ -1,4 +1,4 @@
-<div class="container-fluid  ImagenCargaVideos img-fluid ImagenFija">
+<div class="container-fluid  ImagenEventos img-fluid ImagenFija">
     <div class="row">
         <div class="container-fluid">
             <form action="" method="post">

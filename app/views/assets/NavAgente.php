@@ -19,24 +19,28 @@
                         <div class="container-fluid">
                             <div class="row text-center">
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="?managment=Inicio" title="Inicio"><button class="btn btn-success"><i class="fas fa-home fa-4x"></i></button></a><br>
+                                    <a href="./InicioManagment" title="Inicio"><button class="btn btn-outline-primary"><i class="fas fa-home fa-4x"></i></button></a><br>
                                     <label>Inicio</label>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="?managment=CargaVideosLife" title="Cargar Videos De Vida"><button class="btn btn-success"><i class="fas fa-heart fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a><br>
+                                    <a href="./CargaVideosLife" title="Cargar Videos De Vida"><button class="btn btn-outline-primary"><i class="fas fa-heart fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a><br>
                                     <label>Cargar Videos de Vida</label>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="?managment=CargaVideosSalud" title="Cargar Videos De Salud"><button class="btn btn-success"><i class="fas fa-user-md fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a><br>
+                                    <a href="./CargaVideosSalud" title="Cargar Videos De Salud"><button class="btn btn-outline-primary"><i class="fas fa-user-md fa-4x"></i> <i class="fas fa-video fa-1x"></i></button></a><br>
                                     <label>Cargar Videos de Salud</label>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="?managment=EliminarEditarVideosSalud" title="Editar y Eliminar Videos Salud"><button class="btn btn-success"><i class="fas fa-pencil-alt fa-4x"></i> <i class="fas fa-user-md fa-1x"></i> </button></a><br>
+                                    <a href="./EliminarEditarVideosSalud" title="Editar y Eliminar Videos Salud"><button class="btn btn-outline-primary"><i class="fas fa-pencil-alt fa-4x"></i> <i class="fas fa-user-md fa-1x"></i> </button></a><br>
                                     <label>Editar o Eliminar Videos Salud</label>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="?managment=Eventos" title="Agregar Eventos en el Calendario"><button class="btn btn-success"><i class="far fa-calendar-check fa-4x"></i></button></a><br>
+                                    <a href="./Eventos" title="Agregar Eventos en el Calendario"><button class="btn btn-outline-primary"><i class="far fa-calendar-check fa-4x"></i></button></a><br>
                                     <label>Agregar Eventos</label>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                                    <a href="agentes" title="Ver videos"><button class="btn btn-outline-primary"><i class="fas fa-photo-video fa-4x"></i></button></a><br>
+                                    <label>Ver videos</label>
                                 </div>
                             </div>
                         </div>
