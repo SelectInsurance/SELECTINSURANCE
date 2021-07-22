@@ -163,10 +163,7 @@
             <div id="calendar"></div>
         </div>
         <?php
-        while ($rows = mysqli_fetch_assoc($resultados)) {
-            $datos = $rows;
-        }
-        var_dump($datos);
+        //var_dump($datos);
         ?>
         <script>
             $(document).ready(function() {
@@ -185,6 +182,7 @@
                     eventListToggler	    boolean	    true	        Display the button for toggling the event lists	    true, false
                     calendarEvents	        array	    null	        Defined events for calendar to show	                Array of events */
                     theme: "Midnight Blue",
+                    format: "mm-dd-yy",
                     language: "es",
                     calendarEvents: [
                         <?php echo json_encode($datos); ?>

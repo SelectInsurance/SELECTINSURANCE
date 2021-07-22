@@ -5,16 +5,23 @@ session_start();
 class ControllerPrincipal extends Pather
 {
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->table = "UsuarioPageAgentes";
     }
     public function ControllerInicio()
     {
         require_once 'app/views/assets/NavPrincipal.php';
         session_start();
-        $query = "SELECT * FROM Calendario";
+
+
+
+        $query = "SELECT * FROM Calendario"; //Query traer Datos de la tabla calendario
         $consulta = new Eventos();
         $resultados = $consulta->Consulta($query);
+        while ($rows = mysqli_fetch_assoc($resultados)) {
+            $datos = $rows;
+        }
 
 
 
@@ -71,7 +78,7 @@ class ControllerPrincipal extends Pather
     {
         require_once 'app/views/assets/NavAgente.php';
 
-        
+
         require_once 'app/views/pages/subpages/VideosVida.php';
     }
 }

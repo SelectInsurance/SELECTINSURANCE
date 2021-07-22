@@ -2,10 +2,23 @@
 require_once 'Conexion.php';
     class Eventos  
     {
-        public function Consulta($query){
-            $conexion = new Conexion();
 
-            $consulta = mysqli_query($conexion->EstablecerConexion(),$query);
+        private function Conexion(){
+            $conexion = new Conexion();
+            return $conexion->EstablecerConexion();
+        }
+
+        public function IngresarEvento($query){
+
+            $this->Conexion()->query($query);
+
+            return 'Evento Ingresado';
+        }
+
+        public function Consulta($query){
+            
+
+            $consulta = mysqli_query($this->Conexion(), $query);
 
             return $consulta;
         }

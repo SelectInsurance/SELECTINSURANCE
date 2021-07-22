@@ -183,12 +183,22 @@
             //Modulo Editar o Eliminar Videos de Salud
         case 'EliminarEditarVideosVida':
             if (!empty($_SESSION['managment'])) {
-                
             } else {
-                
             }
             break;
 
+
+
+            //Modulo Agregar Eventos
+        case 'Eventos':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentFormularioEventos();
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
+
+            
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();

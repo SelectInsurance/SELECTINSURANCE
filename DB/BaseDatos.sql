@@ -56,7 +56,7 @@ CREATE TABLE Calendario(
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR (255) NOT NULL,
     date VARCHAR (50) NOT NULL,
-    descripcion VARCHAR (255) NOT NULL,
+    description VARCHAR (255) NOT NULL,
     type VARCHAR (50) NOT NULL,
     everyYear BOOLEAN NOT NULL,
     badge VARCHAR (50) NOT NULL,

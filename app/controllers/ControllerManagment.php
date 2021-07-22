@@ -89,6 +89,52 @@ class ControllerManagment extends Pather
             $Eliminar->Eliminar();
         }
     }
+
+
+
+
+
+
+
+
+
+    //Formulario para Agregar Eventos a la Base de datos
+    public function ControllerManagmentFormularioEventos()
+    {
+        require_once 'app/views/assets/NavAgente.php';
+
+        require_once 'app/views/pages/managment/modulos/Eventos.php';
+
+        if (isset($_POST['btnAñadirEventos'])) {
+            $Name =  $_POST['name'];
+            $Date = date_format(date_create($_POST['date']), 'm-d-y'); //Convirtiendo la fecha en un string admintido en el calendario
+            $Description = $_POST['description'];
+            $Type = $_POST['type'];
+            $EveryYear = boolval($_POST['everyYear']);//Convirtiendo String en booleano
+            $BadGe = $_POST['badge'];
+            $Color = $_POST['color'];
+            $query = "INSERT INTO Calendario(
+                name,
+                date, 
+                description, 
+                type, 
+                everyYear, 
+                badge, 
+                color
+                )
+                VALUES(
+                    '$Name',
+                    '$Date',
+                    '$Description',
+                    '$Type',
+                    '$EveryYear',
+                    '$BadGe',
+                    '$Color'
+                );";
+            $Insert = new Eventos();
+            $mensaje = $Insert->IngresarEvento($query);
+        }
+    }
 }
 
 require_once 'app/views/assets/footer.php';
