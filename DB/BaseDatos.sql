@@ -58,7 +58,9 @@ CREATE TABLE Calendario(
     date VARCHAR (50) NOT NULL,
     descripcion VARCHAR (255) NOT NULL,
     type VARCHAR (50) NOT NULL,
-    everyYear BOOLEAN NOT NULL
+    everyYear BOOLEAN NOT NULL,
+    badge VARCHAR (50) NOT NULL,
+    color VARCHAR (50) NOT NULL
 );
 
 INSERT INTO UsuarioManagment(
