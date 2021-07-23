@@ -180,10 +180,12 @@
 
 
 
-            //Modulo Editar o Eliminar Videos de Salud
+            //Modulo Editar o Eliminar Videos de Vida
         case 'EliminarEditarVideosVida':
             if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentEditarEliminarVideoVida();
             } else {
+                $ManagmentController->ControllerManagmentLogin();
             }
             break;
 
@@ -198,7 +200,7 @@
             }
             break;
 
-            
+
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();

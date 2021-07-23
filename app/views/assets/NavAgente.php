@@ -35,6 +35,10 @@
                                     <label>Editar o Eliminar Videos Salud</label>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                                    <a href="EliminarEditarVideosVida" title="Editar y Eliminar Videos Vida"><button class="btn btn-outline-primary"><i class="fas fa-pencil-alt fa-4x"></i><i class="far fa-heart fa-2x"></i></button></a><br>
+                                    <label>Editar o Eliminar Videos Vida</label>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
                                     <a href="./Eventos" title="Agregar Eventos en el Calendario"><button class="btn btn-outline-primary"><i class="far fa-calendar-check fa-4x"></i></button></a><br>
                                     <label>Agregar Eventos</label>
                                 </div>
@@ -46,7 +50,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <a class="navbar-brand d-flex" href="./"><img src="app/views/assets/img/Logo2.png" height="75"></a>

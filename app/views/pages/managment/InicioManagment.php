@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                     <p>
-                        <a href="" title="Subir Videos de Vida"><button class="btn btn-outline-light"> <i class="fas fa-pencil-alt fa-6x"></i><i class="far fa-heart fa-2x"></i></button></a>
+                        <a href="./EliminarEditarVideosVida" title="Subir Videos de Vida"><button class="btn btn-outline-light"> <i class="fas fa-pencil-alt fa-6x"></i><i class="far fa-heart fa-2x"></i></button></a>
                     </p>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">

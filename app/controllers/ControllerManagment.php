@@ -56,6 +56,8 @@ class ControllerManagment extends Pather
     }
 
 
+
+
     //Controlador para editar o eliminar Videos de Salud
     public function ControllerManagmentEditarEliminarVideoSalud()
     {
@@ -91,7 +93,12 @@ class ControllerManagment extends Pather
     }
 
 
-
+    //Controlador para editar o eliminar Videos de Vida
+    public function ControllerManagmentEditarEliminarVideoVida()
+    {
+            require_once 'app/views/assets/NavAgente.php';
+            require_once 'app/views/pages/managment/modulos/EliminarEditarVideosVida.php';
+    }
 
 
 
@@ -110,7 +117,7 @@ class ControllerManagment extends Pather
             $Date = date_format(date_create($_POST['date']), 'm-d-y'); //Convirtiendo la fecha en un string admintido en el calendario
             $Description = $_POST['description'];
             $Type = $_POST['type'];
-            $EveryYear = boolval($_POST['everyYear']);//Convirtiendo String en booleano
+            $EveryYear = boolval($_POST['everyYear']); //Convirtiendo String en booleano
             $BadGe = $_POST['badge'];
             $Color = $_POST['color'];
             $query = "INSERT INTO Calendario(

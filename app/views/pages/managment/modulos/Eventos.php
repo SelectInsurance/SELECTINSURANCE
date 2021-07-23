@@ -1,10 +1,10 @@
 <div class="container-fluid  ImagenEventos img-fluid ImagenFija">
     <div class="row">
-        <div class="container-fluid">
+        <div class="container-fluid ColorSecundarioTranslucido">
             <form action="" method="post">
                 <div class="row">
                     <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-4 shadow-lg p-3 mb-5 rounded ColorSecundarioFondoTranslucido">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4 shadow-lg p-3 mb-5 rounded border ColorSecundarioFondoTranslucido">
                         <h2 class="text-center">Añadir Eventos</h2>
                         <label for="name">Nombre Evento:</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese Nombre"><br>
