@@ -192,22 +192,70 @@
             //Recibiendo ID para Eliminar o Editar Videos de Vida
         case 'ProcesoVideosVida':
 
-            if (!empty($_POST['btnEditarAnico']) && $_POST['btnEditarAnico'] == 'Editar') {
-                $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'videosanico');
-                header('Location:./EliminarEditarVideosVida');
+            switch ($_POST['btnAnico']) {
+                case 'Editar':
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'videosanico');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                case 'Eliminar':
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                default:
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+            }
 
-            } elseif (!empty($_POST['btnEliminarAnico']) && $_POST['btnEliminarAnico'] == 'Eliminar') {
-                $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
-                header('Location:./EliminarEditarVideosVida');
+
+            //if (!empty($_POST['btnEditarAnico']) && $_POST['btnEditarAnico'] == 'Editar') {
+            //$ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'videosanico');
+            //header('Location:./EliminarEditarVideosVida');
+            //} elseif (!empty($_POST['btnEliminarAnico']) && $_POST['btnEliminarAnico'] == 'Eliminar') {
+            //$ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
+            //header('Location:./EliminarEditarVideosVida');
+            //}
+
+            switch ($_POST['btnAmeritas']) {
+                case 'Editar':
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreameritas'], 'videosameritas');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                case 'Eliminar':
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosameritas');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                default:
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
             }
 
 
 
+
             //if (!empty($_POST['btnEditarAmeritas']) && $_POST['btnEditarAmeritas'] == 'Editar') {
-            //    //controlador
-            //}elseif (!empty($_POST['btnEliminarAmeritas']) && $_POST['btnEliminarAmeritas'] == 'Eliminar') {
-            //    //Controlador
+            //    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreameritas'], 'videosameritas');
+            //    //header('Location:./EliminarEditarVideosVida');
+            //} elseif (!empty($_POST['btnEliminarAmeritas']) && $_POST['btnEliminarAmeritas'] == 'Eliminar') {
+            //    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
+            //    //header('Location:./EliminarEditarVideosVida');
             //}
+
+
+            switch ($_POST['btnNationalLife']) {
+                case 'Editar':
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombrenationallife'], 'videosnationallife');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                case 'Eliminar':
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosnationallife');
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+                default:
+                    header('Location:./EliminarEditarVideosVida');
+                    break;
+            }
+
+
             //
             //if (!empty($_POST['btnEditarNationalLife']) && $_POST['btnEditarNationalLife'] == 'Editar') {
             //    //controlador

@@ -1,3 +1,2 @@
 <?php
-echo   $prueba;
-
+echo   $Array . $nombre . $table;

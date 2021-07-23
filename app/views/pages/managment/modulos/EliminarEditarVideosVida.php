@@ -19,13 +19,15 @@
                             <div class="row">
                                 <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
                                 <div class="col-12 col-sm-8 col-md-6 col-lg-6">
-                                    <h2 class="text-center">Anico</h2>
                                     <center>
                                         <img src="app/views/assets/img/Aseguradoras/AmericanNational.png" class="img-fluid" height="150px" width="150px" alt="Anico" title="Anico">
                                     </center><br><br>
                                     <form action="./?managment=ProcesoVideosVida" method="post">
-                                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                                        <table class="table table-hover table-success text-center text-dark table-responsive shadow p-3 mb-5">
                                             <thead>
+                                                <tr>
+                                                    <th colspan="2"><h2>Anico</h2></th>
+                                                </tr>
                                                 <tr>
                                                     <th>
                                                         Seleccione
@@ -39,17 +41,17 @@
                                                 <?php
                                                 while ($rows = mysqli_fetch_assoc($Anico)) :
                                                 ?>
-                                                <tr>
-                                                    <td>
-                                                        <input type="checkbox" name="id[]" value="<?= $rows['idVideo']; ?>" class="form-check-input">
-                                                    </td>
-                                                    <td>
-                                                        <?= $rows['Nombre']; ?>
-                                                    </td>
-                                                </tr>
-                                                        <?php
-                                                        endwhile;
-                                                        ?>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="id[]" value="<?= $rows['idVideo']; ?>" class="form-check-input">
+                                                        </td>
+                                                        <td>
+                                                            <?= $rows['Nombre']; ?>
+                                                        </td>
+                                                    </tr>
+                                                <?php
+                                                endwhile;
+                                                ?>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
@@ -59,8 +61,8 @@
                                                     </td>
                                                     <td>
                                                         <p>
-                                                            <input type="submit" value="Editar" name="btnEditarAnico" class="btn btn-outline-success">
-                                                            <input type="submit" value="Eliminar" name="btnEliminarAnico" class="btn btn-outline-danger">
+                                                            <input type="submit" value="Editar" name="btnAnico" class="btn btn-outline-success">
+                                                            <input type="submit" value="Eliminar" name="btnAnico" class="btn btn-outline-danger">
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -77,13 +79,15 @@
                             <div class="row">
                                 <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
                                 <div class="col-12 col-sm-8 col-md-6 col-lg-6">
-                                    <h2 class="text-center">Ameritas</h2>
                                     <center>
                                         <img src="app/views/assets/img/Aseguradoras/Ameritas.png" class="img-fluid" height="150px" width="150px" alt="Anico" title="Anico">
                                     </center><br><br>
-                                    <form action="" method="post">
-                                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                                    <form action="./?managment=ProcesoVideosVida" method="post">
+                                        <table class="table table-hover table-success text-center text-dark table-responsive shadow p-3 mb-5">
                                             <thead>
+                                                <tr>
+                                                    <th colspan="2"><h2>Ameritas</h2></th>
+                                                </tr>
                                                 <tr>
                                                     <th>
                                                         Seleccione
@@ -94,23 +98,31 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                </tr>
+                                                <?php
+                                                while ($rows = mysqli_fetch_assoc($Ameritas)) :
+                                                ?>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="id[]" value="<?= $rows['idVideo']; ?>" class="form-check-input">
+                                                        </td>
+                                                        <td>
+                                                            <?= $rows['Nombre']; ?>
+                                                        </td>
+                                                    </tr>
+                                                <?php
+                                                endwhile;
+                                                ?>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
                                                     <td>
-                                                        <label for="nombreanico">Editar</label>
-                                                        <input type="text" name="nombreanico" id="nombreanico" class="form-control" placeholder="Ingrese Nombre a Cambiar">
+                                                        <label for="nombreameritas">Editar</label>
+                                                        <input type="text" name="nombreameritas" id="nombreameritas" class="form-control" placeholder="Ingrese Nombre a Cambiar">
                                                     </td>
                                                     <td>
                                                         <p>
-                                                            <input type="submit" value="Editar" class="btn btn-outline-success">
-                                                            <input type="submit" value="Eliminar" class="btn btn-outline-danger">
+                                                            <input type="submit" value="Editar" name="btnAmeritas" class="btn btn-outline-success">
+                                                            <input type="submit" value="Eliminar" name="btnAmeritas" class="btn btn-outline-danger">
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -127,13 +139,15 @@
                             <div class="row">
                                 <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
                                 <div class="col-12 col-sm-8 col-md-6 col-lg-6">
-                                    <h2 class="text-center">National Life</h2>
                                     <center>
                                         <img src="app/views/assets/img/Aseguradoras/NationalLifeGroup.png" class="img-fluid" height="150px" width="150px" alt="Anico" title="Anico">
                                     </center><br><br>
-                                    <form action="" method="post">
-                                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                                    <form action="./?managment=ProcesoVideosVida" method="post">
+                                        <table class="table table-hover table-success text-center text-dark table-responsive shadow p-3 mb-5">
                                             <thead>
+                                                <tr>
+                                                    <th colspan="2"><h2>National Life</h2></th>
+                                                </tr>
                                                 <tr>
                                                     <th>
                                                         Seleccione
@@ -145,22 +159,32 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                    </td>
-                                                    <td>
-                                                    </td>
+                                                <?php
+                                                while ($rows = mysqli_fetch_assoc($NationalLife)) :
+                                                ?>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="id[]" value="<?= $rows['idVideo']; ?>" class="form-check-input">
+                                                        </td>
+                                                        <td>
+                                                            <?= $rows['Nombre']; ?>
+                                                        </td>
+                                                    </tr>
+                                                <?php
+                                                endwhile;
+                                                ?>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
                                                     <td>
-                                                        <label for="nombreanico">Editar</label>
-                                                        <input type="text" name="nombreanico" id="nombreanico" class="form-control" placeholder="Ingrese Nombre a Cambiar">
+                                                        <label for="nombrenationallife">Editar</label>
+                                                        <input type="text" name="nombrenationallife" id="nombrenationallife" class="form-control" placeholder="Ingrese Nombre a Cambiar">
                                                     </td>
                                                     <td>
                                                         <p>
-                                                            <input type="submit" value="Editar" class="btn btn-outline-success">
-                                                            <input type="submit" value="Eliminar" class="btn btn-outline-danger">
+                                                            <input type="submit" name="btnNationalLife" value="Editar" class="btn btn-outline-success">
+                                                            <input type="submit" name="btnNationalLife" value="Eliminar" class="btn btn-outline-danger">
                                                         </p>
                                                     </td>
                                                 </tr>
