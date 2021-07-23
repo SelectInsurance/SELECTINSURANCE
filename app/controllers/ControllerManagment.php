@@ -4,6 +4,9 @@ require_once 'app/models/autoload.php';
 
 class ControllerManagment extends Pather
 {
+    //(==============================================================================================)
+    //(==============================================================================================)
+    //Controlador de login del Managment
     public function __construct()
     {
         $this->table = "UsuarioManagment";
@@ -26,6 +29,8 @@ class ControllerManagment extends Pather
     }
 
 
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Controlador para carga de videos de Vida
     public function ControllerManagmentCargaVideosVida()
     {
@@ -47,7 +52,8 @@ class ControllerManagment extends Pather
 
 
 
-
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Controlador para carga de videos de Salud
     public function ControllerManagmentCargaVideosSalud()
     {
@@ -57,7 +63,8 @@ class ControllerManagment extends Pather
 
 
 
-
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Controlador para editar o eliminar Videos de Salud
     public function ControllerManagmentEditarEliminarVideoSalud()
     {
@@ -94,39 +101,45 @@ class ControllerManagment extends Pather
         }
     }
 
-
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Controlador para editar o eliminar Videos de Vida
     public function ControllerManagmentEditarEliminarVideoVida()
     {
-            require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/assets/NavAgente.php';
 
 
 
 
-            //Consulta de las 3 tablas dinamicas
-            $SelectAnico = "SELECT * FROM videosanico";
-            $SelectAmeritas = "SELECT * FROM videosameritas";
-            $SelectNationalLife = "SELECT * FROM videosnationallife";
+        //Consulta de las 3 tablas dinamicas
+        $SelectAnico = "SELECT * FROM videosanico";
+        $SelectAmeritas = "SELECT * FROM videosameritas";
+        $SelectNationalLife = "SELECT * FROM videosnationallife";
 
 
-            //Ejecutando los 3 ciclos
-            $query = new crudVideos();
-            $Anico = $query->Read($SelectAnico);
-            $Ameritas = $query->Read($SelectAmeritas);
-            $NationalLife = $query->Read($SelectNationalLife);
-            require_once 'app/views/pages/managment/modulos/EliminarEditarVideosVida.php';
+        //Ejecutando los 3 ciclos
+        $query = new crudVideos();
+        $Anico = $query->Read($SelectAnico);
+        $Ameritas = $query->Read($SelectAmeritas);
+        $NationalLife = $query->Read($SelectNationalLife);
+        require_once 'app/views/pages/managment/modulos/EliminarEditarVideosVida.php';
     }
 
-    public function ControllerManagmentProcesoEditarVideoVida($Array, $nombre, $table){
+
+    //Controlador para hacer update a videos de Vida
+    public function ControllerManagmentProcesoEditarVideoVida($Array, $nombre, $table)
+    {
         foreach ($Array as $id) {
-            //require_once 'app/views/prueba.php';
             $Update = "UPDATE $table SET Nombre = '$nombre' WHERE idVideo = '$id'";
             $query = new crudVideos();
             $query->Update($Update);
         }
     }
 
-    public function ControllerManagmentProcesoEliminarVideoVida($Array, $table){
+
+    //Controlador para hacer Delete a Videos de Vida
+    public function ControllerManagmentProcesoEliminarVideoVida($Array, $table)
+    {
         foreach ($Array as $id) {
             $Select  = "SELECT URL FROM $table WHERE idVideo = '$id'";
             $Delete = "DELETE FROM $table WHERE idVideo = '$id'";
@@ -137,17 +150,11 @@ class ControllerManagment extends Pather
             $Eliminar = new EliminarArchivos($rows['URL']);
             $Eliminar->Eliminar();
             $query->Delete($Delete);
-
         }
     }
 
-
-
-
-
-
-
-
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Formulario para Agregar Eventos a la Base de datos
     public function ControllerManagmentFormularioEventos()
     {
