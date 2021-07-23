@@ -230,8 +230,6 @@
             }
             break;
 
-
-
             //Modulo Agregar Eventos
         case 'Eventos':
             if (!empty($_SESSION['managment'])) {
@@ -241,6 +239,28 @@
             }
             break;
 
+
+        default:
+            if (!isset($_GET['pages']) && empty($_GET['managment'])) {
+                $controller->ControllerInicio();
+            }
+            break;
+    }
+
+
+
+
+
+    //(==============================================================================================)
+    //(==============================================================================================)
+    //Controller de Agentes
+    require_once 'app/controllers/ControllerAgentes.php';
+    $Agente = new ControllerAgentes();
+
+    switch ($_GET['agentes']) {
+        case 'AngelaHerrera':
+        $Agente->ControllerAngelaHerrera();
+            break;
 
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
