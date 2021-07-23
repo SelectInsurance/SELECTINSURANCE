@@ -67,7 +67,7 @@ class ControllerManagment extends Pather
         require_once 'app/views/pages/managment/modulos/EliminarEditarVideosSalud.php';
     }
 
-    //Controladores para recibir ID y procesarlo en el Crud
+    //Controlador para hacer update a videos de Salud
     public function ControllerManagmentProcesoEditarVideoSalud($id, $nombre)
     {
         foreach ($id as $IdVideo) {
@@ -76,6 +76,8 @@ class ControllerManagment extends Pather
             $Query->Update($Update);
         }
     }
+
+    //Controlador para hacer Delete a Videos de Salud
     public function ControllerManagmentProcesoEliminarVideoSalud($id)
     {
 
@@ -97,8 +99,49 @@ class ControllerManagment extends Pather
     public function ControllerManagmentEditarEliminarVideoVida()
     {
             require_once 'app/views/assets/NavAgente.php';
+
+
+
+
+            //Consulta de las 3 tablas dinamicas
+            $SelectAnico = "SELECT * FROM videosanico";
+            $SelectAmeritas = "SELECT * FROM videosameritas";
+            $SelectNationalLife = "SELECT * FROM videosnationallife";
+
+
+            //Ejecutando los 3 ciclos
+            $query = new crudVideos();
+            $Anico = $query->Read($SelectAnico);
+            $Ameritas = $query->Read($SelectAmeritas);
+            $NationalLife = $query->Read($SelectNationalLife);
             require_once 'app/views/pages/managment/modulos/EliminarEditarVideosVida.php';
     }
+
+    public function ControllerManagmentProcesoEditarVideoVida($Array, $nombre, $table){
+        foreach ($Array as $id) {
+            //require_once 'app/views/prueba.php';
+            $Update = "UPDATE $table SET Nombre = '$nombre' WHERE idVideo = '$id'";
+            $query = new crudVideos();
+            $query->Update($Update);
+        }
+    }
+
+    public function ControllerManagmentProcesoEliminarVideoVida($Array, $table){
+        foreach ($Array as $id) {
+            $Select  = "SELECT URL FROM $table WHERE idVideo = '$id'";
+            $Delete = "DELETE FROM $table WHERE idVideo = '$id'";
+
+            $query = new crudVideos();
+            $Consulta = $query->Read($Select);
+            $rows = mysqli_fetch_assoc($Consulta);
+            $Eliminar = new EliminarArchivos($rows['URL']);
+            $Eliminar->Eliminar();
+            $query->Delete($Delete);
+
+        }
+    }
+
+
 
 
 

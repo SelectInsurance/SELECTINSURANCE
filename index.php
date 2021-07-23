@@ -167,7 +167,7 @@
             }
             break;
 
-            //Recibiendo ID para Eliminar o Editar
+            //Recibiendo ID para Eliminar o Editar Videos de Salud
         case 'ProcesoVideosSalud':
             if (!empty($_POST['btnEditar']) && $_POST['btnEditar'] == 'Editar') {
                 $ManagmentController->ControllerManagmentProcesoEditarVideoSalud($_POST['id'], $_POST['EditarNombreVideos']); // ingresar id  si aplica para Editar
@@ -187,6 +187,34 @@
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }
+            break;
+
+            //Recibiendo ID para Eliminar o Editar Videos de Vida
+        case 'ProcesoVideosVida':
+
+            if (!empty($_POST['btnEditarAnico']) && $_POST['btnEditarAnico'] == 'Editar') {
+                $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'videosanico');
+                header('Location:./EliminarEditarVideosVida');
+
+            } elseif (!empty($_POST['btnEliminarAnico']) && $_POST['btnEliminarAnico'] == 'Eliminar') {
+                $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
+                header('Location:./EliminarEditarVideosVida');
+            }
+
+
+
+            //if (!empty($_POST['btnEditarAmeritas']) && $_POST['btnEditarAmeritas'] == 'Editar') {
+            //    //controlador
+            //}elseif (!empty($_POST['btnEliminarAmeritas']) && $_POST['btnEliminarAmeritas'] == 'Eliminar') {
+            //    //Controlador
+            //}
+            //
+            //if (!empty($_POST['btnEditarNationalLife']) && $_POST['btnEditarNationalLife'] == 'Editar') {
+            //    //controlador
+            //}elseif (!empty($_POST['btnEliminarNationalLife']) && $_POST['btnEliminarNationalLife'] == 'Eliminar') {
+            //    //Controlador
+            //}
+
             break;
 
 

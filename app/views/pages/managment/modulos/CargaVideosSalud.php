@@ -9,7 +9,7 @@
                         <img src="app/views/assets/img/Salud/Salud.png" class="img-fluid" height="250px" width="250px" alt="Salud" title="Salud">
                         <h2>Videos Salud</h2><br>
                     </center>
-                    <form action="?managment=CargandoVideosSalud" method="post" enctype="multipart/form-data">
+                    <form action="CargandoVideosSalud" method="post" enctype="multipart/form-data">
                         <label for="Nombre">Nombre:</label>
                         <input type="text" name="NombreVideoDeSalud" id="Nombre" class="form-control rounded-pill" placeholder="Nombre Video"><br><br>
                         <input type="file" name="VideoSalud" id="VideoSalud" class="form-control rounded-pill"><br>
