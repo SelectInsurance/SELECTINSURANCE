@@ -13,56 +13,142 @@
     <div class="tab-pane fade show active" id="pills-anico" role="tabpanel" aria-labelledby="pills-anico-tab">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <h2 class="text-center" >Anico</h2>
-                    <table class="table table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-6">
+                    <h2 class="text-center">Anico</h2>
+                    <form action="" method="post">
+                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Seleccione
+                                    </th>
+                                    <th>
+                                        Nombre de Video
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <label for="nombreanico">Editar</label>
+                                        <input type="text" name="nombreanico" id="nombreanico" class="form-control" placeholder="Ingrese Nombre a Cambiar">
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <input type="submit" value="Editar" class="btn btn-outline-success">
+                                            <input type="submit" value="Eliminar" class="btn btn-outline-danger">
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
                 </div>
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="pills-ameritas" role="tabpanel" aria-labelledby="pills-ameritas-tab">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <h2 class="text-center" >Ameritas</h2>
-                    <table class="table table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-6">
+                    <h2 class="text-center">Ameritas</h2>
+                    <form action="" method="post">
+                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Seleccione
+                                    </th>
+                                    <th>
+                                        Nombre de Video
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <label for="nombreanico">Editar</label>
+                                        <input type="text" name="nombreanico" id="nombreanico" class="form-control" placeholder="Ingrese Nombre a Cambiar">
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <input type="submit" value="Editar" class="btn btn-outline-success">
+                                            <input type="submit" value="Eliminar" class="btn btn-outline-danger">
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
                 </div>
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="pills-nationallife" role="tabpanel" aria-labelledby="pills-nationallife-tab">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <h2 class="text-center" >National Life</h2>
-                    <table class="table table-hover table-responsive">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-6">
+                    <h2 class="text-center">National Life</h2>
+                    <form action="" method="post">
+                        <table class="table table-hover table-responsive text-center border shadow p-3 mb-5">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Seleccione
+                                    </th>
+                                    <th>
+                                        Nombre de Video
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <label for="nombreanico">Editar</label>
+                                        <input type="text" name="nombreanico" id="nombreanico" class="form-control" placeholder="Ingrese Nombre a Cambiar">
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <input type="submit" value="Editar" class="btn btn-outline-success">
+                                            <input type="submit" value="Eliminar" class="btn btn-outline-danger">
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
                 </div>
-                <div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="col-12 col-sm-2 col-md-3 col-lg-3"></div>
             </div>
         </div>
-
     </div>
 </div>
