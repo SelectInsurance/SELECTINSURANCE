@@ -259,9 +259,22 @@
 
     switch ($_GET['agentes']) {
         case 'AngelaHerrera':
-        $Agente->ControllerAngelaHerrera();
+            $Agente->ControllerAngelaHerrera();
+            break;
+        case 'LuaArcila':
+            $Agente->ControllerLuaArcila();
             break;
 
+        case 'LeslieFonseca':
+            $Agente->ControllerLesslieFonseca();
+            break;
+
+        case 'ManoelaFirvida':
+            $Agente->ControllerManoelaFirvida();
+            break;
+        case 'YoimaValdes':
+            $Agente->ControllerYoimaValdes();
+            break;
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();

@@ -156,7 +156,7 @@
 //Cotizador
 ?>
 <div class="container" id="Cotizador">
-    <h2 class="text-center ColorTextoOscuro">Cotiza con su agente personalizado <b>Angela Herrera</b></h2>
+    <h2 class="text-center ColorTextoOscuro">Cotiza con su agente personalizado <b>Lua Arcila</b></h2>
     <hr class="ColorTextoOscuro"><br>
     <div class="row shadow-lg p-3 mb-5 ColorPrincipal RadioDeBordes">
         <div class="col-12 col-sm-6 col-md-5 col-lg-5">
@@ -192,7 +192,7 @@
             </blockquote>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 float-md-start">
-            <img class="img-fluid RadioDeBordes" src="app/views/assets/img/ImagenesAgentes/AngelaHerrera.png">
+            <img class="img-fluid RadioDeBordes" src="app/views/assets/img/ImagenesAgentes/LuaArcila.png">
         </div>
     </div>
 </div><br><br><br>

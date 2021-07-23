@@ -89,4 +89,5 @@ class ControllerPrincipal extends Pather
         require_once 'app/views/pages/subpages/VideosVida.php';
     }
 }
+require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
 require_once 'app/views/assets/footer.php';
