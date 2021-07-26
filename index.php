@@ -239,7 +239,24 @@
             }
             break;
 
+            //Modulo Crear Paginas
+        case 'CrearPaginas':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentCrearPagina();
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
 
+        case 'ProcesoCrearPagina':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['TituloAgente'], 'img');
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
+
+            
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();

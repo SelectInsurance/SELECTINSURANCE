@@ -1,2 +1,4 @@
-<?php
-echo   $Array . $nombre . $table;
+<?php 
+    echo $_POST['TituloAgente'];
+
+?>

@@ -192,6 +192,24 @@ class ControllerManagment extends Pather
             $mensaje = $Insert->IngresarEvento($query);
         }
     }
+
+
+    //Controller para Crear Paginas
+    public function ControllerManagmentCrearPagina()
+    {
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/managment/modulos/CrearPaginaAgente.php';
+
+
+    }
+
+    public function ControllerManagmentProcesoCrearPagina($Titulo, $img){
+        if (isset($_POST['btnCrearPagina'])) {
+            $CreadorPaginas = new CreadorPaginas($Titulo, $img);
+            //require_once 'app/views/prueba.php';
+            $CreadorPaginas->CrearPagina();
+        }
+    }
 }
 require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
 require_once 'app/views/assets/footer.php';

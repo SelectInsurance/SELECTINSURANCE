@@ -63,6 +63,23 @@ CREATE TABLE Calendario(
     color VARCHAR (50) NOT NULL
 );
 
+
+CREATE TABLE CrearPagina(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Titulo VARCHAR(50) NOT NULL,
+    URL VARCHAR(255) NOT NULL
+);
+
+
+
+
+
+
+
+
+
+
+
 INSERT INTO UsuarioManagment(
     Usuario,
     Password
