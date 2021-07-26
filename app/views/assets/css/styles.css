@@ -6,6 +6,11 @@
   filter: blur(0px);
   transition: 0.5s, 0.5s, 0.5s, 0.5s;
 }
+/*Iconos*/
+
+.IconoWhatsapp{
+  background-image: url(../img/Icon/Whatsapp.png);
+}
 
 /*Imagen de fondo*/
 .ImagenBackGround {
