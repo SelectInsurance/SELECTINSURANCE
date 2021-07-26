@@ -2,26 +2,19 @@
 require_once 'Conexion.php';
 class CreadorPaginas
 {
-    private $TituloPagina;
-    private $img;
-    private $url;
-
-
-    public function __construct($TituloPagina, $img)
-    {
-        $this->TituloPagina = strip_tags($TituloPagina);
-        $this->img = $img;
-    }
-
     private function Conexion()
     {
         $conexion = new Conexion();
         return $conexion->EstablecerConexion();
     }
 
-    public function CrearPagina()
+    public function CrearPagina($url, $NombreArchivo, $Nombre, $img)
     {
-        $nombre = $this->TituloPagina;
+        //insertando en la Base de datos
+        $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
+        
+
+        //String del HTML a Generar
         $contenido = "
 <div class=\"container-fluid\" id=\"Inicio\">
     <div class=\"row\">
@@ -175,7 +168,7 @@ class CreadorPaginas
 //Cotizador
 ?>
 <div class=\"container\" id=\"Cotizador\">
-    <h2 class=\"text-center ColorTextoOscuro\">Cotiza con su agente personalizado <b>Angela Herrera</b></h2>
+    <h2 class=\"text-center ColorTextoOscuro\">Cotiza con su agente personalizado <b>$Nombre</b></h2>
     <hr class=\"ColorTextoOscuro\"><br>
     <div class=\"row shadow-lg p-3 mb-5 ColorPrincipal RadioDeBordes\">
         <div class=\"col-12 col-sm-6 col-md-5 col-lg-5\">
@@ -732,7 +725,7 @@ class CreadorPaginas
         ";
 
 
-        file_put_contents('app/views/pages/AgentesPages/' . $nombre . '.php', $contenido);
+        file_put_contents($url . $NombreArchivo . '.php', $contenido);
     }
 }
 

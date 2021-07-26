@@ -250,13 +250,11 @@
 
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
-                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['TituloAgente'], 'img');
+                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombreArchivo'], $_POST['Nombre'], $img);
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
-
-            
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();
@@ -274,28 +272,42 @@
     require_once 'app/controllers/ControllerAgentes.php';
     $Agente = new ControllerAgentes();
 
-    switch ($_GET['agentes']) {
-        case 'AngelaHerrera':
-            $Agente->ControllerAngelaHerrera();
-            break;
-        case 'LuaArcila':
-            $Agente->ControllerLuaArcila();
+    $Valor = $_GET['agentes'];
+
+    switch (isset($_GET['agentes']) && $_GET['agentes'] == $Valor) {
+        case $Valor:
+            $Agente->Controller($_GET['agentes']);
             break;
 
-        case 'LeslieFonseca':
-            $Agente->ControllerLesslieFonseca();
-            break;
-
-        case 'ManoelaFirvida':
-            $Agente->ControllerManoelaFirvida();
-            break;
-        case 'YoimaValdes':
-            $Agente->ControllerYoimaValdes();
-            break;
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();
             }
             break;
     }
+
+    //switch ($_GET['agentes']) {
+    //    case 'AngelaHerrera':
+    //        $Agente->ControllerAngelaHerrera();
+    //        break;
+    //    case 'LuaArcila':
+    //        $Agente->ControllerLuaArcila();
+    //        break;
+    //
+    //    case 'LeslieFonseca':
+    //        $Agente->ControllerLesslieFonseca();
+    //        break;
+    //
+    //    case 'ManoelaFirvida':
+    //        $Agente->ControllerManoelaFirvida();
+    //        break;
+    //    case 'YoimaValdes':
+    //        $Agente->ControllerYoimaValdes();
+    //        break;
+    //    default:
+    //        if (!isset($_GET['pages']) && empty($_GET['managment'])) {
+    //            $controller->ControllerInicio();
+    //        }
+    //        break;
+    //}
     ?>
