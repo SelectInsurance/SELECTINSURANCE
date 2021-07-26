@@ -250,7 +250,8 @@
 
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
-                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombreArchivo'], $_POST['Nombre'], $img);
+                //$_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/'
+                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre']);
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }
@@ -277,6 +278,7 @@
     switch (isset($_GET['agentes']) && $_GET['agentes'] == $Valor) {
         case $Valor:
             $Agente->Controller($_GET['agentes']);
+            //$_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/'
             break;
 
         default:

@@ -50,4 +50,10 @@ class SubidaArchivos extends Pather
         }
         return $menssage;
     }
+
+    public function SubidaImagenes()
+    {
+
+        
+    }
 }

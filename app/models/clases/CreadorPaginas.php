@@ -8,7 +8,7 @@ class CreadorPaginas
         return $conexion->EstablecerConexion();
     }
 
-    public function CrearPagina($url, $NombreArchivo, $Nombre, $img)
+    public function CrearPagina($url, $NombreArchivo, $Nombre)
     {
         //insertando en la Base de datos
         $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");

@@ -203,11 +203,11 @@ class ControllerManagment extends Pather
 
     }
 
-    public function ControllerManagmentProcesoCrearPagina($Titulo, $Nombre,  $img){
+    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre){
         if (isset($_POST['btnCrearPagina'])) {
             $CreadorPaginas = new CreadorPaginas();
             //require_once 'app/views/prueba.php';
-            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $Titulo, $Nombre, $img);
+            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre);
         }
     }
 }
