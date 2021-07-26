@@ -21,6 +21,11 @@ class SubidaArchivos extends Pather
         $this->table = $table;
     }
 
+    private function Conexion(){
+        $Conexion = new Conexion();
+        return $Conexion->EstablecerConexion();
+    }
+
     //Metodo para subir archivo validando la extencion y insertando en la base de datos la url
     public function SubidaValidando($DirectorioDeSubida)
     {
@@ -31,7 +36,6 @@ class SubidaArchivos extends Pather
         $Extencion = explode(".", $this->NombreArchivo);
         $ExtencionMinuscula = strtolower(end($Extencion));
 
-        $conexion = new Conexion();
         $Nombre = $this->Nombre;
 
         $ExtencionesPermitidas = array('mp4');
@@ -41,7 +45,7 @@ class SubidaArchivos extends Pather
             $DirectorioYNombre = $DirectorioDeSubida . $this->NombreArchivo;
             $table = $this->table;
 
-            $conexion->EstablecerConexion()->query("INSERT INTO $table(Nombre, URL) VALUES('$Nombre','$DirectorioYNombre')");
+            $this->Conexion()->query("INSERT INTO $table(Nombre, URL) VALUES('$Nombre','$DirectorioYNombre')");
             if (!empty(move_uploaded_file($this->RutaTemporal, $DirectorioYNombre))) {
                 $menssage = 'Subido con Exito';
             } else {
@@ -57,5 +61,8 @@ class SubidaArchivos extends Pather
         $TargetPath = $path . basename($file);
 
         move_uploaded_file($filetmp, $TargetPath);
+
+        //Insertando datos a la base de datos
+        $this->Conexion()->query("INSERT INTO ImagenAgente(Nombre, URL) VALUES('$file','$path')");
     }
 }
