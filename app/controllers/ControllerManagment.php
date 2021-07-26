@@ -213,7 +213,7 @@ class ControllerManagment extends Pather
 
             $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
 
-            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/',$NombreImgTmp,$NombreImg);
+            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/',$NombreImgTmp,$NombreImg, $NombrePagina);
         }
     }
 }

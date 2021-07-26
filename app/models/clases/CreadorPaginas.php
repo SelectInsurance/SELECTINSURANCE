@@ -13,6 +13,9 @@ class CreadorPaginas
         //insertando en la Base de datos
         $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
         
+        $Consulta = mysqli_query($this->Conexion(), "SELECT URL FROM imagenagente WHERE NombrePagina = '$NombreArchivo'");
+        $rows = mysqli_fetch_assoc($Consulta);
+        $URL = $rows['URL'].$rows['Nombre'];
 
         //String del HTML a Generar
         $contenido = "
@@ -204,7 +207,7 @@ class CreadorPaginas
             </blockquote>
         </div>
         <div class=\"col-12 col-sm-6 col-md-4 col-lg-4 float-md-start\">
-            <img class=\"img-fluid RadioDeBordes\" src=\"app/views/assets/img/ImagenesAgentes/AngelaHerrera.png\">
+            <img class=\"img-fluid RadioDeBordes\" src=\"$URL\">
         </div>
     </div>
 </div><br><br><br>
@@ -722,7 +725,7 @@ class CreadorPaginas
         <h6 class=\"text-end\">Copyright © <?php echo date('M') . ' ' . date('Y'); ?> Select Insurance.</h6>
     </div>
 </div>
-        ";
+    ";
 
 
         file_put_contents($url . $NombreArchivo . '.php', $contenido);

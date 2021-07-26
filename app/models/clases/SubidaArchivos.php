@@ -55,7 +55,7 @@ class SubidaArchivos extends Pather
         return $menssage;
     }
 
-    public function SubidaImagenes($path, $filetmp, $file)
+    public function SubidaImagenes($path, $filetmp, $file, $NombrePagina)
     {
 
         $TargetPath = $path . basename($file);
@@ -63,6 +63,6 @@ class SubidaArchivos extends Pather
         move_uploaded_file($filetmp, $TargetPath);
 
         //Insertando datos a la base de datos
-        $this->Conexion()->query("INSERT INTO ImagenAgente(Nombre, URL) VALUES('$file','$path')");
+        $this->Conexion()->query("INSERT INTO ImagenAgente(Nombre, URL, NombrePagina) VALUES('$file','$path','$NombrePagina')");
     }
 }
