@@ -51,9 +51,11 @@ class SubidaArchivos extends Pather
         return $menssage;
     }
 
-    public function SubidaImagenes()
+    public function SubidaImagenes($path, $filetmp, $file)
     {
 
-        
+        $TargetPath = $path . basename($file);
+
+        move_uploaded_file($filetmp, $TargetPath);
     }
 }

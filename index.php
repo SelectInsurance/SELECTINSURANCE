@@ -251,7 +251,7 @@
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
                 //$_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/'
-                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre']);
+                $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_FILES['ImagenAgente']['tmp_name'],$_FILES['ImagenAgente']['name']);
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }
