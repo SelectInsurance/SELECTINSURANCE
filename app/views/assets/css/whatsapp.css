@@ -13,7 +13,7 @@
   text-align: center;
   font-size: 55px;
   /*font-size: 35px;*/
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 3px 3px 4px rgb(0, 0, 0);
   z-index: 100;
   transition: all 300ms ease;
 }
