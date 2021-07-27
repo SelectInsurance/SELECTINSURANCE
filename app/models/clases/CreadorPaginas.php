@@ -592,20 +592,6 @@ class CreadorPaginas
 </div><br><br><br><br><br><br>
 <?php //Testimonios 
 ?>
-<div class=\"container-fluid text-white text-center ColorPrincipal\" id=\"Testimonios\">
-    <div class=\"row\">
-        <h2>Testimonios</h2>
-        <hr>
-    </div><br><br>
-    <div class=\"row\">
-        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5\">
-            <video src=\"app/views/assets/videos/testimonios/Comercial.mp4\" height=\"350\" controls>lo sentimos, tu navegador no soporta el video</video>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5\">
-            <video src=\"app/views/assets/videos/testimonios/Testimonial.mp4\" height=\"350\" controls>lo sentimos, tu navegador no soporta el video</video>
-        </div>
-    </div>
-</div>
 <div class=\"container-fluid text-center ColorTextoOscuro\"><br><br>
     <div class=\"row\">
         <div class=\"col-12 col-sm-12 col-md-12 col-lg-12\">
