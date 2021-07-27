@@ -8,7 +8,7 @@ class CreadorPaginas
         return $conexion->EstablecerConexion();
     }
 
-    public function CrearPagina($url, $NombreArchivo, $Nombre)
+    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $Telefono)
     {
         //insertando en la Base de datos
         $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
@@ -689,9 +689,9 @@ class CreadorPaginas
             <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
 
                 <p class=\"lh-lg\">
-                    Tel.: (786) 216 1936 <br>
+                    Tel.: $Telefono <br>
 
-                    Email: contact@selectinsurance.info <br>
+                    Email: $Email <br>
 
                     Skype: contact insurance <br>
 

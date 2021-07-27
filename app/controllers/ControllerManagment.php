@@ -199,24 +199,29 @@ class ControllerManagment extends Pather
     {
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/modulos/CrearPaginaAgente.php';
-
-
     }
     //Controller para Crear Paginas 
-                                                        //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
-    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $NombreImgTmp, $NombreImg){
-        if (isset($_POST['btnCrearPagina'])) {
+    //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
+    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg)
+    {
+        if (isset($_POST['btnCrearPagina']) && !file_exists('app/views/pages/AgentesPages/' . $NombrePagina . '.php')) {
 
             //Subiendo Imagen
             $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
-            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/',$NombreImgTmp,$NombreImg, $NombrePagina);
+            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina);
 
 
             //Creando paginas en el directorio AgentesPages
             $CreadorPaginas = new CreadorPaginas();
-            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre);
-
+            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $Telefono);
+        } else {
+            require_once 'app/views/assets/NavAgente.php';
+            require_once 'app/views/mensajes/ErrorPaginaExistente.php';
         }
+    }
+
+    public function ControllerManagmentErrorPaginaExistente()
+    {
     }
 }
 require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
