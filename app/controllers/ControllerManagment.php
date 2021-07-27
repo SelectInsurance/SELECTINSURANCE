@@ -202,9 +202,11 @@ class ControllerManagment extends Pather
 
 
     }
+    //Controller para Crear Paginas 
                                                         //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
     public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $NombreImgTmp, $NombreImg){
         if (isset($_POST['btnCrearPagina'])) {
+
             //Subiendo Imagen
             $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
             $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/',$NombreImgTmp,$NombreImg, $NombrePagina);
@@ -213,7 +215,6 @@ class ControllerManagment extends Pather
             //Creando paginas en el directorio AgentesPages
             $CreadorPaginas = new CreadorPaginas();
             $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre);
-
 
         }
     }
