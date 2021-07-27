@@ -212,25 +212,50 @@ class ControllerManagment extends Pather
     public function ControllerManagerEditarEliminarPagina($Array, $nombre, $TipoBoton)
     {
         foreach ($Array as $id) {
+            $crud = new crud();
             if ($TipoBoton == 'Editar') {
-                $crud = new crud();
 
-                
-                $crearpagina = $crud->Read("SELECT Titulo FROM crearpagina WHERE id = '$id'");
+                //Consultando en base de datos el titulo de la tabla crearpagina para poder realizar el cambio de nombre del archivo
+                $crearpagina = $crud->Read("SELECT Titulo, URL FROM crearpagina WHERE id = '$id'");
                 $rows = mysqli_fetch_assoc($crearpagina);
-                $Archivo = fopen('app/views/pages/AgentesPages/'.$rows['Titulo'].'.php', 'r');
+                $Archivo = fopen($rows['URL'].$rows['Titulo'].'.php', 'r');
                 fclose($Archivo);
-                rename('app/views/pages/AgentesPages/'.$rows['Titulo'].'.php','app/views/pages/AgentesPages/'.$nombre.'.php');
+                rename($rows['URL'].$rows['Titulo'].'.php',$rows['URL'].$nombre.'.php');
 
 
+
+                //Haciendo ambos updates
                 $crud->Update("UPDATE crearpagina SET Titulo = '$nombre' WHERE id = '$id'");
-                $crud->Update("UPDATE imagenagente SET NombrePagina = '$nombre' WHERE id = '$id'");
+                $crud->Update("UPDATE imagenagente SET NombrePagina = '$nombre' WHERE idPagina = '$id'");
+            }elseif ($TipoBoton == 'Eliminar') {
+
+
+
+                $crearpagina = $crud->Read("SELECT Titulo, URL FROM crearpagina WHERE id = '$id'");
+                $imagenagente = $crud->Read("SELECT Nombre, URL FROM imagenagente WHERE idPagina = '$id'");
+
+                $RowPagina = mysqli_fetch_assoc($crearpagina);
+                $RowImagen = mysqli_fetch_assoc($imagenagente);
+
+                //require_once 'app/views/prueba.php';
+                $EliminarPagina = new EliminarArchivos($RowPagina['URL'].$RowPagina['Titulo'].'.php');
+                $EliminarImagen = new EliminarArchivos($RowImagen['URL'].$RowImagen['Nombre']);
+
+                $EliminarPagina->Eliminar();
+                $EliminarImagen->Eliminar();
+
+
+                $crud->Delete("DELETE FROM crearpagina WHERE id = '$id'");
+                $crud->Delete("DELETE FROM imagenagente WHERE idPagina = '$id'");
             }
 
             //$mensaje = $TipoBoton;
             //require_once 'app/views/prueba.php';
         }
     }
+
+
+
 
     //Controller para Crear Paginas 
     //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
@@ -240,12 +265,20 @@ class ControllerManagment extends Pather
 
             //Subiendo Imagen
             $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
-            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina);
 
-
+            
+            
             //Creando paginas en el directorio AgentesPages
             $CreadorPaginas = new CreadorPaginas();
             $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $Telefono);
+
+
+            //Consultando el id de la pagina para poder ingresarla en la tabla de imagenagente
+            $ConsultaIDpagina = new crud();
+            $id = $ConsultaIDpagina->Read("SELECT id FROM crearpagina ORDER BY id DESC LIMIT 1");
+            $rows = mysqli_fetch_array($id);
+
+            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina, $rows['id']);
         } else {
             require_once 'app/views/assets/NavAgente.php';
             require_once 'app/views/mensajes/ErrorPaginaExistente.php';

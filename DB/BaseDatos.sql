@@ -75,7 +75,10 @@ CREATE TABLE ImagenAgente(
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     Nombre VARCHAR(50) NOT NULL,
     URL VARCHAR(255) NOT NULL,
-    NombrePagina VARCHAR(50) NOT NULL
+    NombrePagina VARCHAR(50) NOT NULL,
+    idPagina INTEGER,
+    INDEX(idPagina),
+    FOREIGN KEY ImagenAgente(idPagina) REFERENCES CrearPagina(id)
 );
 
 

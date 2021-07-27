@@ -285,11 +285,10 @@
                 if (isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Editar') {
                     $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], $_POST['Nombre'], $_POST['btnEditarEliminar']);
                     header('Location:./CrearPaginas');
-                }else {
+                }elseif(isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
                     $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], null, $_POST['btnEditarEliminar']);
+                    header('Location:./CrearPaginas');
                 }
-
-
                 //if (!empty($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Editar') {
                 //    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], $_POST['Nombre']);
                 //} elseif (!empty($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
