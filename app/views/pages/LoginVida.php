@@ -3,7 +3,7 @@
         <div class="col-12 col-sm-3 col-md-4 col-lg-4"></div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 ColorTextoOscuro text-center shadow p-3 mb-5"><br><br>
             <h3>Ingrese su contraseña para acceder a esta página</h3><br><br>
-            <form action="?pages=ValidacionLogin" method="post">
+            <form action="./ValidacionLogin" method="post">
                 <div class="form-floating mb-3">
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                     <label for="password">Password</label>

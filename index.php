@@ -19,30 +19,30 @@
         case 'ValidacionLogin':
             if (isset($_POST['btnloginSalud'])) {
                 $controller->ControllerLogeadoSalud('admin', $_POST['password']);
-                header('Location:./?pages=Videos-de-salud');
+                header('Location:./VideosSalud');
             } elseif (isset($_POST['btnloginVida'])) {
                 $controller->ControllerLogeadoVida('admin', $_POST['password']);
-                header('Location:./?pages=Videos-de-Vida');
+                header('Location:./VideosVida');
             }
             break;
 
             //Validacion si existe inicio de sesion en videos de salud
-        case 'Videos-de-salud':
+        case 'VideosSalud':
             if (!empty($_SESSION['logeado']) || !empty($_SESSION['managment'])) {
                 $controller->ControllerVideosDeSalud();
             } else {
                 $controller->ControllerLogeadoSalud('admin', $_POST['password']);
-                header('./?pages=Videos-de-salud');
+                header('./VideosSalud');
             }
             break;
 
             //Validacion si existe inicio de sesion en videos de Vida
-        case 'Videos-de-Vida':
+        case 'VideosVida':
             if (!empty($_SESSION['logeado']) || !empty($_SESSION['managment'])) {
                 $controller->ControllerVideosDeVida();
             } else {
                 $controller->ControllerLogeadoVida('admin', $_POST['password']);
-                header('./?pages=Videos-de-Vida');
+                header('./VideosVida');
             }
             break;
 
@@ -53,6 +53,17 @@
             }
             break;
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
     //(==============================================================================================)
@@ -83,7 +94,7 @@
             if (!empty($_SESSION['managment'])) {
                 $ManagmentController->ControllerPrincipalManagment();
             } else {
-                header('Location:./InicioManagment');
+                header('Location:./login');
             }
             break;
 
@@ -268,9 +279,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
     //(==============================================================================================)
     //(==============================================================================================)
-    //Controller de Agentes
+    //Controller de Agentes llamados dinamicamente con la condicion de si existe traigalo o si no, error
     require_once 'app/controllers/ControllerAgentes.php';
     $Agente = new ControllerAgentes();
 
@@ -279,7 +306,6 @@
     switch (isset($_GET['agentes']) && $_GET['agentes'] == $Valor) {
         case $Valor:
             $Agente->Controller($_GET['agentes']);
-            //$_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/'
             break;
 
         default:
@@ -288,29 +314,4 @@
             }
             break;
     }
-
-    //switch ($_GET['agentes']) {
-    //    case 'AngelaHerrera':
-    //        $Agente->ControllerAngelaHerrera();
-    //        break;
-    //    case 'LuaArcila':
-    //        $Agente->ControllerLuaArcila();
-    //        break;
-    //
-    //    case 'LeslieFonseca':
-    //        $Agente->ControllerLesslieFonseca();
-    //        break;
-    //
-    //    case 'ManoelaFirvida':
-    //        $Agente->ControllerManoelaFirvida();
-    //        break;
-    //    case 'YoimaValdes':
-    //        $Agente->ControllerYoimaValdes();
-    //        break;
-    //    default:
-    //        if (!isset($_GET['pages']) && empty($_GET['managment'])) {
-    //            $controller->ControllerInicio();
-    //        }
-    //        break;
-    //}
     ?>
