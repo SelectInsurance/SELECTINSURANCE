@@ -37,12 +37,18 @@
                 <div class="tab-pane fade" id="nav-Administrar" role="tabpanel" aria-labelledby="nav-Administrar-tab">
                     <div class="row">
                         <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
-                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4 text-center">
+                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center">
                             <form action="" method="post">
-                                <table>
+                                <table class="table table-responsive table-hover shadow p-3 mb-5">
                                     <thead>
                                         <tr>
-                                            <th></th>
+                                            <th colspan="4">Administrar Paginas</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Seleccionar</th>
+                                            <th>Titulo</th>
+                                            <th>Nombre</th>
+                                            <th>URL</th>
                                         </tr>
                                     </thead>
                                     <tbody>
