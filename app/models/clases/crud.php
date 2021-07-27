@@ -1,6 +1,6 @@
 <?php 
 require_once 'Conexion.php';
-    class crudVideos
+    class crud
     {
 
         private function Conexion(){

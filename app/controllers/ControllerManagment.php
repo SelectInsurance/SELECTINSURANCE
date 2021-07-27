@@ -70,7 +70,7 @@ class ControllerManagment extends Pather
     {
         require_once 'app/views/assets/NavAgente.php';
         $Select = "SELECT * FROM videosdesalud";
-        $Query = new crudVideos();
+        $Query = new crud();
         require_once 'app/views/pages/managment/modulos/EliminarEditarVideosSalud.php';
     }
 
@@ -79,7 +79,7 @@ class ControllerManagment extends Pather
     {
         foreach ($id as $IdVideo) {
             $Update = "UPDATE videosdesalud SET Nombre = '$nombre' WHERE idVideo = '$IdVideo'";
-            $Query = new crudVideos();
+            $Query = new crud();
             $Query->Update($Update);
         }
     }
@@ -91,7 +91,7 @@ class ControllerManagment extends Pather
         foreach ($id as $IdVideo) {
             $Select = "SELECT URL FROM videosdesalud WHERE idVideo = '$IdVideo'";
             $Delete = "DELETE FROM videosdesalud WHERE idVideo = '$IdVideo'";
-            $Query = new crudVideos();
+            $Query = new crud();
             $resultado = $Query->Read($Select);
             $Query->Delete($Delete);
 
@@ -118,7 +118,7 @@ class ControllerManagment extends Pather
 
 
         //Ejecutando los 3 ciclos
-        $query = new crudVideos();
+        $query = new crud();
         $Anico = $query->Read($SelectAnico);
         $Ameritas = $query->Read($SelectAmeritas);
         $NationalLife = $query->Read($SelectNationalLife);
@@ -131,7 +131,7 @@ class ControllerManagment extends Pather
     {
         foreach ($Array as $id) {
             $Update = "UPDATE $table SET Nombre = '$nombre' WHERE idVideo = '$id'";
-            $query = new crudVideos();
+            $query = new crud();
             $query->Update($Update);
         }
     }
@@ -144,7 +144,7 @@ class ControllerManagment extends Pather
             $Select  = "SELECT URL FROM $table WHERE idVideo = '$id'";
             $Delete = "DELETE FROM $table WHERE idVideo = '$id'";
 
-            $query = new crudVideos();
+            $query = new crud();
             $Consulta = $query->Read($Select);
             $rows = mysqli_fetch_assoc($Consulta);
             $Eliminar = new EliminarArchivos($rows['URL']);
