@@ -1,26 +1,43 @@
 <div class="container-fluid ">
     <div class="row ImagenCreadorPaginas ImagenFija">
-        <div class="container-fluid ColorSecundarioFondoTranslucido"><br><br><br>
-            <div class="row">
-                <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
-                <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 shadow p-3 mb-5">
-                    <h2 class="text-center">Crear Pagina</h2>
-                    <form action="./ProcesoCrearPagina" method="post" enctype="multipart/form-data">
-                        <label for="NombrePagina">Nombre Pagina:</label>
-                        <input type="text" name="NombrePagina" id="NombrePagina" class="form-control" placeholder="Ingrese URL Ejemplo: NombreApellido" required="required"><br>
-                        <label for="Nombre">Nombre el Agente:</label>
-                        <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Por favor ingrese Nombre del Agente" required="required"><br>
-                        <label for="Email">Correo del Agente:</label>
-                        <input type="email" name="Email" id="Email" class="form-control" placeholder="Ingrese Correo" required="required"><br>
-                        <label for="Telefono">Telefono:</label>
-                        <input type="tel" name="Telefono" id="Telefono" class="form-control" placeholder="Ingrese Telefono del Agente" required="required"><br>
-                        <label for="ImagenAgente">Imagen Agente:</label>
-                        <input type="file" name="ImagenAgente" id="ImagenAgente" class="form-control" required="required"><br>
-                        <input type="submit" value="Guardar" name="btnCrearPagina" class="btn btn-outline-success">
-                    </form>
+        <div class="container-fluid ColorSecundarioFondoTranslucido">
+
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-Creador-tab" data-bs-toggle="tab" data-bs-target="#nav-Creador" type="button" role="tab" aria-controls="nav-Creador" aria-selected="true">Creador</button>
+                    <button class="nav-link" id="nav-Administrar-tab" data-bs-toggle="tab" data-bs-target="#nav-Administrar" type="button" role="tab" aria-controls="nav-Administrar" aria-selected="false">Administrar</button>
                 </div>
-                <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+            </nav>
+
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-Creador" role="tabpanel" aria-labelledby="nav-Creador-tab">
+                    <div class="row">
+                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 shadow p-3 mb-5">
+                            <h2 class="text-center">Crear Pagina</h2>
+                            <form action="./ProcesoCrearPagina" method="post" enctype="multipart/form-data">
+                                <label for="NombrePagina">Nombre Pagina:</label>
+                                <input type="text" name="NombrePagina" id="NombrePagina" class="form-control" placeholder="Ingrese URL Ejemplo: NombreApellido" required="required"><br>
+                                <label for="Nombre">Nombre el Agente:</label>
+                                <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Por favor ingrese Nombre del Agente" required="required"><br>
+                                <label for="Email">Correo del Agente:</label>
+                                <input type="email" name="Email" id="Email" class="form-control" placeholder="Ingrese Correo" required="required"><br>
+                                <label for="Telefono">Telefono:</label>
+                                <input type="tel" name="Telefono" id="Telefono" class="form-control" placeholder="Ingrese Telefono del Agente" required="required"><br>
+                                <label for="ImagenAgente">Imagen Agente:</label>
+                                <input type="file" name="ImagenAgente" id="ImagenAgente" class="form-control" required="required"><br>
+                                <input type="submit" value="Guardar" name="btnCrearPagina" class="btn btn-outline-success">
+                            </form>
+                        </div>
+                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Administrar" role="tabpanel" aria-labelledby="nav-Administrar-tab">...</div>
             </div>
+
+
         </div>
         <div class="text-white ColorPrincipalTranslucido" id="Contacto">
             <div class="container">

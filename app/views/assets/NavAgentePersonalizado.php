@@ -5,7 +5,6 @@
                 <a class="nav-link" href="./">INICIO</a>
                 <a class="nav-link" href="#Cotizador">COTIZADOR ONLINE</a>
                 <a class="nav-link" href="#Servicios">SERVICIOS</a>
-                <a class="nav-link" href="#Testimonios">TESTIMONIOS</a>
                 <a class="nav-link" href="#Contacto">CONTACTO</a>
             </div>
         </div>
