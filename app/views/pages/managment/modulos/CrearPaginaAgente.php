@@ -37,8 +37,8 @@
                 <div class="tab-pane fade" id="nav-Administrar" role="tabpanel" aria-labelledby="nav-Administrar-tab">
                     <div class="row">
                         <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
-                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center">
-                            <form action="" method="post">
+                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center"><br><br>
+                            <form action="./ProcesoEditarEliminarPagina" method="post">
                                 <table class="table table-responsive table-hover shadow p-3 mb-5">
                                     <thead>
                                         <tr>
@@ -52,10 +52,31 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td></td>
-                                        </tr>
+                                        <?php
+                                        while ($rows = mysqli_fetch_assoc($ConsultaCrearPagina)) :
+                                        ?>
+                                            <tr>
+                                                <td><input type="checkbox" name="id[]" value="<?= $rows['id']; ?>" class="form-check-input"></td>
+                                                <td><?= $rows['Titulo']; ?></td>
+                                                <td><?= $rows['Nombre']; ?></td>
+                                                <td><?= $rows['URL']; ?></td>
+                                            </tr>
+                                        <?php
+                                        endwhile;
+                                        ?>
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3">
+                                                <label for="Nombre">Nombre:</label>
+                                                <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Ingrese Nombre de Pagina">
+                                            </td>
+                                            <td>
+                                                <input type="submit" value="Editar" name="btnEditarEliminar" class="btn btn-outline-success">
+                                                <input type="submit" value="Eliminar" name="btnEditarEliminar" class="btn btn-outline-danger">
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </form>
                         </div>

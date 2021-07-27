@@ -1,4 +1,5 @@
 <?php 
-    echo $_POST['TituloAgente'];
+    var_dump($id);
+    echo $mensaje;
 
 ?>

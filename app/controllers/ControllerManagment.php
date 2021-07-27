@@ -197,9 +197,41 @@ class ControllerManagment extends Pather
     //Controller para Crear Paginas
     public function ControllerManagmentCrearPagina()
     {
+        $crud = new crud();
+
+        //Consultando en la base de Datos
+        $ConsultaCrearPagina = $crud->Read("SELECT * FROM crearpagina");
+        $ConsultaImagenAgente = $crud->Read("SELECT * FROM imagenagente");
+
+
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/managment/modulos/CrearPaginaAgente.php';
     }
+
+    //Controller para Eliminar o Editar Paginas
+    public function ControllerManagerEditarEliminarPagina($Array, $nombre, $TipoBoton)
+    {
+        foreach ($Array as $id) {
+            if ($TipoBoton == 'Editar') {
+                $crud = new crud();
+
+                
+                $crearpagina = $crud->Read("SELECT Titulo FROM crearpagina WHERE id = '$id'");
+                $rows = mysqli_fetch_assoc($crearpagina);
+                $Archivo = fopen('app/views/pages/AgentesPages/'.$rows['Titulo'].'.php', 'r');
+                fclose($Archivo);
+                rename('app/views/pages/AgentesPages/'.$rows['Titulo'].'.php','app/views/pages/AgentesPages/'.$nombre.'.php');
+
+
+                $crud->Update("UPDATE crearpagina SET Titulo = '$nombre' WHERE id = '$id'");
+                $crud->Update("UPDATE imagenagente SET NombrePagina = '$nombre' WHERE id = '$id'");
+            }
+
+            //$mensaje = $TipoBoton;
+            //require_once 'app/views/prueba.php';
+        }
+    }
+
     //Controller para Crear Paginas 
     //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
     public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg)

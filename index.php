@@ -226,6 +226,8 @@
                     header('Location:./EliminarEditarVideosVida');
                     break;
             }
+
+
             switch ($_POST['btnNationalLife']) {
                 case 'Editar':
                     $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombrenationallife'], 'videosnationallife');
@@ -258,20 +260,53 @@
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+
             //Proceso para Crear Pagina, valida si el archivo existe, si no existe lo Crea de lo contrario llama el Error del controller
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
-                if (!file_exists('app/views/pages/AgentesPages/'.$_POST['NombrePagina'].'.php')) {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'],$_FILES['ImagenAgente']['name']);
+                if (!file_exists('app/views/pages/AgentesPages/' . $_POST['NombrePagina'] . '.php')) {
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name']);
                     $NombrePagina = $_POST['NombrePagina'];
                     header("Location:$NombrePagina");
-                }else {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null,null,null,null,null,null,null);
+                } else {
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null, null, null, null, null, null, null);
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
+
+            //Proceso Editar o Eliminar Pagina
+        case 'ProcesoEditarEliminarPagina':
+            if (!empty($_SESSION['managment'])) {
+
+
+
+                if (isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Editar') {
+                    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], $_POST['Nombre'], $_POST['btnEditarEliminar']);
+                    header('Location:./CrearPaginas');
+                }else {
+                    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], null, $_POST['btnEditarEliminar']);
+                }
+
+
+                //if (!empty($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Editar') {
+                //    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], $_POST['Nombre']);
+                //} elseif (!empty($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
+                //    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], null);
+                //}
+
+
+
+            } else {
+
+
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
+
+
+
         default:
             if (!isset($_GET['pages']) && empty($_GET['managment'])) {
                 $controller->ControllerInicio();
@@ -296,7 +331,6 @@
 
 
 
-    
 
 
     //(==============================================================================================)
