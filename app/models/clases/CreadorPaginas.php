@@ -13,7 +13,7 @@ class CreadorPaginas
         //insertando en la Base de datos
         $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
         
-        $Consulta = mysqli_query($this->Conexion(), "SELECT URL FROM imagenagente WHERE NombrePagina = '$NombreArchivo'");
+        $Consulta = mysqli_query($this->Conexion(), "SELECT URL, Nombre FROM imagenagente WHERE NombrePagina = '$NombreArchivo'");
         $rows = mysqli_fetch_assoc($Consulta);
         $URL = $rows['URL'].$rows['Nombre'];
 
