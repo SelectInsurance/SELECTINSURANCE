@@ -4,7 +4,8 @@ class Conexion
 {
     public function EstablecerConexion()
     {
-        $conexion = new mysqli('localhost', 'root', '', 'crm_select');
+        $PassEncriptada = base64_decode('');
+        $conexion = new mysqli('localhost', 'root', $PassEncriptada, 'crm_select');
 
         error_reporting(0);
 
