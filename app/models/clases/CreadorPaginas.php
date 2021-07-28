@@ -1,5 +1,7 @@
 <?php
 require_once 'Conexion.php';
+require_once 'SubidaArchivos.php';
+require_once 'crud.php';
 class CreadorPaginas
 {
     private function Conexion()
@@ -7,16 +9,31 @@ class CreadorPaginas
         $conexion = new Conexion();
         return $conexion->EstablecerConexion();
     }
-
-    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $Telefono)
+                                                                                                                                    /*, $id*/
+    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $Telefono, $urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina)
     {
-        //insertando en la Base de datos
+
+        //insertando Pagina en la Base de datos
         $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
-        
+        $Read = new crud();
+
+        //Consultando Id en la base de datos
+        $consulta = $Read->Read("SELECT id FROM crearpagina ORDER BY id DESC LIMIT 1");
+        $rows = mysqli_fetch_assoc($consulta);
+
+
+        //Subiendo Imagen y insertando en la base de datos en ese respectivo orden
+        $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
+        $SubiendoImagen->SubidaImagenes($urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina, $rows['id']);
+
+
+
+        //seleccionando la imagen
         $Consulta = mysqli_query($this->Conexion(), "SELECT URL, Nombre FROM imagenagente WHERE NombrePagina = '$NombreArchivo'");
         $rows = mysqli_fetch_assoc($Consulta);
-        $URL = $rows['URL'].$rows['Nombre'];
+        $URL = $rows['URL'] . $rows['Nombre'];
 
+        
         //String del HTML a Generar
         $contenido = "
 <div class=\"container-fluid\" id=\"Inicio\">

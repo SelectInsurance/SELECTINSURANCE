@@ -218,16 +218,16 @@ class ControllerManagment extends Pather
                 //Consultando en base de datos el titulo de la tabla crearpagina para poder realizar el cambio de nombre del archivo
                 $crearpagina = $crud->Read("SELECT Titulo, URL FROM crearpagina WHERE id = '$id'");
                 $rows = mysqli_fetch_assoc($crearpagina);
-                $Archivo = fopen($rows['URL'].$rows['Titulo'].'.php', 'r');
+                $Archivo = fopen($rows['URL'] . $rows['Titulo'] . '.php', 'r');
                 fclose($Archivo);
-                rename($rows['URL'].$rows['Titulo'].'.php',$rows['URL'].$nombre.'.php');
+                rename($rows['URL'] . $rows['Titulo'] . '.php', $rows['URL'] . $nombre . '.php');
 
 
 
                 //Haciendo ambos updates
                 $crud->Update("UPDATE crearpagina SET Titulo = '$nombre' WHERE id = '$id'");
                 $crud->Update("UPDATE imagenagente SET NombrePagina = '$nombre' WHERE idPagina = '$id'");
-            }elseif ($TipoBoton == 'Eliminar') {
+            } elseif ($TipoBoton == 'Eliminar') {
 
 
 
@@ -238,8 +238,8 @@ class ControllerManagment extends Pather
                 $RowImagen = mysqli_fetch_assoc($imagenagente);
 
                 //require_once 'app/views/prueba.php';
-                $EliminarPagina = new EliminarArchivos($RowPagina['URL'].$RowPagina['Titulo'].'.php');
-                $EliminarImagen = new EliminarArchivos($RowImagen['URL'].$RowImagen['Nombre']);
+                $EliminarPagina = new EliminarArchivos($RowPagina['URL'] . $RowPagina['Titulo'] . '.php');
+                $EliminarImagen = new EliminarArchivos($RowImagen['URL'] . $RowImagen['Nombre']);
 
                 $EliminarPagina->Eliminar();
                 $EliminarImagen->Eliminar();
@@ -257,28 +257,18 @@ class ControllerManagment extends Pather
 
 
 
-    //Controller para Crear Paginas 
-    //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
-    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg)
+    //Controller para Crear Paginas
+    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg)//NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
     {
         if (isset($_POST['btnCrearPagina']) && !file_exists('app/views/pages/AgentesPages/' . $NombrePagina . '.php')) {
 
             //Subiendo Imagen
             $SubiendoImagen = new SubidaArchivos(null, null, null, null, null, null);
 
-            
-            
-            //Creando paginas en el directorio AgentesPages
+
+            //Creando paginas en el directorio AgentesPages                                                                                                                                      
             $CreadorPaginas = new CreadorPaginas();
-            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $Telefono);
-
-
-            //Consultando el id de la pagina para poder ingresarla en la tabla de imagenagente
-            $ConsultaIDpagina = new crud();
-            $id = $ConsultaIDpagina->Read("SELECT id FROM crearpagina ORDER BY id DESC LIMIT 1");
-            $rows = mysqli_fetch_array($id);
-
-            $SubiendoImagen->SubidaImagenes('app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina, $rows['id']);
+            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $Telefono, 'app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina);
         } else {
             require_once 'app/views/assets/NavAgente.php';
             require_once 'app/views/mensajes/ErrorPaginaExistente.php';
