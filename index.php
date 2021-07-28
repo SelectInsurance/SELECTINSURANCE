@@ -84,8 +84,9 @@
             break;
 
             //Validacion para conseguir el refresco de la pagina ya que se quedaba en blanco si no aplicaba header
-        case 'validacion-managment-login':
+        case 'ValidacionManagmentLogin':
             $ManagmentController->ControllerManagmentConsultaLogin($_POST['user'], $_POST['pass']);
+            //echo "<script>location.href='InicioManagment';</script>";
             header('Location:./InicioManagment');
             break;
 

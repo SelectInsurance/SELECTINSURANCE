@@ -33,7 +33,7 @@ class ControllerPrincipal extends Pather
             $i++;
         }
         require_once 'app/views/pages/inicio.php';
-        if (isset($_POST['btnform1enviar'])) {
+        if (isset($_POST['btnFormEnviar'])) {
             $InsertarCliente = new InsertClientes($_POST['nombre'], $_POST['apellido'], $_POST['correo'], $_POST['telefono'], $_POST['estado'], $_POST['servicio']);
             $InsertarCliente->InsertCliente();
         }

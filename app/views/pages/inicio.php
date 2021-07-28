@@ -45,7 +45,7 @@
                                     <h3 class="text text-center text-white"><b>¡Sea parte de nuestra familia!</b></h3>
                                     <h4 class="text text-center text-white">Diligencie el formulario a continuación y uno de nuestros agentes se pondrá en contacto brevemente.</h4>
                                 </div>
-                                <form action="./" method="post">
+                                <form action="../SELECTINSURANCE/inicio" method="post">
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                             <label for="nombre" class="text-white">Nombre: <label class="text text-danger">*</label></label>
@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                             <p>
-                                                <input type="submit" value="Enviar" name="btnform1enviar" class="btn btn-success btn-lg">
+                                                <input type="submit" value="Enviar" name="btnFormEnviar" class="btn btn-success btn-lg">
                                             </p>
                                             <?php
                                             if (isset($_SESSION['Mensaje'])) {
@@ -231,7 +231,7 @@
             </blockquote>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 float-md-start">
-            <img class="img-fluid RadioDeBordes" src="app\views\assets\img\imgcotizador.jpg">
+            <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADOR.jpg" alt="Select Insurance Cotizador" title="Cotiza tu seguro">
         </div>
     </div>
 </div><br><br><br>
