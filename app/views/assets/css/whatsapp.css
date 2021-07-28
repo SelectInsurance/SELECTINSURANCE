@@ -1,21 +1,62 @@
 .btn-wsp {
   position: fixed;
-  width: 70px;
-  height: 70px;
-  line-height: 73px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
   /*bottom: 25px;*/
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px; /*Vertical*/
+  right: 150px; /*Horizontal*/
   /*right: 25px;*/
-  background-color: rgba(37, 211, 102, 0.6);
+  background-color: rgba(205, 228, 196, 1);
   border-radius: 50px;
-  color: #fff;
+  color: rgba(7, 120, 113, 1);
   text-align: center;
-  font-size: 55px;
+  /*font-size: 110px;*/
   /*font-size: 35px;*/
   box-shadow: 3px 3px 4px rgb(54, 54, 54);
   z-index: 100;
   transition: all 300ms ease;
+  text-decoration: none;
+}
+
+.fondo-text-wsp {
+  position: fixed;
+  height: 70px;
+  width: 160px;
+  line-height: 100px;
+  /*bottom: 25px;*/
+  bottom: 35px; /*Vertical*/
+  right: 10px;  /*Horizontal*/
+  text-indent: 50px;
+  /*right: 25px;*/
+  background-color: rgba(2, 30, 44, 1);
+  border-radius: 10px;
+  color: rgba(205, 228, 196, 1);
+  /*font-size: 110px;*/
+  /*font-size: 35px;*/
+  box-shadow: 3px 3px 4px rgb(54, 54, 54);
+  z-index: 98;
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+.texto-wsp {
+  position: fixed;
+  height: 70px;
+  width: 160px;
+  line-height: 100px;
+  /*bottom: 25px;*/
+  bottom: 20px; /*Vertical*/
+  right: 5px; /*Horizontal*/
+  font-size: 20px;
+  /*right: 25px;*/
+  color: rgba(205, 228, 196, 1);
+  text-align: center;
+  line-height: 1px;
+  /*font-size: 110px;*/
+  /*font-size: 35px;*/
+  z-index: 99;
+  transition: all 300ms ease;
+  text-decoration: none;
 }
 
 .btn-wsp:hover {
