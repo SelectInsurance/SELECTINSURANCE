@@ -11,7 +11,7 @@
             <center><img src="app\views\assets\img\Aseguradoras\AmericanNational.png" class="img-fluid" width="300px" height="300px" alt="Anico" title="Anico"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crudVideos();
+                $ConsultaAnico = new crud();
                 $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosanico");
                 while ($rows = mysqli_fetch_assoc($resultados)) :
 
@@ -29,7 +29,7 @@
             <center><img src="app\views\assets\img\Aseguradoras\Ameritas.png" class="img-fluid" width="300px" height="300px" alt="Ameritas" title="Ameritas"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crudVideos();
+                $ConsultaAnico = new crud();
                 $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosameritas");
                 while ($rows = mysqli_fetch_assoc($resultados)) :
                 ?>
@@ -46,7 +46,7 @@
             <center><img src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" class="img-fluid" width="300px" height="300px" alt="National Life" title="National Life"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crudVideos();
+                $ConsultaAnico = new crud();
                 $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosnationallife");
                 while ($rows = mysqli_fetch_assoc($resultados)) :
 

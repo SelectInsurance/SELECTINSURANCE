@@ -8,7 +8,8 @@
     <title>Select Insurance</title>
     <link rel="stylesheet" href="app/views/assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="app/views/assets/css/calendario/evo-calendar.css" />
-    <link rel="stylesheet" type="text/css" href="app/views/assets/css/calendario/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="app/views/assets/css/calendario/evo-calendar.royal-navy.min.css">
+
 
 
     <link rel="stylesheet" href="app/views/assets/fontawesome-free-5.15.3-web/css/all.css">

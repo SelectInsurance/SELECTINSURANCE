@@ -37,12 +37,14 @@ class ControllerPrincipal extends Pather
             $InsertarCliente = new InsertClientes($_POST['nombre'], $_POST['apellido'], $_POST['correo'], $_POST['telefono'], $_POST['estado'], $_POST['servicio']);
             $InsertarCliente->InsertCliente();
         }
+        require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
     }
 
     public function ControllerAgentes()
     {
         require_once 'app/views/assets/NavPrincipal.php';
         require_once 'app/views/pages/Agentes.php';
+        require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
     }
 
 
@@ -84,10 +86,7 @@ class ControllerPrincipal extends Pather
     public function ControllerVideosDeVida()
     {
         require_once 'app/views/assets/NavAgente.php';
-
-
         require_once 'app/views/pages/subpages/VideosVida.php';
     }
 }
-require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
 require_once 'app/views/assets/footer.php';

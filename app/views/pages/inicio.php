@@ -182,7 +182,7 @@
                     eventDisplayDefault	    boolean	    true	        Set default visibility of event lists	            true, false
                     eventListToggler	    boolean	    true	        Display the button for toggling the event lists	    true, false
                     calendarEvents	        array	    null	        Defined events for calendar to show	                Array of events */
-                    theme: "Midnight Blue",
+                    theme: "Royal Navy",
                     format: "mm-dd-yy",
                     language: "es",
                     calendarEvents: <?php echo json_encode($datos); ?> 

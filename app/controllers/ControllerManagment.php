@@ -279,5 +279,4 @@ class ControllerManagment extends Pather
     {
     }
 }
-require_once 'app/views/assets/WhatsappPegajoso/WhatsappPrincipal.php';
 require_once 'app/views/assets/footer.php';

@@ -1,16 +1,12 @@
 <div class="container-fluid ">
     <div class="row ImagenCreadorPaginas ImagenFija">
         <div class="container-fluid ColorSecundarioFondoTranslucido">
-
-
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-Creador-tab" data-bs-toggle="tab" data-bs-target="#nav-Creador" type="button" role="tab" aria-controls="nav-Creador" aria-selected="true">Creador</button>
                     <button class="nav-link" id="nav-Administrar-tab" data-bs-toggle="tab" data-bs-target="#nav-Administrar" type="button" role="tab" aria-controls="nav-Administrar" aria-selected="false">Administrar</button>
                 </div>
             </nav>
-
-
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-Creador" role="tabpanel" aria-labelledby="nav-Creador-tab">
                     <div class="row">
@@ -35,9 +31,13 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-Administrar" role="tabpanel" aria-labelledby="nav-Administrar-tab">
-                    <div class="row">
-                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
-                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center"><br><br>
+                    <div class="row"><br><br>
+
+                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
+                        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 text-center shadow p-3 mb-5">
+                            <center>
+                                <h2>Gestion Paginas</h2>
+                            </center>
                             <form action="./ProcesoEditarEliminarPagina" method="post">
                                 <table class="table table-responsive table-hover shadow p-3 mb-5">
                                     <thead>
@@ -80,12 +80,10 @@
                                 </table>
                             </form>
                         </div>
-                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+                        <div class="col-12 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
                     </div>
                 </div>
             </div>
-
-
         </div>
         <div class="text-white ColorPrincipalTranslucido" id="Contacto">
             <div class="container">
