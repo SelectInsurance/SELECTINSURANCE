@@ -29,7 +29,7 @@ class CreadorPaginas
 
 
         //seleccionando la imagen
-        $Consulta = mysqli_query($this->Conexion(), "SELECT URL, Nombre FROM imagenagente WHERE NombrePagina = '$NombreArchivo'");
+        $Consulta = mysqli_query($this->Conexion(), "SELECT URL, Nombre FROM ImagenAgente WHERE NombrePagina = '$NombreArchivo'");
         $rows = mysqli_fetch_assoc($Consulta);
         $URL = $rows['URL'] . $rows['Nombre'];
 
