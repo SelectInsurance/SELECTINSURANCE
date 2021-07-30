@@ -194,6 +194,8 @@ class ControllerManagment extends Pather
     }
 
 
+    //(==============================================================================================)
+    //(==============================================================================================)
     //Controller para Crear Paginas
     public function ControllerManagmentCrearPagina()
     {
@@ -258,7 +260,7 @@ class ControllerManagment extends Pather
 
 
     //Controller para Crear Paginas
-    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg)//NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
+    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg) //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
     {
         if (isset($_POST['btnCrearPagina']) && !file_exists('app/views/pages/AgentesPages/' . $NombrePagina . '.php')) {
 

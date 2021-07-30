@@ -53,7 +53,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        while ($rows = mysqli_fetch_assoc($ConsultaCrearPagina)) :
+                                        while ($rows = $ConsultaCrearPagina->fetch_assoc()) :
                                         ?>
                                             <tr>
                                                 <td><input type="checkbox" name="id[]" value="<?= $rows['id']; ?>" class="form-check-input"></td>
