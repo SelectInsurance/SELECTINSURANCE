@@ -1,4 +1,4 @@
---Base de Datos de CRM--
+/*Base de Datos de CRM*/
 DROP DATABASE IF EXISTS CRM_SELECT ;
 
 CREATE  DATABASE IF NOT EXISTS CRM_SELECT;
@@ -13,7 +13,7 @@ CREATE TABLE Prospectos(
     telefonoProspecto VARCHAR (100) NOT NULL,
     estadoProspecto VARCHAR (50) NOT NULL, 
     servicioProspecto VARCHAR (50) NOT NULL,
-    fechaProspecto datetime NOT NULL DEFAULT current_timestamp()
+    fechaProspecto TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE UsuarioPageAgentes(
