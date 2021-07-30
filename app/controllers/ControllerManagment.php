@@ -78,7 +78,7 @@ class ControllerManagment extends Pather
     public function ControllerManagmentProcesoEditarVideoSalud($id, $nombre)
     {
         foreach ($id as $IdVideo) {
-            $Update = "UPDATE videosdesalud SET Nombre = '$nombre' WHERE idVideo = '$IdVideo'";
+            $Update = "UPDATE VideosDeSalud SET Nombre = '$nombre' WHERE idVideo = '$IdVideo'";
             $Query = new crud();
             $Query->Update($Update);
         }
@@ -89,8 +89,8 @@ class ControllerManagment extends Pather
     {
 
         foreach ($id as $IdVideo) {
-            $Select = "SELECT URL FROM videosdesalud WHERE idVideo = '$IdVideo'";
-            $Delete = "DELETE FROM videosdesalud WHERE idVideo = '$IdVideo'";
+            $Select = "SELECT URL FROM VideosDeSalud WHERE idVideo = '$IdVideo'";
+            $Delete = "DELETE FROM VideosDeSalud WHERE idVideo = '$IdVideo'";
             $Query = new crud();
             $resultado = $Query->Read($Select);
             $Query->Delete($Delete);
@@ -112,9 +112,9 @@ class ControllerManagment extends Pather
 
 
         //Consulta de las 3 tablas dinamicas
-        $SelectAnico = "SELECT * FROM videosanico";
-        $SelectAmeritas = "SELECT * FROM videosameritas";
-        $SelectNationalLife = "SELECT * FROM videosnationallife";
+        $SelectAnico = "SELECT * FROM VideosAnico";
+        $SelectAmeritas = "SELECT * FROM VideosAmeritas";
+        $SelectNationalLife = "SELECT * FROM VideosNationalLife";
 
 
         //Ejecutando los 3 ciclos
@@ -200,8 +200,8 @@ class ControllerManagment extends Pather
         $crud = new crud();
 
         //Consultando en la base de Datos
-        $ConsultaCrearPagina = $crud->Read("SELECT * FROM crearpagina");
-        $ConsultaImagenAgente = $crud->Read("SELECT * FROM imagenagente");
+        $ConsultaCrearPagina = $crud->Read("SELECT * FROM CrearPagina");
+        $ConsultaImagenAgente = $crud->Read("SELECT * FROM ImagenAgente");
 
 
         require_once 'app/views/assets/NavAgente.php';
@@ -216,7 +216,7 @@ class ControllerManagment extends Pather
             if ($TipoBoton == 'Editar') {
 
                 //Consultando en base de datos el titulo de la tabla crearpagina para poder realizar el cambio de nombre del archivo
-                $crearpagina = $crud->Read("SELECT Titulo, URL FROM crearpagina WHERE id = '$id'");
+                $crearpagina = $crud->Read("SELECT Titulo, URL FROM CrearPagina WHERE id = '$id'");
                 $rows = mysqli_fetch_assoc($crearpagina);
                 $Archivo = fopen($rows['URL'] . $rows['Titulo'] . '.php', 'r');
                 fclose($Archivo);
@@ -225,14 +225,14 @@ class ControllerManagment extends Pather
 
 
                 //Haciendo ambos updates
-                $crud->Update("UPDATE crearpagina SET Titulo = '$nombre' WHERE id = '$id'");
-                $crud->Update("UPDATE imagenagente SET NombrePagina = '$nombre' WHERE idPagina = '$id'");
+                $crud->Update("UPDATE CrearPagina SET Titulo = '$nombre' WHERE id = '$id'");
+                $crud->Update("UPDATE ImagenAgente SET NombrePagina = '$nombre' WHERE idPagina = '$id'");
             } elseif ($TipoBoton == 'Eliminar') {
 
 
 
-                $crearpagina = $crud->Read("SELECT Titulo, URL FROM crearpagina WHERE id = '$id'");
-                $imagenagente = $crud->Read("SELECT Nombre, URL FROM imagenagente WHERE idPagina = '$id'");
+                $crearpagina = $crud->Read("SELECT Titulo, URL FROM CrearPagina WHERE id = '$id'");
+                $imagenagente = $crud->Read("SELECT Nombre, URL FROM ImagenAgente WHERE idPagina = '$id'");
 
                 $RowPagina = mysqli_fetch_assoc($crearpagina);
                 $RowImagen = mysqli_fetch_assoc($imagenagente);
@@ -245,8 +245,8 @@ class ControllerManagment extends Pather
                 $EliminarImagen->Eliminar();
 
 
-                $crud->Delete("DELETE FROM crearpagina WHERE id = '$id'");
-                $crud->Delete("DELETE FROM imagenagente WHERE idPagina = '$id'");
+                $crud->Delete("DELETE FROM CrearPagina WHERE id = '$id'");
+                $crud->Delete("DELETE FROM ImagenAgente WHERE idPagina = '$id'");
             }
 
             //$mensaje = $TipoBoton;

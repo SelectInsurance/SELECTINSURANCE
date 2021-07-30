@@ -2,13 +2,11 @@
     <div class="row shadow-lg p-3 mb-5 border">
         <center><h2>Videos de Salud</h2></center>
         <?php
-        $ConsultaAnico = new crud();
-        $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosdesalud");
-        while ($rows = mysqli_fetch_assoc($resultados)) :
+        while ($rows = $ResultadosSalud->fetch_assoc()) :
         ?>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
                 <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                <video src="<?= $rows['URL']; ?>" type="video/mp4" controls>Lo sentimos el video no esta disponible</video>
             </div>
         <?php endwhile; ?>
     </div><br><br><br>

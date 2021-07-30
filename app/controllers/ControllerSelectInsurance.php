@@ -19,8 +19,8 @@ class ControllerPrincipal extends Pather
         $query = "SELECT * FROM Calendario"; //Query traer Datos de la tabla calendario
         $consulta = new Eventos();
         $resultados = $consulta->Consulta($query);
-        
-        $i=0;
+
+        $i = 0;
         while ($rows = mysqli_fetch_assoc($resultados)) {
             $datos[$i]['id'] = $rows['id'];
             $datos[$i]['name'] = $rows['name'];
@@ -79,12 +79,25 @@ class ControllerPrincipal extends Pather
     //controller Videos de Salud
     public function ControllerVideosDeSalud()
     {
+        $ConsultaSalud = new crud();
+        $ResultadosSalud = $ConsultaSalud->Read("SELECT Nombre, URL FROM VideosDeSalud");
+
+
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/subpages/VideosSalud.php';
     }
 
+    //Controller Videos de vida 
     public function ControllerVideosDeVida()
     {
+        $ConsultaAnico = new crud();
+        $consultaAmeritas = new crud();
+        $ConsultaNationalLife = new crud();
+
+        $ResultadosAnico = $ConsultaAnico->Read("SELECT Nombre, URL FROM VideosAnico");
+        $ResultadosAmeritas = $consultaAmeritas->Read("SELECT Nombre, URL FROM VideosAmeritas");
+        $ResultadosNationalLife = $ConsultaNationalLife->Read("SELECT Nombre, URL FROM VideosNationalLife");
+
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/subpages/VideosVida.php';
     }

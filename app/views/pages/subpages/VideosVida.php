@@ -11,14 +11,13 @@
             <center><img src="app\views\assets\img\Aseguradoras\AmericanNational.png" class="img-fluid" width="300px" height="300px" alt="Anico" title="Anico"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crud();
-                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosanico");
-                while ($rows = mysqli_fetch_assoc($resultados)) :
-
+                while ($rows = $ResultadosAnico->fetch_assoc()) :
                 ?>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
                         <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                        <video controls>
+                            <source src="<?php echo $rows['URL']; ?>" type="video/mp4">
+                        </video>
                     </div>
                 <?php endwhile; ?>
             </div>
@@ -29,13 +28,11 @@
             <center><img src="app\views\assets\img\Aseguradoras\Ameritas.png" class="img-fluid" width="300px" height="300px" alt="Ameritas" title="Ameritas"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crud();
-                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosameritas");
-                while ($rows = mysqli_fetch_assoc($resultados)) :
+                while ($rows = $ResultadosAmeritas->fetch_assoc()) :
                 ?>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
                         <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                        <video src="<?= $rows['URL']; ?>" type="video/mp4" controls>Lo sentimos el video no esta disponible</video>
                     </div>
                 <?php endwhile; ?>
             </div>
@@ -46,20 +43,16 @@
             <center><img src="app\views\assets\img\Aseguradoras\NationalLifeGroup.png" class="img-fluid" width="300px" height="300px" alt="National Life" title="National Life"></center>
             <div class="row">
                 <?php
-                $ConsultaAnico = new crud();
-                $resultados = $ConsultaAnico->Read("SELECT Nombre, URL FROM videosnationallife");
-                while ($rows = mysqli_fetch_assoc($resultados)) :
-
+                while ($rows = $ResultadosNationalLife->fetch_assoc()) :
                 ?>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 shadow p-3 mb-5">
                         <h4 class="text-center"><?php echo $rows['Nombre']; ?></h4>
-                        <video src="<?= $rows['URL']; ?>" controls>Lo sentimos el video no esta disponible</video>
+                        <video src="<?= $rows['URL']; ?>" type="video/mp4" controls>Lo sentimos el video no esta disponible</video>
                     </div>
                 <?php endwhile; ?>
             </div>
         </div>
     </div>
-
 </div>
 <div class="container-fluid ColorPrincipal text-white"><br>
     <h4 class="text-white text-center">Contactenos</h4>
