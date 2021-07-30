@@ -69,7 +69,7 @@ class ControllerManagment extends Pather
     public function ControllerManagmentEditarEliminarVideoSalud()
     {
         require_once 'app/views/assets/NavAgente.php';
-        $Select = "SELECT * FROM videosdesalud";
+        $Select = "SELECT * FROM VideosDeSalud";
         $Query = new crud();
         require_once 'app/views/pages/managment/modulos/EliminarEditarVideosSalud.php';
     }

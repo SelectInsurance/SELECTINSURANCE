@@ -59,13 +59,6 @@
 
 
 
-
-
-
-
-
-
-
     //(==============================================================================================)
     //(==============================================================================================)
     //Controller del Managment
@@ -158,7 +151,7 @@
         case 'CargandoVideosSalud':
             if (!empty($_SESSION['managment'])) {
                 if (isset($_POST['btnUploadVideoSalud'])) {
-                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'videosdesalud', 'app/views/assets/videos/videos_de_salud/');
+                    $ManagmentController->ControllerCargandoVideos($_POST['NombreVideoDeSalud'], $_FILES['VideoSalud']['tmp_name'], $_FILES['VideoSalud']['name'], $_FILES['VideoSalud']['size'], $_FILES['VideoSalud']['type'], 'VideosDeSalud', 'app/views/assets/videos/videos_de_salud/');
                     header('Location:./CargaVideosSalud');
                 }
             } else {
@@ -203,11 +196,11 @@
         case 'ProcesoVideosVida':
             switch ($_POST['btnAnico']) {
                 case 'Editar':
-                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'videosanico');
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreanico'], 'VideosAnico');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 case 'Eliminar':
-                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosanico');
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'VideosAnico');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 default:
@@ -216,11 +209,11 @@
             }
             switch ($_POST['btnAmeritas']) {
                 case 'Editar':
-                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreameritas'], 'videosameritas');
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombreameritas'], 'VideosAmeritas');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 case 'Eliminar':
-                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosameritas');
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'VideosAmeritas');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 default:
@@ -231,11 +224,11 @@
 
             switch ($_POST['btnNationalLife']) {
                 case 'Editar':
-                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombrenationallife'], 'videosnationallife');
+                    $ManagmentController->ControllerManagmentProcesoEditarVideoVida($_POST['id'], $_POST['nombrenationallife'], 'VideosNationalLife');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 case 'Eliminar':
-                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'videosnationallife');
+                    $ManagmentController->ControllerManagmentProcesoEliminarVideoVida($_POST['id'], 'VideosNationalLife');
                     header('Location:./EliminarEditarVideosVida');
                     break;
                 default:
