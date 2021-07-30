@@ -14,11 +14,11 @@ class CreadorPaginas
     {
 
         //insertando Pagina en la Base de datos
-        $this->Conexion()->query("INSERT INTO crearpagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
+        $this->Conexion()->query("INSERT INTO CrearPagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
         $Read = new crud();
 
         //Consultando Id en la base de datos
-        $consulta = $Read->Read("SELECT id FROM crearpagina ORDER BY id DESC LIMIT 1");
+        $consulta = $Read->Read("SELECT id FROM CrearPagina ORDER BY id DESC LIMIT 1");
         $rows = mysqli_fetch_assoc($consulta);
 
 
