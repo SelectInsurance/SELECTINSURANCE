@@ -57,7 +57,7 @@
 .ColorPrincipal {
   /*background-color: rgba(7, 120, 113, 1);*/
   background: linear-gradient(
-    to right,
+    to top right,
     rgba(7, 78, 98, 255),
     rgba(94, 169, 175, 255)
   );
