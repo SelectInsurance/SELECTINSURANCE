@@ -8,7 +8,7 @@
 }
 /*Iconos*/
 
-.IconoWhatsapp{
+.IconoWhatsapp {
   background-image: url(../img/Icon/Whatsapp.png);
 }
 
@@ -25,17 +25,17 @@
   background-image: url(../img/BackGroundCargaVideos.png);
 }
 
-.ImagenManagment{
+.ImagenManagment {
   background-image: url(../img/BackGroundManagment.png);
   background-size: 100% 100%;
 }
 
-.ImagenEventos{
+.ImagenEventos {
   background-image: url(../img/EventosBackGround.png);
   background-size: 100% 100%;
 }
 
-.ImagenCreadorPaginas{
+.ImagenCreadorPaginas {
   background-image: url(../img/BackGroundCreadorPaginas.png);
   background-size: 100% 100%;
 }
@@ -55,28 +55,45 @@
 }
 
 .ColorPrincipal {
-  background-color: rgba(7, 120, 113, 1);
+  /*background-color: rgba(7, 120, 113, 1);*/
+  background: linear-gradient(
+    to right,
+    rgba(7, 78, 98, 255),
+    rgba(94, 169, 175, 255)
+  );
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ColorSecundario {
-  background-color: rgba(205, 228, 196, 1);
+  background-color: rgb(255, 255, 255);
+  /*background: linear-gradient(
+    to right,
+    rgba(7, 78, 98, 255),
+    rgba(94, 169, 175, 255)
+  );*/
 }
 
-.ColorSecundarioFondoTranslucido{
-  background-color: rgba(205, 228, 196, 0.9);
+.ColorSecundarioFondoTranslucido {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .ColorMenuPrincipalConTexto {
-  background-color: rgba(205, 228, 196, 1);
-  color: rgba(44, 62, 80, 1);
+  background: linear-gradient(
+    to right,
+    rgba(7, 78, 98, 255),
+    rgba(94, 169, 175, 255)
+  );
+  /*background-color: rgb(255, 255, 255);*/
+  color: rgb(255, 255, 255);
 }
 .ColorTextoOscuro {
-  color: rgba(44, 62, 80, 1);
+  color: rgba(0, 74, 81, 255);
 }
 .ColorTextoClaro {
   color: white;
 }
-.ColorTextoClaro:hover{
+.ColorTextoClaro:hover {
   color: black;
 }
 

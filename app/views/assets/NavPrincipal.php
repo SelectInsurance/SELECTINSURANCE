@@ -1,5 +1,5 @@
 <nav class="sticky-top">
-    <div class="shadow-lg navbar navbar-expand-lg navbar-light bg-light" id="nav-tab" role="tablist">
+    <div class="shadow-lg navbar navbar-expand-lg ColorSecundario navbar-dark ColorPrincipal" id="nav-tab" role="tablist">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="nav navbar-nav">
                 <a href="" class="nav-link" id="nav-Inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-Inicio" role="tab" aria-controls="nav-Inicio">INICIO</a>
@@ -11,7 +11,7 @@
                 <a href="" class="nav-link" id="nav-Agentes-tab" data-bs-toggle="tab" data-bs-target="#nav-Agentes" role="tab" aria-controls="nav-Agentes">AGENTES</a>
             </div>
         </div>
-        <a class="navbar-brand d-flex"><img src="app/views/assets/img/Logo2.png" height="75"></a>
+        <a class="navbar-brand d-flex"><img src="app\views\assets\img\LogoWhite.png" height="75"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +21,7 @@
     <div class="tab-pane fade" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
         <div class="container-fluid ImagenBackGround ImagenFija">
             <div class="row">
-            <img src="app\views\assets\img\banner\BANNER WEB FRONT2.png" class="img-fluid shadow mb-1" alt="Select Insurance" title="Select Insurance"><br><br>
+                <img src="app\views\assets\img\banner\BANNER WEB FRONT2.png" style="border-radius: 50px;" class="img-fluid shadow mb-1" alt="Select Insurance" title="Select Insurance"><br><br>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
@@ -507,7 +507,7 @@
         </div><br><br><br>
     </div>
     <div class="tab-pane fade" id="nav-Testimonios" role="tabpanel" aria-labelledby="nav-Testimonios-tab">
-        <div class="container-fluid text-white text-center ColorPrincipal" id="Testimonios">
+        <div class="container-fluid text-center ColorMenuPrincipalConTexto" id="Testimonios">
             <div class="row">
                 <h2>Testimonios</h2>
                 <hr>

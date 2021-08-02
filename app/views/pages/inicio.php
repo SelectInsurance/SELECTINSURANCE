@@ -630,9 +630,8 @@
         </div>
     </div>
 </div>-->
-<h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2>
-<hr class="ColorTextoOscuro"><br>
-<div class="container">
+<h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2><br><br>
+<div class="container-fluid shadow-lg p-3 mb-5 border border-success rounded">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <button class="btn btn-success btn-lg text-end" data-bs-toggle="modal" data-bs-target="#ModalInscribase">Comenzar</button>
@@ -756,42 +755,41 @@
         </div>
     </div>
 </div>
-<div class="container-fluid text-center ColorTextoOscuro">
+<div class="container-fluid text-center ColorTextoOscuro shadow-lg p-3 mb-5">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
             <h2>Acerca de Nosotros</h2>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col shadow p-3 mb-5">
-            <div class="card">
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestroObjetivo.png" title="Nuestros Objetivos" class="card-img-top" alt="Nuestro Objetivo">
-                <div class="ColorSecundario">
+    <div class="row row-cols-1 row-cols-md-3 ColorPrincipal">
+        <div class="col shadow-lg p-3 mb-5">
+            <div>
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestroObjetivo.png" height="300px" title="Nuestros Objetivos" class="card-img-top" alt="Nuestro Objetivo">
+                <div>
                     <h5 class="card-title"><b>Nuestro Objetivo</b></h5>
                     <p class="card-text" style="text-align: justify;">Transformamos riesgos en soluciones de protección para familias, empleados o activos, mediante herramientas tecnológicas que le brinden a nuestros clientes la facilidad de analizar, manejar y obtener soluciones que ayuden a minimizar sus riesgos.</p>
                 </div>
             </div>
         </div>
-        <div class="col shadow p-3 mb-5">
-            <div class="card">
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\A Futuro.png" class="card-img-top" alt="A Futuro" title="Nuestro Futuro">
-                <div class="ColorSecundario">
+        <div class="col shadow-lg p-3 mb-5">
+            <div>
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\A Futuro.png" height="300px" class="card-img-top" alt="A Futuro" title="Nuestro Futuro">
+                <div>
                     <h5 class="card-title"><b>A futuro</b></h5>
                     <p class="card-text" style="text-align: justify;">Seremos intermediarios líderes en soluciones de protección, por medios digitales facilitando la suscripción, comprensión y atención tanto de nuestro clientes al momento de obtener una solución, como al momento de un siniestro.</p>
                 </div>
             </div>
         </div>
-        <div class="col shadow p-3 mb-5">
-            <div class="card">
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestrosPrincipios.png" class="card-img-top" alt="Nuestros Principios" title="Nuestros Principios">
-                <div class="ColorSecundario">
+        <div class="col shadow-lg p-3 mb-5">
+            <div>
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestrosPrincipios.png" height="300px" class="card-img-top" alt="Nuestros Principios" title="Nuestros Principios">
+                <div>
                     <h5 class="card-title"><b>Nuestros Principios</b></h5>
                     <p class="card-text" style="text-align: justify;">Confianza, respaldo, acompañamiento, actitud permanente de servicio, ética como pilar de nuestras actividades, respeto por los grupos de personas con los que interactuamos y por nosotros mismos.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br>
 
     <!--<div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
@@ -815,7 +813,8 @@
     </div><br><br>-->
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <p style="font-size: xx-small; text-align:justify;">
+            <center><h6><b>POLITICA DE PRIVACIDAD</b></h6></center>
+            <p style="font-size: 12px; text-align:justify;">
                 Para asegurarnos de que las consultas de los consumidores se manejen de manera rápida,
                 cortés y precisa, algunas de las llamadas telefónicas entre usted y nosotros o
                 cualquiera de nuestros afiliados, agentes, cesionarios y proveedores de servicios,
