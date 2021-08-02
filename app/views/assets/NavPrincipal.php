@@ -1,6 +1,3 @@
-<div class="row">
-    <img src="app\views\assets\img\banner\BANNER WEB FRONT2.png" alt="Select Insurance" title="Select insurance">
-</div>
 <nav id="paginaSelectInsurance" class="shadow-lg navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid ColorTextoOscuro">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -19,3 +16,6 @@
         </button>
     </div>
 </nav>
+<div class="row">
+    <img src="app\views\assets\img\banner\BANNER WEB FRONT2.png" alt="Select Insurance" title="Select insurance">
+</div>
