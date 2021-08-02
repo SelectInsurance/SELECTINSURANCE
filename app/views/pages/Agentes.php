@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div class="row">
         <div class="container-fluid ImagenAgentes img-fluid ImagenFija">
             <div class="row ColorSecundarioTranslucido">
@@ -91,4 +91,4 @@
             <h6 class="text-end">Copyright © <?php echo date('M').' '.date('Y'); ?> Select Insurance.</h6>
         </div>
     </div>
-</div>
+</div>-->
