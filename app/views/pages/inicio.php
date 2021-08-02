@@ -759,7 +759,7 @@
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
             <h2>Acerca de Nosotros</h2>
-        </div>
+        </div><hr>
     </div>
     <div class="row row-cols-1 row-cols-md-3 ColorPrincipal">
         <div class="col shadow-lg p-3 mb-5">
