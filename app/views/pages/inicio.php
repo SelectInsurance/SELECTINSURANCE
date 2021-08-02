@@ -630,7 +630,7 @@
         </div>
     </div>
 </div>-->
-<h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2><br><br>
+<!--<h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2><br><br>
 <div class="container-fluid shadow-lg p-3 mb-5 border border-success rounded">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
@@ -754,7 +754,7 @@
             <img src="app/views/assets/img/LogoColorReal.png" alt="Select Insurance" title="Select Insurance" height="100px">
         </div>
     </div>
-</div>
+</div>-->
 <div class="container-fluid text-center ColorTextoOscuro shadow-lg p-3 mb-5">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -833,7 +833,7 @@
             </p>
         </div>
     </div>
-</div><br><br>
+</div>
 <div class="container-fluid ColorPrincipal text-white" id="Contacto">
     <div class="container">
         <hr>

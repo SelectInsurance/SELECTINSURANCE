@@ -523,7 +523,131 @@
         </div>
     </div>
     <div class="tab-pane fade" id="nav-Contacto" role="tabpanel" aria-labelledby="nav-Contacto-tab">
-
+        <h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2><br><br>
+        <div class="container-fluid shadow-lg p-3 mb-5 border border-success rounded">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <button class="btn btn-success btn-lg text-end" data-bs-toggle="modal" data-bs-target="#ModalInscribase">Comenzar</button>
+                    <div class="modal fade" id="ModalInscribase" tabindex="-1" aria-labelledby="TituloModalInscribase" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <form action="" method="post">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light ColorTextoOscuro">
+                                        <h5 class="modal-title animate__animated animate__flipInX" id="TituloModalInscribase">Inscribase</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ColorPrincipal">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                    <label for="NombreForm2" class="text-white animate__animated animate__rollIn">Nombre: <label class="text text-danger">*</label></label>
+                                                    <input type="text" name="NombreForm2" id="NombreForm2" class="form-control animate__animated animate__lightSpeedInRight" placeholder="Ingrese Nombre">
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                                    <label for="ApellidoForm2" class="text-white animate__animated animate__rollIn">Apellido: <label class="text text-danger">*</label></label>
+                                                    <input type="text" name="ApellidoForm2" id="ApellidoForm2" class="form-control animate__animated animate__lightSpeedInRight" placeholder="Ingrese Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                    <label for="CorreoForm2" class="text-white animate__animated animate__rollIn">Correo Electronico: <label class="text text-danger">*</label></label>
+                                                    <input type="email" name="CorreoForm2" id="CorreoForm2" class="form-control animate__animated animate__lightSpeedInRight" placeholder="Correo">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                    <label for="TelefonoForm2" class="text-white animate__animated animate__rollIn">Telefono: <label class="text text-danger">*</label></label>
+                                                    <input type="text" name="TelefonoForm2" id="TelefonoForm2" class="form-control animate__animated animate__lightSpeedInRight" placeholder="Telefono">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <label for="EstadoForm2" class="text-white animate__animated animate__rollIn">Estado: <label class="text text-danger">*</label></label>
+                                                    <select name="EstadoForm2" class="form-select animate__animated animate__lightSpeedInRight" id="EstadoForm2">
+                                                        <option value="Alabama">Alabama</option>
+                                                        <option value="Alaska">Alaska</option>
+                                                        <option value="Arizona">Arizona</option>
+                                                        <option value="Arkansas">Arkansas</option>
+                                                        <option value="California">California</option>
+                                                        <option value="Carolina del Norte">Carolina del Norte</option>
+                                                        <option value="Carolina del Sur">Carolina del Sur</option>
+                                                        <option value="Colorado">Colorado</option>
+                                                        <option value="Connecticut">Connecticut</option>
+                                                        <option value="Dakota del Norte">Dakota del Norte</option>
+                                                        <option value="Dakota del Sur">Dakota del Sur</option>
+                                                        <option value="Delaware">Delaware</option>
+                                                        <option value="Florida">Florida</option>
+                                                        <option value="Georgia">Georgia</option>
+                                                        <option value="Hawái9​">Hawái9​</option>
+                                                        <option value="Idaho">Idaho</option>
+                                                        <option value="Illinois">Illinois</option>
+                                                        <option value="Indiana">Indiana</option>
+                                                        <option value="Iowa">Iowa</option>
+                                                        <option value="Kansas">Kansas</option>
+                                                        <option value="Kentucky">Kentucky</option>
+                                                        <option value="Luisiana10​">Luisiana10​</option>
+                                                        <option value="Maine">Maine</option>
+                                                        <option value="Maryland">Maryland</option>
+                                                        <option value="Massachusetts">Massachusetts</option>
+                                                        <option value="Míchigan13​">Míchigan13​</option>
+                                                        <option value="Minnesota">Minnesota</option>
+                                                        <option value="Misisipi14​">Misisipi14​</option>
+                                                        <option value="Misuri15​">Misuri15​</option>
+                                                        <option value="Montana">Montana</option>
+                                                        <option value="Nebraska">Nebraska</option>
+                                                        <option value="Nevada">Nevada</option>
+                                                        <option value="Nueva Jersey17​">Nueva Jersey17​</option>
+                                                        <option value="Nueva York19​">Nueva York19​</option>
+                                                        <option value="Nuevo Hampshire20​">Nuevo Hampshire20​</option>
+                                                        <option value="Nuevo México22​">Nuevo México22​</option>
+                                                        <option value="Ohio">Ohio</option>
+                                                        <option value="Oklahoma">Oklahoma</option>
+                                                        <option value="Oregón24​">Oregón24​</option>
+                                                        <option value="Pensilvania25​">Pensilvania25​</option>
+                                                        <option value="Rhode Island">Rhode Island</option>
+                                                        <option value="Tennessee">Tennessee</option>
+                                                        <option value="Texas27​">Texas27​</option>
+                                                        <option value="Utah">Utah</option>
+                                                        <option value="Vermont">Vermont</option>
+                                                        <option value="Virginia">Virginia</option>
+                                                        <option value="Virginia Occidental">Virginia Occidental</option>
+                                                        <option value="Washington">Washington</option>
+                                                        <option value="Wisconsin">Wisconsin</option>
+                                                        <option value="Wyoming">Wyoming</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <label for="ServicioForm2" class="text-white animate__animated animate__rollIn">Servicio de su Interes: <label class="text text-danger">*</label></label>
+                                                    <select name="ServicioForm2" id="ServicioForm2" class="form-select animate__animated animate__lightSpeedInRight">
+                                                        <option selected>Seleccione una opcion</option>
+                                                        <option value="vida">Seguro de vida</option>
+                                                        <option value="familiar">Seguro Familiar</option>
+                                                        <option value="salud">Seguro de Salud</option>
+                                                        <option value="compañias">Seguro de Compañias</option>
+                                                        <option value="planes de retiro">Planes de Retiro</option>
+                                                        <option value="soluciones financieras">Soluciones Financieras</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer bg-light">
+                                        <button type="button" class="btn btn-danger animate__animated animate__zoomInDown" data-bs-dismiss="modal">Cerrar</button>
+                                        <input type="submit" class="btn btn-success animate__animated animate__zoomInDown" value="Enviar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 ColorTextoOscuro">
+                    <h5 class="text-center">A SU SERVICIO</h5>
+                    <p style="text-align: justify;">
+                        Si tiene alguna pregunta específica, estamos aquí para ayudarle.
+                        Correo electrónico, chat o teléfono. Tu eliges.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 text-end">
+                    <img src="app/views/assets/img/LogoColorReal.png" alt="Select Insurance" title="Select Insurance" height="100px">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="tab-pane fade" id="nav-Agentes" role="tabpanel" aria-labelledby="nav-Agentes-tab">
         <div class="container-fluid">
