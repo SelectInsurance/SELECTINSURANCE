@@ -1,9 +1,9 @@
 <div class="container-fluid" id="Inicio">
     <div class="row">
-        <div class="container ImagenBackGround ImagenFija"><br><br>
+        <div class="container ImagenBackGround ImagenFija">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
-                <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10"><br><br>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 text text-center RadioDeBordes ColorSecundarioTranslucido">
                             <div class="container text-white"><br><br><br><br><br>
@@ -168,24 +168,24 @@
         <script>
             $(document).ready(function() {
                 $('#calendar').evoCalendar({
-                /*  Configuraciones del calendario
-                    Settings	            Type	    Default	        Description	                                        Options
-                    theme	                string	    Default	        Define calendar's theme	                            Default, Midnight Blue, Orange Coral, Royal Navy
-                    format	                string	    'mm/dd/yyyy'	Date format	                                        Date string format
-                    titleFormat	string	    'MM yyyy'	Date            format for calendar title	                        Date string format
-                    eventHeaderFormat	    string	    'MM d, yyyy'	Date format for calendar event's title	            Date string format
-                    firstDayOfWeek	        number	    0	            Displayed first day of the week	                    0 (Sunday) - 6 (Saturday)
-                    language	            string	    'en'	        Calendar's language	                                en, es, de, pt, fr, nl
-                    todayHighlight	        boolean	    false	        Highlight today's date in calendar	                true, false
-                    sidebarDisplayDefault	boolean	    true	        Set default visibility of sidebar	                true, false
-                    sidebarToggler	        boolean	    true	        Display the button for toggling the sidebar	        true, false
-                    eventDisplayDefault	    boolean	    true	        Set default visibility of event lists	            true, false
-                    eventListToggler	    boolean	    true	        Display the button for toggling the event lists	    true, false
-                    calendarEvents	        array	    null	        Defined events for calendar to show	                Array of events */
+                    /*  Configuraciones del calendario
+                        Settings	            Type	    Default	        Description	                                        Options
+                        theme	                string	    Default	        Define calendar's theme	                            Default, Midnight Blue, Orange Coral, Royal Navy
+                        format	                string	    'mm/dd/yyyy'	Date format	                                        Date string format
+                        titleFormat	string	    'MM yyyy'	Date            format for calendar title	                        Date string format
+                        eventHeaderFormat	    string	    'MM d, yyyy'	Date format for calendar event's title	            Date string format
+                        firstDayOfWeek	        number	    0	            Displayed first day of the week	                    0 (Sunday) - 6 (Saturday)
+                        language	            string	    'en'	        Calendar's language	                                en, es, de, pt, fr, nl
+                        todayHighlight	        boolean	    false	        Highlight today's date in calendar	                true, false
+                        sidebarDisplayDefault	boolean	    true	        Set default visibility of sidebar	                true, false
+                        sidebarToggler	        boolean	    true	        Display the button for toggling the sidebar	        true, false
+                        eventDisplayDefault	    boolean	    true	        Set default visibility of event lists	            true, false
+                        eventListToggler	    boolean	    true	        Display the button for toggling the event lists	    true, false
+                        calendarEvents	        array	    null	        Defined events for calendar to show	                Array of events */
                     theme: "Royal Navy",
                     format: "mm-dd-yy",
                     language: "es",
-                    calendarEvents: <?php echo json_encode($datos); ?> 
+                    calendarEvents: <?php echo json_encode($datos); ?>
                 })
             })
         </script>
