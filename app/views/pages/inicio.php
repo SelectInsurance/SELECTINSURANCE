@@ -283,7 +283,7 @@
             <h2 class="text-center ColorTextoOscuro">Nuestros Servicio</h2>
             <hr class="ColorTextoOscuro"><br>
             <div class="row text-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                     <a data-bs-toggle="modal" data-bs-target="#SegurosDeVida" class="ColorTextoOscuro"><span class="fas fa-heartbeat fa-6x"></span></a><br><br>
                     <?php
                     //Modal Seguros de vida
@@ -315,7 +315,7 @@
                     </div>
                     <h3 class="ColorTextoOscuro">Seguros de Vida</h3><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
 
                     <?php
                     //Modal Seguros Familiares
@@ -348,7 +348,7 @@
                     </div>
                     <h3 class="ColorTextoOscuro">Seguros Familiares</h3><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                     <?php
                     //Modal Seguros Compañias
                     ?>
@@ -378,7 +378,7 @@
                     </div>
                     <h3 class="ColorTextoOscuro">Seguros para compañías</h3><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                     <?php
                     //Modal Seguros de Salud
                     ?>
@@ -418,7 +418,7 @@
                     </div>
                     <h3 class="ColorTextoOscuro">Seguros de Salud</h3><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                     <?php
                     //Modal Planes de Retiro
                     ?>
@@ -451,7 +451,7 @@
                     </div>
                     <h3 class="ColorTextoOscuro">Planes de Retiro</h3><br><br><br><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
                     <a data-bs-toggle="modal" data-bs-target="#SolucionesFinancieras" class="ColorTextoOscuro"><span class="fas fa-search-dollar fa-6x"></span></a><br><br>
                     <?php
                     //Modal Soluciones Financieras
@@ -635,20 +635,20 @@
             <div class="row">
                 <div class="container-fluid ImagenAgentes img-fluid ImagenFija">
                     <div class="row ColorSecundarioTranslucido">
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
-                            <a href="./VideosSalud" class="btn btn-outline-success btn-lg "><i class="fas fa-video fa-6x"></i></a><br><br>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                            <a href="./VideosSalud" class="btn btn-outline-success"><i class="fas fa-video fa-6x"></i></a><br><br>
                             <label class="text-white">Galeria de Videos de Salud</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
-                            <a href="" class="btn btn-outline-success btn-lg "><i class="fas fa-database fa-6x"></i></a><br><br>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                            <a href="" class="btn btn-outline-success"><i class="fas fa-database fa-6x"></i></a><br><br>
                             <label class="text-white">CRM Select</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
-                            <a href="" class="btn btn-outline-success btn-lg "><i class="fas fa-headset fa-6x"></i></a><br><br>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                            <a href="" class="btn btn-outline-success"><i class="fas fa-headset fa-6x"></i></a><br><br>
                             <label class="text-white">Contact Center</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
-                            <a href="./VideosVida" class="btn btn-outline-success btn-lg "><i class="fas fa-film fa-6x"></i></a><br><br>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                            <a href="./VideosVida" class="btn btn-outline-success"><i class="fas fa-film fa-6x"></i></a><br><br>
                             <label class="text-white">Galeria de Videos de Vida</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         </div>
                     </div>

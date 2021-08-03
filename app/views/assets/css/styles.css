@@ -14,7 +14,7 @@
 
 /*Imagen de fondo*/
 .ImagenBackGround {
-  background-image: url(../img/BackGround.jpg);
+  background-image: url(..\img\BackGround.png);
 }
 
 .ImagenAgentes {
