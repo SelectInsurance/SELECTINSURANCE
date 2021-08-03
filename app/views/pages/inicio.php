@@ -1468,7 +1468,7 @@
     <div class="row row-cols-1 row-cols-md-3 ColorPrincipal">
         <div class="col shadow-lg p-3 mb-5">
             <div>
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestroObjetivo.png" height="300px" title="Nuestros Objetivos" class="card-img-top" alt="Nuestro Objetivo">
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestroObjetivo.png" height="250px" title="Nuestros Objetivos" class="card-img-top" alt="Nuestro Objetivo">
                 <div>
                     <h5 class="card-title"><b>Nuestro Objetivo</b></h5>
                     <p class="card-text" style="text-align: justify;">Transformamos riesgos en soluciones de protección para familias, empleados o activos, mediante herramientas tecnológicas que le brinden a nuestros clientes la facilidad de analizar, manejar y obtener soluciones que ayuden a minimizar sus riesgos.</p>
@@ -1477,7 +1477,7 @@
         </div>
         <div class="col shadow-lg p-3 mb-5">
             <div>
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\A Futuro.png" height="300px" class="card-img-top" alt="A Futuro" title="Nuestro Futuro">
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\A Futuro.png" height="250px" class="card-img-top" alt="A Futuro" title="Nuestro Futuro">
                 <div>
                     <h5 class="card-title"><b>A futuro</b></h5>
                     <p class="card-text" style="text-align: justify;">Seremos intermediarios líderes en soluciones de protección, por medios digitales facilitando la suscripción, comprensión y atención tanto de nuestro clientes al momento de obtener una solución, como al momento de un siniestro.</p>
@@ -1486,7 +1486,7 @@
         </div>
         <div class="col shadow-lg p-3 mb-5">
             <div>
-                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestrosPrincipios.png" height="300px" class="card-img-top" alt="Nuestros Principios" title="Nuestros Principios">
+                <img src="app\views\assets\img\TarjetasAcercaDeNosotros\NuestrosPrincipios.png" height="250px" class="card-img-top" alt="Nuestros Principios" title="Nuestros Principios">
                 <div>
                     <h5 class="card-title"><b>Nuestros Principios</b></h5>
                     <p class="card-text" style="text-align: justify;">Confianza, respaldo, acompañamiento, actitud permanente de servicio, ética como pilar de nuestras actividades, respeto por los grupos de personas con los que interactuamos y por nosotros mismos.</p>
