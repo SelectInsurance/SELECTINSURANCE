@@ -1415,49 +1415,55 @@
     </div>
 </div>-->
 <div class="container-fluid text-center ColorTextoOscuro">
-    <div class="row ColorPrincipal shadow-lg p-3 mb-5">
-
-
-            <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <div class="row ColorPrincipal">
+        <div class="col-12 col-sm-1 col-md-1 col-lg-2"></div><br><br><br>
+        <div class="col-12 col-sm-10 col-md-10 col-lg-8">
+            <div class="container-fluid">
+                <div class="row"></div><br>
+                <div class="row shadow-lg">
+                    <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="app\views\assets\img\CarrucelIndex\Planes de retiro.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="app\views\assets\img\CarrucelIndex\seguro de salud.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="app\views\assets\img\CarrucelIndex\seguro de vida.png" class="d-block w-100" alt="Seguro de Vida" title="Seguro de vida">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="app\views\assets\img\CarrucelIndex\seguros empresariales.png" class="d-block w-100" alt="Seguros Empresariales" title="Seguros empresariales">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="app\views\assets\img\CarrucelIndex\seguros familiares.png" class="d-block w-100" alt="Seguros familiares" title="Seguros Familiares">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="app\views\assets\img\CarrucelIndex\Soluciones financieras.png" class="d-block w-100" alt="Soluciones Financieras" title="Soluciones Financieras">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="app\views\assets\img\CarrucelIndex\Planes de retiro.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="app\views\assets\img\CarrucelIndex\seguro de salud.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="app\views\assets\img\CarrucelIndex\seguro de vida.png" class="d-block w-100" alt="Seguro de Vida" title="Seguro de vida">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="app\views\assets\img\CarrucelIndex\seguros empresariales.png" class="d-block w-100" alt="Seguros Empresariales" title="Seguros empresariales">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="app\views\assets\img\CarrucelIndex\seguros familiares.png" class="d-block w-100" alt="Seguros familiares" title="Seguros Familiares">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="app\views\assets\img\CarrucelIndex\Soluciones financieras.png" class="d-block w-100" alt="Soluciones Financieras" title="Soluciones Financieras">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-
+        </div>
+        <div class="col-12 col-sm-1 col-md-1 col-lg-2"></div>
+        <div class="row"></div><br>
     </div><br><br>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
