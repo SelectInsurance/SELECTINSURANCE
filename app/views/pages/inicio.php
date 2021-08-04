@@ -618,7 +618,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 ColorTextoOscuro">
-                    <h5 class="text-center">A SU SERVICIO</h5>
+                    <h5 class="text-center"><strong>A SU SERVICIO</strong></h5>
                     <p style="text-align: justify;">
                         Si tiene alguna pregunta específica, estamos aquí para ayudarle.
                         Correo electrónico, chat o teléfono. Tu eliges.
