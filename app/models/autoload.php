@@ -5,4 +5,5 @@
     }
 
     spl_autoload_register('app_autoload');
+
 ?>

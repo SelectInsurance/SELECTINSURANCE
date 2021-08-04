@@ -51,6 +51,12 @@
                         <label class="text-white">Crear Paginas</label>
                     </p>
                 </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <p>
+                        <a href="./GeneradorQR" title="Generador de QR"><button class="btn btn-outline-light"><i class="fas fa-qrcode fa-6x"></i></button></a>
+                        <label class="text-white">Generar QR</label>
+                    </p>
+                </div>
             </div><br><br><br><br>
         </div>
         <div class="container-fluid">

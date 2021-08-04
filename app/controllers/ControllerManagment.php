@@ -277,8 +277,38 @@ class ControllerManagment extends Pather
         }
     }
 
-    public function ControllerManagmentErrorPaginaExistente()
+    public function ControllerManagmentGeneradorQR()
     {
+        require_once 'app/views/assets/NavAgente.php';
+
+        if (isset($_POST['btnGenerarQR'])) {
+
+
+            //Agregamos la libreria para genera códigos QR
+            require_once 'app/models/phpqrcode/qrlib.php';
+
+            //Declaramos una carpeta temporal para guardar la imagenes generadas
+            $dir = 'QRGenerados/';
+
+            //Si no existe la carpeta la creamos
+            if (!file_exists($dir))
+                mkdir($dir);
+
+            //Declaramos la ruta y nombre del archivo a generar
+            $filename = $dir . $_POST['NombreArchivo'].'.png';
+
+            //Parametros de Condiguración
+
+            $tamaño = 5; //Tamaño de Pixel
+            $level = 'L'; //Precisión Baja
+            $framSize = 3; //Tamaño en blanco
+            $contenido = $_POST['ContenidoQR']; //Texto
+
+            //Enviamos los parametros a la Función para generar código QR 
+            QRcode::png($contenido, $filename, $level, $tamaño, $framSize);
+
+        }
+        require_once 'app/views/pages/managment/modulos/CreadorQR.php';
     }
 }
 require_once 'app/views/assets/footer.php';

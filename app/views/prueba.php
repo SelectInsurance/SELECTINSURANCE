@@ -1,4 +1,3 @@
 <?php 
-    var_dump($pruebaDos);
-
+echo '<img src="' . $dir . basename($filename) . '" /><hr/>';
 ?>

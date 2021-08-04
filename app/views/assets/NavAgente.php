@@ -50,6 +50,10 @@
                                     <a href="CrearPaginas" title="Ver videos"><button class="btn btn-outline-primary"><i class="fas fa-broom fa-4x"></i></button></a><br>
                                     <label>Creador de Paginas</label>
                                 </div>
+                                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                                    <a href="./GeneradorQR" title="Generador de QR"><button class="btn btn-outline-primary"><i class="fas fa-qrcode fa-4x"></i></button></a><br>
+                                    <label>Generar QR</label>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -279,7 +279,7 @@
                 if (isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Editar') {
                     $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], $_POST['Nombre'], $_POST['btnEditarEliminar']);
                     header('Location:./CrearPaginas');
-                }elseif(isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
+                } elseif (isset($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
                     $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], null, $_POST['btnEditarEliminar']);
                     header('Location:./CrearPaginas');
                 }
@@ -288,16 +288,18 @@
                 //} elseif (!empty($_POST['btnEditarEliminar']) && $_POST['btnEditarEliminar'] == 'Eliminar') {
                 //    $ManagmentController->ControllerManagerEditarEliminarPagina($_POST['id'], null);
                 //}
-
-
-
             } else {
-
-
                 $ManagmentController->ControllerManagmentLogin();
             }
             break;
 
+        case 'GeneradorQR':
+            if (!empty($_SESSION['managment'])) {
+                $ManagmentController->ControllerManagmentGeneradorQR();
+            } else {
+                $ManagmentController->ControllerManagmentLogin();
+            }
+            break;
 
 
         default:
