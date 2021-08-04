@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-12 col-sm-2 col-md-4 col-lg-4"></div>
         <div class="col-12 col-sm-8 col-md-4 col-lg-4 shadow p-3 mb-5">
-            <form action="../SELECTINSURANCE/ValidacionManagmentLogin" method="post">
+            <form action="./ValidacionManagmentLogin" method="post">
                 <p>
                     <label for="user">Usuario:</label>
                     <input class="form-control" type="text" name="user" id="user" required="required" placeholder="Ingrese Usuario">
