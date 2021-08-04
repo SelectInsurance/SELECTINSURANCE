@@ -3,11 +3,11 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" href="./">INICIO</a>
-                <a class="nav-link" href="./#Cotizador">COTIZADOR ONLINE</a>
-                <a class="nav-link" href="./#Servicios">SERVICIOS</a>
-                <a class="nav-link" href="./#Testimonios">TESTIMONIOS</a>
-                <a class="nav-link" href="./#Contacto">CONTACTO</a>
-                <a class="nav-link" href="agentes">AGENTES</a>
+                <a class="nav-link" href="./">COTIZADOR ONLINE</a>
+                <a class="nav-link" href="./">SERVICIOS</a>
+                <a class="nav-link" href="./">TESTIMONIOS</a>
+                <a class="nav-link" href="./">CONTACTO</a>
+                <a class="nav-link" href="./">AGENTES</a>
                 <a class="nav-link" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">SUBIR VIDEOS</a>
 
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
