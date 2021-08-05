@@ -15,6 +15,7 @@
 /*Imagen de fondo*/
 .ImagenBackGround {
   background-image: url(../img/BackGround.png);
+  background-size: 100% 100%;
 }
 
 .ImagenAgentes {
@@ -37,6 +38,13 @@
 
 .ImagenCreadorPaginas {
   background-image: url(../img/BackGroundCreadorPaginas.png);
+  background-size: 100% 100%;
+}
+
+/*Imagen de fondo de Caroucel*/
+
+.ImagenCaroucelFondo{
+  background-image: url(../img/CarrucelIndex/ImagenFondo/TAPIZ.png);
   background-size: 100% 100%;
 }
 

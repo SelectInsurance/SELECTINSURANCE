@@ -2,7 +2,7 @@
     <div class="tab-pane fade" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
         <div class="container-fluid ImagenBackGround ImagenFija">
             <div class="row">
-                <img src="app\views\assets\img\banner\Banner Inicio.png" style="border-radius: 50px;" class="img-fluid shadow mb-1" alt="Select Insurance" title="Select Insurance"><br><br>
+                <img src="app\views\assets\img\banner\Banner Inicio.png" class="img-fluid" alt="Select Insurance" title="Select Insurance"><br><br>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
@@ -345,7 +345,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguros para compañias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\seguros para compañias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -393,7 +393,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de salud CT.png" alt="Planes de Retiro" title="Planes de Retiro">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Planes de retiro CT.png" alt="Planes de Retiro" title="Planes de Retiro">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -1359,7 +1359,7 @@
     </div>
 </div>-->
 <div class="container-fluid text-center ColorTextoOscuro shadow-lg">
-    <div class="row ColorPrincipal">
+    <div class="row ImagenCaroucelFondo ImagenFija ImagenFija">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-4"></div>
