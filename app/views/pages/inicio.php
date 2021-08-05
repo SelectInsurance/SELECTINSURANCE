@@ -2,7 +2,7 @@
     <div class="tab-pane fade" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
         <div class="container-fluid ImagenBackGround ImagenFija">
             <div class="row">
-                <img src="app\views\assets\img\banner\BANNER WEB FRONT2.png" style="border-radius: 50px;" class="img-fluid shadow mb-1" alt="Select Insurance" title="Select Insurance"><br><br>
+                <img src="app\views\assets\img\banner\Banner Inicio.png" style="border-radius: 50px;" class="img-fluid shadow mb-1" alt="Select Insurance" title="Select Insurance"><br><br>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
@@ -296,15 +296,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario" width="100" height="100">
-                                    <div class="shadow p-3 mb-5">
-                                        <p class="black-dark fs-5 animate__animated animate__slideInUp" style="text-align: justify;">
-                                            El seguro de vida fue creado como un apoyo para ayudar a
-                                            garantizar la seguridad de las personas que mas amamos,
-                                            en caso de que por alguna circunstancia se presente su muerte
-                                            temprana pero ¿Se imagina que pudiera usarlo antes de morir?
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/Salud.jpg" alt="Seguros de vida" title="Seguros de vida">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de vida CT.png" alt="Seguros de vida" title="Seguros de vida">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -329,15 +321,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                        <p class="text-black fs-5" style="text-align: justify;">
-                                            El seguro de vida fue creado como un apoyo para ayudar a
-                                            garantizar la seguridad de las personas que mas amamos,
-                                            en caso de que por alguna circunstancia se presente su muerte
-                                            temprana… pero ¿Se imagina que pudiera usarlo antes de morir
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Familia.jpg" alt="Seguros Familiares" title="Seguros Familiares">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguros familiares CT.png" alt="Seguros Familiares" title="Seguros Familiares">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -361,13 +345,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                        <p class="text-black fs-5" style="text-align: justify;">
-                                            Aseguramos su equipo de trabajo a muy bajo costo de riesgos
-                                            profesionales y familiares.
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Compañias.png" alt="Seguros Compañias" title="Seguros Compañias">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguros para compañias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -391,23 +369,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                        <p class="text-black fs-5" style="text-align: justify;">
-                                            Un seguro de salud es un beneficio para usted y para su familia donde puede
-                                            obtener una muy buena cobertura y recibir el subsidio del gobierno mas conocido
-                                            como el Obamacare.
-                                            ObamaCare (Ley de Cuidados de la Salud Asequibles o Affordable Care Act)
-                                            es una reforma de salud en E.E.U.U. que extiende y mejora el acceso a
-                                            los cuidados de salud y disminuye el gasto mediante regulaciones e impuestos.
-                                            El principal objetivo de la Ley de Cuidados de la Salud Asequibles
-                                            (Affordable Care Act) es dar acceso a más Americanos a cuidados de salud
-                                            asequibles mejorando la calidad de los mismos y regulando la industria de los
-                                            seguros médicos y reduciendo así el gasto en cuidados de la salud en E.E.U.U. La ley
-                                            contiene cientos de diferentes disposiciones y conjuga diferentes aspectos de
-                                            “la crisis de cuidados de la salud” en los E.E.U.U.
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\SeguroSalud.png" alt="Seguros de Salud" title="Seguros de Salud">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de salud CT.png" alt="Seguros de Salud" title="Seguros de Salud">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -431,16 +393,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                        <p class="text-black fs-5" style="text-align: justify;">
-                                            Un plan de retiro es un plan de ahorro programado a largo
-                                            plazo que consiste en depositar periódicamente una suma de
-                                            dinero que se puede hacer a traves de debito directo o pagos
-                                            voluntarios con un plan de retiro se garantiza un rendimiento competitivo
-                                            tanto en el capital como el interés.
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Planes Retiro.png" alt="Planes de Retiro" title="Planes de Retiro">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de salud CT.png" alt="Planes de Retiro" title="Planes de Retiro">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -464,16 +417,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <div class="shadow p-3 mb-5 animate__animated animate__slideInUp">
-                                        <p class="text-black fs-5" style="text-align: justify;">
-                                            Un plan de retiro es un plan de ahorro programado a largo
-                                            plazo que consiste en depositar periódicamente una suma de
-                                            dinero que se puede hacer a traves de debito directo o pagos
-                                            voluntarios con un plan de retiro se garantiza un rendimiento competitivo
-                                            tanto en el capital como el interés.
-                                        </p>
-                                    </div>
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Soluciones Financieras.png" alt="Soluciones Financieras" title="Soluciones Financieras">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/Soluciones financieras CT.png" alt="Soluciones Financieras" title="Soluciones Financieras">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -1414,77 +1358,89 @@
         </div>
     </div>
 </div>-->
-<div class="container-fluid text-center ColorTextoOscuro">
+<div class="container-fluid text-center ColorTextoOscuro shadow-lg">
     <div class="row ColorPrincipal">
-        <div class="col-12 col-sm-1 col-md-1 col-lg-4"></div><br><br><br>
-        <div class="col-12 col-sm-10 col-md-10 col-lg-4">
-            <div class="container-fluid">
-                <div class="row"></div><br>
-                <div class="row shadow-lg">
-                    <!--<div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4"></div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-4">
+                    <div class="container">
+                        <div class="row"></div><br>
+                        <div class="row shadow-lg">
+                            <!--<div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="app\views\assets\img\CarrucelIndex\Planes de retiro.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\seguro de salud.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\seguro de vida.png" class="d-block w-100" alt="Seguro de Vida" title="Seguro de vida">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\seguros empresariales.png" class="d-block w-100" alt="Seguros Empresariales" title="Seguros empresariales">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\seguros familiares.png" class="d-block w-100" alt="Seguros familiares" title="Seguros Familiares">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\Soluciones financieras.png" class="d-block w-100" alt="Soluciones Financieras" title="Soluciones Financieras">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>-->
+                            <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO R.png" height="610px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                                    </div>150px
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  V.png" height="610px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  S.png" height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.png" height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="app\views\assets\img\CarrucelIndex\Planes de retiro.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="app\views\assets\img\CarrucelIndex\seguro de salud.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="app\views\assets\img\CarrucelIndex\seguro de vida.png" class="d-block w-100" alt="Seguro de Vida" title="Seguro de vida">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="app\views\assets\img\CarrucelIndex\seguros empresariales.png" class="d-block w-100" alt="Seguros Empresariales" title="Seguros empresariales">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="app\views\assets\img\CarrucelIndex\seguros familiares.png" class="d-block w-100" alt="Seguros familiares" title="Seguros Familiares">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="app\views\assets\img\CarrucelIndex\Soluciones financieras.png" class="d-block w-100" alt="Soluciones Financieras" title="Soluciones Financieras">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>-->
-                    <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="app/views/assets/img/CarrucelIndex/prueba.png"  height="610px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
-                            </div>150px
-                            <div class="carousel-item">
-                                <img src="app/views/assets/img/CarrucelIndex/prueba1.png"  height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4"></div>
             </div>
         </div>
-        <div class="col-12 col-sm-1 col-md-1 col-lg-4"></div>
         <div class="row"></div><br>
     </div><br><br>
     <div class="row">
