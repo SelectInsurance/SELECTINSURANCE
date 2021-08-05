@@ -4,8 +4,8 @@ class Conexion
 {
     public function EstablecerConexion()
     {
-        $PassEncriptada = base64_decode('U2VsZWN0MjAyMQ==');
-        $conexion = new mysqli('localhost', 'admin', $PassEncriptada, 'CRM_SELECT');
+        $PassEncriptada = base64_decode('PyQ7LmNOKikpbVdw');
+        $conexion = new mysqli('localhost', 'Admin', $PassEncriptada, 'CRM_SELECT');
 
         error_reporting(0);
 

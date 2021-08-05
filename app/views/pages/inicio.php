@@ -1416,12 +1416,12 @@
 </div>-->
 <div class="container-fluid text-center ColorTextoOscuro">
     <div class="row ColorPrincipal">
-        <div class="col-12 col-sm-1 col-md-1 col-lg-2"></div><br><br><br>
-        <div class="col-12 col-sm-10 col-md-10 col-lg-8">
+        <div class="col-12 col-sm-1 col-md-1 col-lg-4"></div><br><br><br>
+        <div class="col-12 col-sm-10 col-md-10 col-lg-4">
             <div class="container-fluid">
                 <div class="row"></div><br>
                 <div class="row shadow-lg">
-                    <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
+                    <!--<div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -1458,11 +1458,33 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>-->
+                    <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="app/views/assets/img/CarrucelIndex/prueba.png"  height="610px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                            </div>150px
+                            <div class="carousel-item">
+                                <img src="app/views/assets/img/CarrucelIndex/prueba1.png"  height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Carrucel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-1 col-md-1 col-lg-2"></div>
+        <div class="col-12 col-sm-1 col-md-1 col-lg-4"></div>
         <div class="row"></div><br>
     </div><br><br>
     <div class="row">
