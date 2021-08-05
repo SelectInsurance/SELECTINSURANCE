@@ -1362,8 +1362,8 @@
     <div class="row ImagenCaroucelFondo ImagenFija ImagenFija">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4"></div>
-                <div class="col-12 col-sm-12 col-md-10 col-lg-4">
+                <div class="col-12 col-sm-1 col-md-2 col-lg-4"></div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                     <div class="container">
                         <div class="row"></div><br>
                         <div class="row shadow-lg">
@@ -1414,13 +1414,13 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO R.png" height="610px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
-                                    </div>150px
-                                    <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  V.png" height="610px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO R.png" height="600px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  S.png" height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  V.png" height="600px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  S.png" height="600px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.png" height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
@@ -1438,7 +1438,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4"></div>
+                <div class="col-12 col-sm-1 col-md-2 col-lg-4"></div>
             </div>
         </div>
         <div class="row"></div><br>

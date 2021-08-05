@@ -1,10 +1,10 @@
 .btn-wsp {
   position: fixed;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   /*bottom: 25px;*/
-  bottom: 20px; /*Vertical*/
+  bottom: 35px; /*Vertical*/
   right: 150px; /*Horizontal*/
   /*right: 25px;*/
   background-color: rgba(205, 228, 196, 1);
@@ -21,11 +21,11 @@
 
 .fondo-text-wsp {
   position: fixed;
-  height: 70px;
+  height: 75px;
   width: 160px;
   line-height: 100px;
   /*bottom: 25px;*/
-  bottom: 35px; /*Vertical*/
+  bottom: 10px; /*Vertical*/
   right: 10px;  /*Horizontal*/
   text-indent: 50px;
   /*right: 25px;*/
@@ -41,7 +41,7 @@
 }
 .texto-wsp {
   position: fixed;
-  height: 70px;
+  height: 50px;
   width: 160px;
   line-height: 100px;
   /*bottom: 25px;*/
