@@ -345,7 +345,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\seguros para compañias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\seguros para companias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
