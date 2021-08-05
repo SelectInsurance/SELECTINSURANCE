@@ -12,7 +12,7 @@
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-Anico" role="tabpanel" aria-labelledby="nav-Anico-tab">
                     <div class="container-fluid">
-                        <form action="./?managment=CargandoVideosAnico" method="post" enctype="multipart/form-data">
+                        <form action="./CargandoVideosAnico" method="post" enctype="multipart/form-data">
                             <div class="row text-black">
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="tab-pane fade" id="nav-Ameritas" role="tabpanel" aria-labelledby="nav-Ameritas-tab">
                     <div class="container-fluid">
-                        <form action="./?managment=CargandoVideosAmeritas" method="post" enctype="multipart/form-data">
+                        <form action="./CargandoVideosAmeritas" method="post" enctype="multipart/form-data">
                             <div class="row text-black">
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="tab-pane fade" id="nav-NationalLife" role="tabpanel" aria-labelledby="nav-NationalLife-tab">
                     <div class="container-fluid">
-                        <form action="./?managment=CargandoVideosNationalLife" method="post" enctype="multipart/form-data">
+                        <form action="./CargandoVideosNationalLife" method="post" enctype="multipart/form-data">
                             <div class="row text-black">
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4"></div>
                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5">
