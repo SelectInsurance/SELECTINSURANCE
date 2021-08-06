@@ -1,8 +1,9 @@
+
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
         <div class="container-fluid ImagenBackGround ImagenFija">
             <div class="row">
-                <img src="app\views\assets\img\banner\Banner Inicio.png" class="img-fluid" alt="Select Insurance" title="Select Insurance"><br><br>
+                <img src="app\views\assets\img\banner\Banner Inicio.webp" class="img-fluid" alt="Select Insurance" title="Select Insurance"><br><br>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
@@ -234,7 +235,7 @@
                         </blockquote>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 float-md-start">
-                        <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADOR.jpg" alt="Select Insurance Cotizador" title="Cotiza tu seguro">
+                        <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADOR.webp" alt="Select Insurance Cotizador" title="Cotiza tu seguro">
                     </div>
                 </div>
             </div><br><br><br>
@@ -298,7 +299,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario" width="100" height="100">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de vida CT.png" alt="Seguros de vida" title="Seguros de vida">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de vida CT.webp" alt="Seguros de vida" title="Seguros de vida">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -323,7 +324,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguros familiares CT.png" alt="Seguros Familiares" title="Seguros Familiares">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguros familiares CT.webp" alt="Seguros Familiares" title="Seguros Familiares">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -347,7 +348,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\seguros para companias ct.png" alt="Seguros Compañias" title="Seguros Compañias">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\seguros para companias ct.webp" alt="Seguros Compañias" title="Seguros Compañias">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -371,7 +372,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de salud CT.png" alt="Seguros de Salud" title="Seguros de Salud">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/seguro de salud CT.webp" alt="Seguros de Salud" title="Seguros de Salud">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -395,7 +396,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Planes de retiro CT.png" alt="Planes de Retiro" title="Planes de Retiro">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app\views\assets\img\imgmodales\Planes de retiro CT.webp" alt="Planes de Retiro" title="Planes de Retiro">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -419,7 +420,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ColorSecundario">
-                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/Soluciones financieras CT.png" alt="Soluciones Financieras" title="Soluciones Financieras">
+                                    <img class="img-fluid shadow p-3 mb-5 " src="app/views/assets/img/imgmodales/Soluciones financieras CT.webp" alt="Soluciones Financieras" title="Soluciones Financieras">
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -1416,16 +1417,16 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE RETIRO.png" width="600px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE RETIRO.webp" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE SALUD.png" width="600px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE SALUD.webp" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE VIDA.png" width="600px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE VIDA.webp" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.png" width="600px" class="d-block w-100" alt="Seguros de SpecialEnrollMent" title="Seguros de SpecialEnrollMent">
+                                        <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.webp" class="d-block w-100" alt="Seguros de SpecialEnrollMent" title="Seguros de SpecialEnrollMent">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">

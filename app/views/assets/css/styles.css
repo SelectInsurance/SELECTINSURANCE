@@ -6,45 +6,40 @@
   filter: blur(0px);
   transition: 0.5s, 0.5s, 0.5s, 0.5s;
 }
-/*Iconos*/
-
-.IconoWhatsapp {
-  background-image: url(../img/Icon/Whatsapp.png);
-}
 
 /*Imagen de fondo*/
 .ImagenBackGround {
-  background-image: url(../img/BackGround.png);
+  background-image: url(../img/BackGround.webp);
   background-size: 100% 100%;
 }
 
 .ImagenAgentes {
-  background-image: url(../img/BackGroundAgentes.png);
+  background-image: url(../img/BackGroundAgentes.webp);
 }
 
 .ImagenCargaVideos {
-  background-image: url(../img/BackGroundCargaVideos.png);
+  background-image: url(../img/BackGroundCargaVideos.webp);
 }
 
 .ImagenManagment {
-  background-image: url(../img/BackGroundManagment.png);
+  background-image: url(../img/BackGroundManagment.webp);
   background-size: 100% 100%;
 }
 
 .ImagenEventos {
-  background-image: url(../img/EventosBackGround.png);
+  background-image: url(../img/EventosBackGround.webp);
   background-size: 100% 100%;
 }
 
 .ImagenCreadorPaginas {
-  background-image: url(../img/BackGroundCreadorPaginas.png);
+  background-image: url(../img/BackGroundCreadorPaginas.webp);
   background-size: 100% 100%;
 }
 
 /*Imagen de fondo de Caroucel*/
 
 .ImagenCaroucelFondo{
-  background-image: url(../img/CarrucelIndex/ImagenFondo/TAPIZ.png);
+  background-image: url(../img/CarrucelIndex/ImagenFondo/TAPIZ.webp);
   background-size: 100% 100%;
 }
 

@@ -11,7 +11,7 @@
                 <a href="" class="nav-link" id="nav-Agentes-tab" data-bs-toggle="tab" data-bs-target="#nav-Agentes" role="tab" aria-controls="nav-Agentes">AGENTES</a>
             </div>
         </div>
-        <a class="navbar-brand d-flex"><img src="app\views\assets\img\LogoWhite.png" height="75"></a>
+        <a class="navbar-brand d-flex"><img src="app\views\assets\img\LogoWhite.webp" height="75"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
