@@ -155,7 +155,7 @@
         </div>
     </div>
     <div class="tab-pane fade" id="nav-Eventos" role="tabpanel" aria-labelledby="nav-Eventos-tab">
-        <div class="container-fluid">
+        <div class="container-fluid ImagenCaroucelFondo ImagenFija">
             <h2 class="text-center ColorTextoOscuro">Eventos</h2>
             <hr class="ColorTextoOscuro"><br>
             <div class="row">
@@ -196,90 +196,92 @@
         </div><br><br><br><br><br>
     </div>
     <div class="tab-pane fade" id="nav-Cotizador" role="tabpanel" aria-labelledby="nav-Cotizador-tab">
-        <div class="container" id="Cotizador">
-            <h2 class="text-center ColorTextoOscuro">Cotizador</h2>
-            <hr class="ColorTextoOscuro"><br>
-            <div class="row shadow-lg p-3 mb-5 ColorPrincipal RadioDeBordes">
-                <div class="col-12 col-sm-6 col-md-5 col-lg-5">
-                    <div class="accordion" id="cotizacion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    COTIZADOR
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cotizacion">
-                                <div class="accordion-body">
-                                    <script type="text/javascript">
-                                        window.IXN_QUOTER_CONFIG = {
-                                            id: "fdb29d59-520c-455c-948a-b51b7defea14"
-                                        }
-                                    </script>
-                                    <div id="ixn-website-quoter"></div>
-                                    <script type="text/javascript" src="https://wq.ixn.tech/js/website_quoter.widget.js"></script>
+        <div class="container-fluid ImagenCaroucelFondo ImagenFija">
+            <div class="container" id="Cotizador">
+                <h2 class="text-center ColorTextoOscuro">Cotizador</h2>
+                <hr class="ColorTextoOscuro"><br>
+                <div class="row shadow-lg p-3 mb-5 ColorPrincipal RadioDeBordes">
+                    <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+                        <div class="accordion" id="cotizacion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        COTIZADOR
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cotizacion">
+                                    <div class="accordion-body">
+                                        <script type="text/javascript">
+                                            window.IXN_QUOTER_CONFIG = {
+                                                id: "fdb29d59-520c-455c-948a-b51b7defea14"
+                                            }
+                                        </script>
+                                        <div id="ixn-website-quoter"></div>
+                                        <script type="text/javascript" src="https://wq.ixn.tech/js/website_quoter.widget.js"></script>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <blockquote class="text text-white" style="text-align: justify;">
-                        <h4 class="text-center">
-                            OBTENGA UNA COTIZACIÓN DE SEGURO DE VIDA ASEQUIBLE
-                        </h4>
-                        <p class="fs-5">
-                            Contamos con el mejor acompañamiento en cuanto a seguros de vida, ofrecemos los mejores servicios para beneficios de nuestros clientes. Ahorre tiempo buscando la mejor cotización de seguro de vida en línea en nuestro sitio. ¡Obtenga una cotización de seguro instantánea y ahórrese tiempo y dinero! Nuestro servicio instantáneo de cotización de seguros le permite acceder directamente a pólizas de seguro de vida de bajo costo de compañías de seguros de vida de alta calificación en todo el país.
-                        </p>
-                    </blockquote>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4 float-md-start">
-                    <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADOR.jpg" alt="Select Insurance Cotizador" title="Cotiza tu seguro">
-                </div>
-            </div>
-        </div><br><br><br>
-        <div class="container-fluid">
-            <div class="row text ColorTextoOscuro text-center">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <label><span class="fas fa-file-medical fa-4x"></span></label>
-                    <p>
-                    <h4>Aplicación Simple</h4>
-                    </p>
-                    <p>
-                        Aplica online y el resto lo hacemos nosotros por usted.
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <label><span class="fas fa-piggy-bank fa-4x"></span></label>
-                    <p>
-                    <h4>Adaptado a su presupuesto</h4>
-                    </p>
-                    <p>
-                        ¡Obtenga $ 250,000 de cobertura de seguro de vida a término por tan solo $ 20 por mes!
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <label><span class="far fa-clock fa-4x"></span></label>
-                    <p>
-                    <h4>1 dia de activación</h4>
-                    </p>
-                    <p>
-                        Cobertura inmediata, rapido y eficaz.
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <label><span class="far fa-calendar-alt fa-4x"></span></label>
-                    <p>
-                    <h4>Disponibilidad 24 / 7 / 365</h4>
-                    </p>
-                    <p>
-                        Inscríbase en cualquier momento durante el año.
-                    </p>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <blockquote class="text text-white" style="text-align: justify;">
+                            <h4 class="text-center">
+                                OBTENGA UNA COTIZACIÓN DE SEGURO DE VIDA ASEQUIBLE
+                            </h4>
+                            <p class="fs-5">
+                                Contamos con el mejor acompañamiento en cuanto a seguros de vida, ofrecemos los mejores servicios para beneficios de nuestros clientes. Ahorre tiempo buscando la mejor cotización de seguro de vida en línea en nuestro sitio. ¡Obtenga una cotización de seguro instantánea y ahórrese tiempo y dinero! Nuestro servicio instantáneo de cotización de seguros le permite acceder directamente a pólizas de seguro de vida de bajo costo de compañías de seguros de vida de alta calificación en todo el país.
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 float-md-start">
+                        <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADOR.jpg" alt="Select Insurance Cotizador" title="Cotiza tu seguro">
+                    </div>
                 </div>
             </div><br><br><br>
+            <div class="container-fluid">
+                <div class="row text ColorTextoOscuro text-center">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <label><span class="fas fa-file-medical fa-4x"></span></label>
+                        <p>
+                        <h4>Aplicación Simple</h4>
+                        </p>
+                        <p>
+                            Aplica online y el resto lo hacemos nosotros por usted.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <label><span class="fas fa-piggy-bank fa-4x"></span></label>
+                        <p>
+                        <h4>Adaptado a su presupuesto</h4>
+                        </p>
+                        <p>
+                            ¡Obtenga $ 250,000 de cobertura de seguro de vida a término por tan solo $ 20 por mes!
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <label><span class="far fa-clock fa-4x"></span></label>
+                        <p>
+                        <h4>1 dia de activación</h4>
+                        </p>
+                        <p>
+                            Cobertura inmediata, rapido y eficaz.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <label><span class="far fa-calendar-alt fa-4x"></span></label>
+                        <p>
+                        <h4>Disponibilidad 24 / 7 / 365</h4>
+                        </p>
+                        <p>
+                            Inscríbase en cualquier momento durante el año.
+                        </p>
+                    </div>
+                </div><br><br><br>
+            </div>
         </div>
     </div>
     <div class="tab-pane fade" id="nav-Servicios" role="tabpanel" aria-labelledby="nav-Servicios-tab">
-        <div class="container-fluid ColorSecundario" id="Servicios">
+        <div class="container-fluid ImagenCaroucelFondo ImagenFija" id="Servicios">
             <h2 class="text-center ColorTextoOscuro">Nuestros Servicio</h2>
             <hr class="ColorTextoOscuro"><br>
             <div class="row text-center">
@@ -429,7 +431,7 @@
                     <h3 class="ColorTextoOscuro">Soluciones Financieras</h3><br><br><br><br>
                 </div>
             </div>
-        </div><br><br><br>
+        </div>
     </div>
     <div class="tab-pane fade" id="nav-Testimonios" role="tabpanel" aria-labelledby="nav-Testimonios-tab">
         <div class="container-fluid text-center ColorMenuPrincipalConTexto" id="Testimonios">
@@ -448,8 +450,8 @@
         </div>
     </div>
     <div class="tab-pane fade" id="nav-Contacto" role="tabpanel" aria-labelledby="nav-Contacto-tab">
-        <h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2><br><br>
-        <div class="container-fluid shadow-lg p-3 mb-5 border border-success rounded">
+        <div class="container-fluid ImagenCaroucelFondo ImagenFija shadow-lg p-3 mb-5 border border-success rounded">
+            <h2 class="text-center ColorTextoOscuro"><b>Nuestro Proceso de Inscripcion General</b></h2>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <button class="btn btn-success btn-lg text-end" data-bs-toggle="modal" data-bs-target="#ModalInscribase">Comenzar</button>
@@ -1410,16 +1412,20 @@
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE RETIRO.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE RETIRO.png" width="600px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE SALUD.png" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE SALUD.png" width="600px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE VIDA.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE VIDA.png" width="600px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.png" width="600px" class="d-block w-100" alt="Seguros de SpecialEnrollMent" title="Seguros de SpecialEnrollMent">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
