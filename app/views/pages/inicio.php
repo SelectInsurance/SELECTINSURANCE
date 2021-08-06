@@ -1,5 +1,5 @@
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
+    <div class="tab-pane fade show active" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
         <div class="container-fluid ImagenBackGround ImagenFija">
             <div class="row">
                 <img src="app\views\assets\img\banner\Banner Inicio.png" class="img-fluid" alt="Select Insurance" title="Select Insurance"><br><br>

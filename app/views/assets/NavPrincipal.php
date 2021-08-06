@@ -2,7 +2,7 @@
     <div class="shadow-lg navbar navbar-expand-lg ColorSecundario navbar-dark ColorPrincipal" id="nav-tab" role="tablist">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="nav navbar-nav">
-                <a href="" class="nav-link" id="nav-Inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-Inicio" role="tab" aria-controls="nav-Inicio">INICIO</a>
+                <a href="" class="nav-link active" id="nav-Inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-Inicio" role="tab" aria-controls="nav-Inicio">INICIO</a>
                 <a href="" class="nav-link" id="nav-Eventos-tab" data-bs-toggle="tab" data-bs-target="#nav-Eventos" role="tab" aria-controls="nav-Eventos">EVENTOS</a>
                 <a href="" class="nav-link" id="nav-Cotizador-tab" data-bs-toggle="tab" data-bs-target="#nav-Cotizador" role="tab" aria-controls="nav-Cotizador">COTIZADOR</a>
                 <a href="" class="nav-link" id="nav-Servicios-tab" data-bs-toggle="tab" data-bs-target="#nav-Servicios" role="tab" aria-controls="nav-Servicios">SERVICIOS</a>
