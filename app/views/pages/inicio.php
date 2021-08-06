@@ -1360,10 +1360,10 @@
 </div>-->
 <div class="container-fluid text-center ColorTextoOscuro shadow-lg">
     <div class="row ImagenCaroucelFondo ImagenFija ImagenFija">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-1 col-md-2 col-lg-4"></div>
-                <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                <div class="col-12 col-sm-1 col-md-2 col-lg-12"></div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-12">
                     <div class="container">
                         <div class="row"></div><br>
                         <div class="row shadow-lg">
@@ -1410,20 +1410,16 @@
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO R.png" height="600px" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE RETIRO.png" class="d-block w-100" alt="Planes de Retiro" title="Planes de Retiro">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  V.png" height="600px" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE SALUD.png" class="d-block w-100" alt="Seguros de Vida" title="Seguros de Vida">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO  S.png" height="600px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="app\views\assets\img\CarrucelIndex\SPECIAL ENROLLMENT.png" height="610px" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
+                                        <img src="app\views\assets\img\CarrucelIndex\SEGURO DE VIDA.png" class="d-block w-100" alt="Seguros de Salud" title="Seguros de Salud">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#Carrucel" data-bs-slide="prev">
@@ -1438,7 +1434,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-1 col-md-2 col-lg-4"></div>
+                <div class="col-12 col-sm-1 col-md-2 col-lg-12"></div>
             </div>
         </div>
         <div class="row"></div><br>
