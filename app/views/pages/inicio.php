@@ -1362,7 +1362,7 @@
     </div>
 </div>-->
 <div class="container-fluid text-center ColorTextoOscuro shadow-lg">
-    <div class="row ImagenCaroucelFondo ImagenFija ImagenFija">
+    <div class="row ImagenCaroucelFondo ImagenFija">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-1 col-md-2 col-lg-12"></div>
