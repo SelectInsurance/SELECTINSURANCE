@@ -22,7 +22,7 @@
                                             <h3>Descubra por qué más de 32,000 clientes en Estados Unidos eligieron Select Insurance.</h3>
                                         </div><br><br>
                                         <div class="row">
-                                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                            <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <h4>Ver testimonios</h4>
@@ -204,12 +204,16 @@
                     <div class="container" id="Cotizador">
                         <h2 class="text-center ColorTextoOscuro">Cotizador</h2>
                         <hr class="ColorTextoOscuro"><br>
-                        <div class="row text-center">
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                                <a href="CotizarVida" class="btn btn-success ColorPrincipal"><i class="far fa-heart fa-6x"></i></a>
+                        <div class="row text-center ColorTextoOscuro">
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+                                <button href="CotizarVida" title="Cotizar Vida" class="btn btn-success ColorPrincipal"><i class="far fa-heart fa-7x"></i></button><br>
+                                <b><label>Cotizar Vida</label></b>
                             </div>
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                                <a href="https://www.healthsherpa.com/?_agent_id=freedom-asistentes" target="__blank" class="btn btn-success ColorPrincipal"><i class="fas fa-user-nurse fa-6x"></i></a>
+                            <div class="col-6 col-sm-6 col-md-1 col-lg-1"></div>
+                            <div class="col-6 col-sm-6 col-md-1 col-lg-1"></div>
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+                                <button href="https://www.healthsherpa.com/?_agent_id=freedom-asistentes" title="Cotizar Salud" target="__blank" class="btn btn-success ColorPrincipal"><i class="fas fa-user-nurse fa-7x"></i></button><br>
+                                <b><label>Cotizar Salud</label></b>
                             </div>
                         </div><br><br>
                     </div>
@@ -286,7 +290,7 @@
                             <h3 class="ColorTextoOscuro">Seguros de Vida</h3><br><br><br><br>
                         </div>
                         <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-        
+
                             <?php
                             //Modal Seguros Familiares
                             ?>
@@ -410,7 +414,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-Testimonios" role="tabpanel" aria-labelledby="nav-Testimonios-tab">
-                <div class="container-fluid text-center ColorMenuPrincipalConTexto" id="Testimonios">
+                <div class="container-fluid text-center" id="Testimonios">
                     <div class="row">
                         <h2>Testimonios</h2>
                         <hr>
@@ -1418,7 +1422,7 @@
                     </div>
                 </div>
             </div><br><br>
-        
+
             <!--<div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <h3>Nuestro Objetivo</h3>
@@ -1440,99 +1444,99 @@
                 </p>
             </div>
         </div><br><br>-->
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <center>
-                    <h6><b>POLITICA DE PRIVACIDAD</b></h6>
-                </center>
-                <p style="font-size: 12px; text-align:justify;">
-                    Para asegurarnos de que las consultas de los consumidores se manejen de manera rápida,
-                    cortés y precisa, algunas de las llamadas telefónicas entre usted y nosotros o
-                    cualquiera de nuestros afiliados, agentes, cesionarios y proveedores de servicios,
-                    pueden ser monitoreadas y registradas por nosotros y cualquiera de nuestros afiliados,
-                    agentes , asigna y proveedores de servicios, para mejorar el servicio para usted.
-                    Usted da su consentimiento para este seguimiento y grabación. Usted acepta que Select
-                    Insurance puede realizar llamadas y / o enviarle mensajes de texto de vez en cuando a
-                    cualquier número de teléfono asociado con su cuenta, incluidos los números de teléfonos
-                    inalámbricos que podrían generarle cargos. La manera en que se le hacen estas llamadas o
-                    mensajes de texto puede incluir, entre otros, el uso de mensajes de voz pre-grabados /
-                    artificiales y / o el sistema de marcación telefónica automática. Además, acepta que Select
-                    Insurance puede enviarle correos electrónicos a cualquier dirección de correo
-                    electrónico que nos proporcione o utilizar otros medios electrónicos de comunicación en
-                    la medida que lo permita la ley. El consentimiento puede ser revocado en cualquier momento y
-                    por cualquier medio razonable. Todos los derechos reservados. www.selectinsurance.info
-                </p>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <center>
+                        <h6><b>POLITICA DE PRIVACIDAD</b></h6>
+                    </center>
+                    <p style="font-size: 12px; text-align:justify;">
+                        Para asegurarnos de que las consultas de los consumidores se manejen de manera rápida,
+                        cortés y precisa, algunas de las llamadas telefónicas entre usted y nosotros o
+                        cualquiera de nuestros afiliados, agentes, cesionarios y proveedores de servicios,
+                        pueden ser monitoreadas y registradas por nosotros y cualquiera de nuestros afiliados,
+                        agentes , asigna y proveedores de servicios, para mejorar el servicio para usted.
+                        Usted da su consentimiento para este seguimiento y grabación. Usted acepta que Select
+                        Insurance puede realizar llamadas y / o enviarle mensajes de texto de vez en cuando a
+                        cualquier número de teléfono asociado con su cuenta, incluidos los números de teléfonos
+                        inalámbricos que podrían generarle cargos. La manera en que se le hacen estas llamadas o
+                        mensajes de texto puede incluir, entre otros, el uso de mensajes de voz pre-grabados /
+                        artificiales y / o el sistema de marcación telefónica automática. Además, acepta que Select
+                        Insurance puede enviarle correos electrónicos a cualquier dirección de correo
+                        electrónico que nos proporcione o utilizar otros medios electrónicos de comunicación en
+                        la medida que lo permita la ley. El consentimiento puede ser revocado en cualquier momento y
+                        por cualquier medio razonable. Todos los derechos reservados. www.selectinsurance.info
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ColorPrincipal text-white" id="Contacto">
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <img src="app\views\assets\img\LogoWhite.webp" alt="Select Insurance" height="80px" title="Select Insurance"><br><br>
+                    </div>
+                    <div class="col-12 col-md-1 col-lg-1"></div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3"><br><br>
+                        <p><b>CONTÁCTENOS</b></p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2"><br><br>
+                        <p><b>ENLACES</b></p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3"><br><br>
+                        <p><b>ZONA DE AFILIADOS</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <p class="fs-7" style="text-align: justify;">
+                            Select Insurance And Financial
+                            Services nace en el año 2009 teniendo
+                            en cuenta la necesidad de las personas
+                            como una compañía dedicada a la venta y el
+                            asesoramiento de seguros de vida y hoy es
+                            una compañía especializada en aseguramiento, plan
+                            de retiro y planes de inversión.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-1 col-lg-1"></div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+
+                        <p class="lh-lg">
+                            Tel.: (786) 216 1936 <br>
+
+                            Email: contact@selectinsurance.info <br>
+
+                            Skype: contact insurance <br>
+
+                            Dirección: 7791 NW 46 ST. SUITE 112 DORAL, FL 33166 <br>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                        <p class="lh-lg">
+                            Cotizador Online <br>
+
+                            Nuestros Servicios <br>
+
+                            Testimonios <br>
+
+                            Contacto <br>
+                            <a href="./login" style="text-decoration: none;" target="__blank">Administracion</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <p class="lh-lg">
+                            FAQ <br>
+
+                            Blog <br>
+
+                            Crm <br>
+
+                            Galería <br>
+                        </p>
+                    </div>
+                </div>
+                <h6 class="text-end">Copyright © <?php echo date('M') . ' ' . date('Y'); ?> Select Insurance.</h6>
             </div>
         </div>
     </div>
-    <div class="container-fluid ColorPrincipal text-white" id="Contacto">
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img src="app\views\assets\img\LogoWhite.webp" alt="Select Insurance" height="80px" title="Select Insurance"><br><br>
-                </div>
-                <div class="col-12 col-md-1 col-lg-1"></div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3"><br><br>
-                    <p><b>CONTÁCTENOS</b></p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-2 col-lg-2"><br><br>
-                    <p><b>ENLACES</b></p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3"><br><br>
-                    <p><b>ZONA DE AFILIADOS</b></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <p class="fs-7" style="text-align: justify;">
-                        Select Insurance And Financial
-                        Services nace en el año 2009 teniendo
-                        en cuenta la necesidad de las personas
-                        como una compañía dedicada a la venta y el
-                        asesoramiento de seguros de vida y hoy es
-                        una compañía especializada en aseguramiento, plan
-                        de retiro y planes de inversión.
-                    </p>
-                </div>
-                <div class="col-12 col-md-1 col-lg-1"></div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-    
-                    <p class="lh-lg">
-                        Tel.: (786) 216 1936 <br>
-    
-                        Email: contact@selectinsurance.info <br>
-    
-                        Skype: contact insurance <br>
-    
-                        Dirección: 7791 NW 46 ST. SUITE 112 DORAL, FL 33166 <br>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                    <p class="lh-lg">
-                        Cotizador Online <br>
-    
-                        Nuestros Servicios <br>
-    
-                        Testimonios <br>
-    
-                        Contacto <br>
-                        <a href="./login" style="text-decoration: none;" target="__blank">Administracion</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                    <p class="lh-lg">
-                        FAQ <br>
-    
-                        Blog <br>
-    
-                        Crm <br>
-    
-                        Galería <br>
-                    </p>
-                </div>
-            </div>
-            <h6 class="text-end">Copyright © <?php echo date('M') . ' ' . date('Y'); ?> Select Insurance.</h6>
-        </div>
-    </div>
-</div>

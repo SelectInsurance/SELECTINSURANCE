@@ -53,7 +53,13 @@
 
 /*Colores Principales y Secundario*/
 .ColorPrincipalTranslucido {
-  background-color: rgba(7, 120, 113, 0.7);
+  /*background-color: rgba(7, 120, 113, 0.7);*/
+
+  background: linear-gradient(
+    to top right,
+    rgba(7, 78, 98, 255),
+    rgba(94, 169, 175, 255)
+  );
 }
 
 .ColorSecundarioTranslucido {
