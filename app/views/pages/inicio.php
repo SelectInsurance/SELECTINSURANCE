@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row ImagenCaroucelFondo ImagenFija">
+    <div class="row ImagenCaroucelFondo">
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-Inicio" role="tabpanel" aria-labelledby="nav-Inicio-tab">
                 <div class="container-fluid">
@@ -562,7 +562,7 @@
                                     <label class="text-black">Galeria de Videos de Salud</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
-                                    <a href="" class="btn btn-outline-success"><i class="fas fa-database fa-6x"></i></a><br><br>
+                                    <a href="https://crm.selectinsurance.info" target="__blank" class="btn btn-outline-success"><i class="fas fa-database fa-6x"></i></a><br><br>
                                     <label class="text-black">CRM Select</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
@@ -1336,15 +1336,15 @@
                 </div>
             </div>
         </div>-->
-        <div class="container-fluid text-center ColorTextoOscuro shadow-lg">
+        <div class="container-fluid text-center ColorTextoOscuro">
             <div class="row">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-sm-1 col-md-2 col-lg-12"></div>
                         <div class="col-12 col-sm-10 col-md-8 col-lg-12">
-                            <div class="container">
+                            <div class="container ">
                                 <div class="row"></div><br>
-                                <div class="row shadow-lg">
+                                <div class="row">
                                     <div id="Carrucel" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#Carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1517,7 +1517,7 @@
                         Testimonios <br>
     
                         Contacto <br>
-                        <a href="./login" style="text-decoration: none;" target="__blank">Administracion</a>
+                        <a href="/login" style="text-decoration: none;" target="__blank">Administracion</a>
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3">

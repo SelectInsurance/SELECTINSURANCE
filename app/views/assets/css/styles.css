@@ -10,7 +10,9 @@
 /*Imagen de fondo*/
 .ImagenBackGround {
   background-image: url(../img/BackGround.webp);
-  background-size: cover;
+  /*background-size: cover;*/
+  /*background-size: 100% 100%;*/
+  background-size: contain;
 }
 
 .ImagenAgentes {
@@ -41,6 +43,7 @@
 .ImagenCaroucelFondo{
   background-image: url(../img/CarrucelIndex/ImagenFondo/TAPIZ.webp);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Imagen fija*/
