@@ -14,7 +14,10 @@
         case 'agentes':
             $controller->ControllerAgentes();
             break;
-
+            case 'CotizarVida':
+                $controller->ControllerCotizarVida();
+                break;
+                
             //Validacion para conseguir el refresco de la pagina ya que se quedaba en blanco si no aplicaba header
         case 'ValidacionLogin':
             if (isset($_POST['btnloginSalud'])) {

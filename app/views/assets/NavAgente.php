@@ -1,4 +1,26 @@
-<nav id="paginaSelectInsurance" class="shadow-lg navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="sticky-top">
+    <div class="shadow-lg navbar navbar-expand-lg ColorSecundario navbar-dark ColorPrincipal">
+        <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav">
+                <a class="nav-link" href="./">INICIO</a>
+                <a class="nav-link" href="./">EVENTOS</a>
+                <a class="nav-link" href="./">COTIZADOR</a>
+                <a class="nav-link" href="./">SERVICIOS</a>
+                <a class="nav-link" href="./">TESTIMONIOS</a>
+                <a class="nav-link" href="./">CONTACTO</a>
+                <a class="nav-link" href="./">AGENTES</a>
+            </div>
+        </div>
+        <a class="navbar-brand d-flex"><img src="app\views\assets\img\LogoWhite.webp" height="75"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+
+
+<!--<nav id="paginaSelectInsurance" class="shadow-lg navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid ColorTextoOscuro">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -65,4 +87,4 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-</nav>
+</nav>-->

@@ -101,5 +101,10 @@ class ControllerPrincipal extends Pather
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/subpages/VideosVida.php';
     }
+
+    public function ControllerCotizarVida(){
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/subpages/CotizarVida.php';
+    }
 }
 require_once 'app/views/assets/footer.php';
