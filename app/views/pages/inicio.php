@@ -1470,7 +1470,7 @@
             <hr>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img src="app/views/assets/img/LogoColorReal.png" alt="Select Insurance" height="80px" title="Select Insurance"><br><br>
+                    <img src="app\views\assets\img\LogoWhite.webp" alt="Select Insurance" height="80px" title="Select Insurance"><br><br>
                 </div>
                 <div class="col-12 col-md-1 col-lg-1"></div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3"><br><br>
