@@ -260,7 +260,7 @@ class ControllerManagment extends Pather
 
 
     //Controller para Crear Paginas
-    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $Telefono, $NombreImgTmp, $NombreImg) //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
+    public function ControllerManagmentProcesoCrearPagina($NombrePagina, $Nombre, $Email, $whatsapp,$Telefono, $NombreImgTmp, $NombreImg, $Instagram, $Facebook) //NombreArchivo, Nombre Agente, Nombre Imagen Temporal, Nombre Imagen
     {
         if (isset($_POST['btnCrearPagina']) && !file_exists('app/views/pages/AgentesPages/' . $NombrePagina . '.php')) {
 
@@ -270,7 +270,7 @@ class ControllerManagment extends Pather
 
             //Creando paginas en el directorio AgentesPages                                                                                                                                      
             $CreadorPaginas = new CreadorPaginas();
-            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $Telefono, 'app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina);
+            $CreadorPaginas->CrearPagina('app/views/pages/AgentesPages/', $NombrePagina, $Nombre, $Email, $whatsapp,$Telefono, 'app/views/assets/img/ImagenesAgentes/', $NombreImgTmp, $NombreImg, $NombrePagina, $Instagram, $Facebook);
         } else {
             require_once 'app/views/assets/NavAgente.php';
             require_once 'app/views/mensajes/ErrorPaginaExistente.php';

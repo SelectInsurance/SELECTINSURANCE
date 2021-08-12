@@ -10,11 +10,11 @@ class CreadorPaginas
         return $conexion->EstablecerConexion();
     }
                                                                                                                                     /*, $id*/
-    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $Telefono, $urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina)
+    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $whatsapp,$Telefono, $urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina, $Instagram, $Facebook)
     {
 
         //insertando Pagina en la Base de datos
-        $this->Conexion()->query("INSERT INTO CrearPagina(Titulo, Nombre, URL) VALUES('$NombreArchivo','$Nombre','$url');");
+        $this->Conexion()->query("INSERT INTO CrearPagina(Titulo, Nombre, URL, Email) VALUES('$NombreArchivo','$Nombre','$url','$Email');");
         $Read = new crud();
 
         //Consultando Id en la base de datos
@@ -38,7 +38,7 @@ class CreadorPaginas
         $contenido = "
 <div class=\"container-fluid\" id=\"Inicio\">
     <div class=\"row\">
-        <div class=\"container ImagenBackGround ImagenFija\"><br><br>
+        <div class=\"container-fluid ImagenCaroucelFondo ImagenFija\"><br><br>
             <div class=\"row\">
                 <div class=\"col-12 col-sm-12 col-md-1 col-lg-1\"></div>
                 <div class=\"col-12 col-sm-12 col-md-10 col-lg-10\">
@@ -83,7 +83,7 @@ class CreadorPaginas
                                     <h3 class=\"text text-center text-white\"><b>¡Sea parte de nuestra familia!</b></h3>
                                     <h4 class=\"text text-center text-white\">Diligencie el formulario a continuación y uno de nuestros agentes se pondrá en contacto brevemente.</h4>
                                 </div>
-                                <form action=\"./\" method=\"post\">
+                                <form action=\"./$NombrePagina\" method=\"post\">
                                     <div class=\"row\">
                                         <div class=\"col-12 col-sm-12 col-md-6 col-lg-6\">
                                             <label for=\"nombre\" class=\"text-white\">Nombre: <label class=\"text text-danger\">*</label></label>
@@ -659,11 +659,11 @@ class CreadorPaginas
     </div>
 </div><br><br>
 <div class=\"container-fluid ColorPrincipal text-white\" id=\"Contacto\">
-    <div class=\"container\">
+    <div class=\"container-fluid\">
         <hr>
         <div class=\"row\">
             <div class=\"col-12 col-sm-6 col-md-3 col-lg-3 text-center\">
-                <img src=\"app/views/assets/img/LogoColorReal.png\" alt=\"Select Insurance\" height=\"80px\" title=\"Select Insurance\"><br><br>
+                <img src=\"app/views/assets/img/LogoWhite.webp\" alt=\"Select Insurance\" height=\"80px\" title=\"Select Insurance\"><br><br>
             </div>
             <div class=\"col-12 col-md-1 col-lg-1\"></div>
             <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\"><br><br>
@@ -692,13 +692,15 @@ class CreadorPaginas
             <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
 
                 <p class=\"lh-lg\">
-                    Tel.: $Telefono <br>
+                    Whatsapp: $whatsapp <br>
 
-                    Email: $Email <br>
+                    Telefono: <a href=\"tel:$Telefono\" title=\"Telefono\">$Telefono</a> <br>
 
-                    Skype: contact insurance <br>
+                    Email: <a href=\"mailto:$Email\">$Email</a> <br>
 
                     Dirección: 7791 NW 46 ST. SUITE 112 DORAL, FL 33166 <br>
+
+                    Redes: <p><a href=\"$Instagram\" title=\"Mi Instagram\" target=\"__blank\"><i class=\"fab fa-instagram fa-2x\"></i></a> <a href=\"$Facebook\" title=\"Mi Facebook\" target=\"__blank\"><i class=\"fab fa-facebook fa-2x\"></i></a></p> <br>
                 </p>
             </div>
             <div class=\"col-12 col-sm-6 col-md-2 col-lg-2\">
@@ -729,7 +731,7 @@ class CreadorPaginas
     </div>
 </div>
 <blockquote>
-	<a href=\"https://api.whatsapp.com/send?phone=$Telefono\" target=\"__blank\">
+	<a href=\"https://api.whatsapp.com/send?phone=$whatsapp\" target=\"__blank\">
 		<p>
 			<span class=\"fab fa-whatsapp fa-3x btn-wsp\"></span>
 			<span class=\"fondo-text-wsp\">

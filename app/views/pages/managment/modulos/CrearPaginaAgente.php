@@ -20,10 +20,16 @@
                                 <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Por favor ingrese Nombre del Agente" required="required"><br>
                                 <label for="Email">Correo del Agente:</label>
                                 <input type="email" name="Email" id="Email" class="form-control" placeholder="Ingrese Correo" required="required"><br>
+                                <label for="whatsapp">Whatsapp:</label>
+                                <input type="tel" name="whatsapp" id="whatsapp" class="form-control" placeholder="Ingrese Telefono del Agente" required="required"><br>
                                 <label for="Telefono">Telefono:</label>
-                                <input type="tel" name="Telefono" id="Telefono" class="form-control" placeholder="Ingrese Telefono del Agente" required="required"><br>
+                                <input type="text" name="Telefono" id="Telefono" class="form-control" placeholder="Telefno"><br>
                                 <label for="ImagenAgente">Imagen Agente:</label>
                                 <input type="file" name="ImagenAgente" id="ImagenAgente" class="form-control" required="required"><br>
+                                <label for="Instagram">Instagram:</label>
+                                <input type="text" name="Instagram" id="Instagram" class="form-control" placeholder="Ingrese Instagram"><br>
+                                <label for="Facebook">Facebook:</label>
+                                <input type="text" name="Facebook" id="Facebook" class="form-control" placeholder="Ingrese Facebook"><br>
                                 <input type="submit" value="Guardar" name="btnCrearPagina" class="btn btn-outline-success">
                             </form>
                         </div>

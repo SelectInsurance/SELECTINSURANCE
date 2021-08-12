@@ -206,13 +206,13 @@
                         <hr class="ColorTextoOscuro"><br>
                         <div class="row text-center ColorTextoOscuro">
                             <div class="col-12 col-sm-6 col-md-5 col-lg-5">
-                                <button href="CotizarVida" title="Cotizar Vida" class="btn btn-success ColorPrincipal"><i class="far fa-heart fa-7x"></i></button><br>
+                                <a href="CotizarVida" title="Cotizar Vida" class="btn btn-success ColorPrincipal"><i class="far fa-heart fa-7x"></i></a><br>
                                 <b><label>Cotizar Vida</label></b>
                             </div>
                             <div class="col-6 col-sm-6 col-md-1 col-lg-1"></div>
                             <div class="col-6 col-sm-6 col-md-1 col-lg-1"></div>
                             <div class="col-12 col-sm-6 col-md-5 col-lg-5">
-                                <button href="https://www.healthsherpa.com/?_agent_id=freedom-asistentes" title="Cotizar Salud" target="__blank" class="btn btn-success ColorPrincipal"><i class="fas fa-user-nurse fa-7x"></i></button><br>
+                                <a href="https://www.healthsherpa.com/?_agent_id=freedom-asistentes" title="Cotizar Salud" target="__blank" class="btn btn-success ColorPrincipal"><i class="fas fa-user-nurse fa-7x"></i></a><br>
                                 <b><label>Cotizar Salud</label></b>
                             </div>
                         </div><br><br>

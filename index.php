@@ -258,15 +258,15 @@
             }
             break;
 
-            //Proceso para Crear Pagina, valida si el archivo existe, si no existe lo Crea de lo contrario llama el Error del controller
+            //Proceso para Crear Pagina, valida si el archivo existe, si no existe lo Crea de lo contrario llama el Error del controller $Instagram, $Facebook
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
                 if (!file_exists('app/views/pages/AgentesPages/' . $_POST['NombrePagina'] . '.php')) {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name']);
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['whatsapp'],$_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name'], $_POST['Instagram'], $_POST['Facebook']);
                     $NombrePagina = $_POST['NombrePagina'];
                     header("Location:$NombrePagina");
                 } else {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null, null, null, null, null, null, null);
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null, null, null, null, null, null, null, null, null);
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();
