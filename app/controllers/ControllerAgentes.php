@@ -15,7 +15,7 @@ class ControllerAgentes
 
             if (isset($_POST['btnform1enviar'])) {
 
-                echo 'Nombre' . $_POST['nombre'];
+                //Consulta para sacar el Email del Agente y poder enviar emails con la libreria
                 $ReadEmail = new crud();
                 $Email = $ReadEmail->Read("SELECT Email FROM CrearPagina WHERE Titulo = '$Valor'");
                 $rows = mysqli_fetch_assoc($Email);
