@@ -262,11 +262,11 @@
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
                 if (!file_exists('app/views/pages/AgentesPages/' . $_POST['NombrePagina'] . '.php')) {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['whatsapp'],$_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name'], $_POST['Instagram'], $_POST['Facebook']);
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['whatsapp'],$_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name'], $_POST['Instagram'], $_POST['Facebook'], $_POST['urlCotizador']);
                     $NombrePagina = $_POST['NombrePagina'];
                     header("Location:$NombrePagina");
                 } else {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null, null, null, null, null, null, null, null, null);
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina(null, null, null, null, null, null, null, null, null, null);
                 }
             } else {
                 $ManagmentController->ControllerManagmentLogin();

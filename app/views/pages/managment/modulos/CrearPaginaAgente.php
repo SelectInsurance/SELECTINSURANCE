@@ -30,6 +30,8 @@
                                 <input type="text" name="Instagram" id="Instagram" class="form-control" placeholder="Ingrese Instagram"><br>
                                 <label for="Facebook">Facebook:</label>
                                 <input type="text" name="Facebook" id="Facebook" class="form-control" placeholder="Ingrese Facebook"><br>
+                                <label for="urlCotizador">URL Cotizador:</label>
+                                <input type="text" name="urlCotizador" id="urlCotizador" class="form-control" placeholder="Ingrese la URL del Cotizador"><br>
                                 <input type="submit" value="Guardar" name="btnCrearPagina" class="btn btn-outline-success">
                             </form>
                         </div>
