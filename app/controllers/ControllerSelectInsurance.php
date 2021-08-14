@@ -48,6 +48,47 @@ class ControllerPrincipal extends Pather
     }
 
 
+
+    //controller Videos de Salud
+    public function ControllerVideosDeSalud()
+    {
+        $ConsultaSalud = new crud();
+        $ResultadosSalud = $ConsultaSalud->Read("SELECT Nombre, URL FROM VideosDeSalud");
+
+
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/subpages/VideosSalud.php';
+    }
+
+    //Controller Videos de vida 
+    public function ControllerVideosDeVida()
+    {
+        $ConsultaAnico = new crud();
+        $consultaAmeritas = new crud();
+        $ConsultaNationalLife = new crud();
+
+        $ResultadosAnico = $ConsultaAnico->Read("SELECT Nombre, URL FROM VideosAnico");
+        $ResultadosAmeritas = $consultaAmeritas->Read("SELECT Nombre, URL FROM VideosAmeritas");
+        $ResultadosNationalLife = $ConsultaNationalLife->Read("SELECT Nombre, URL FROM VideosNationalLife");
+
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/subpages/VideosVida.php';
+    }
+
+    public function ControllerCotizarVida()
+    {
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/subpages/CotizarVida.php';
+    }
+
+
+    public function ControllerBuscadorLeads()
+    {
+        require_once 'app/views/assets/NavAgente.php';
+        require_once 'app/views/pages/subpages/BuscadorLeads.php';
+    }
+
+
     //Validacion Login Salud
     public function ControllerLogeadoSalud($user, $pass)
     {
@@ -76,35 +117,18 @@ class ControllerPrincipal extends Pather
         }
     }
 
-    //controller Videos de Salud
-    public function ControllerVideosDeSalud()
+    //Validacion Login Buscador Leadas
+    public function ControllerLogeadoBuscadorLeads($user, $pass)
     {
-        $ConsultaSalud = new crud();
-        $ResultadosSalud = $ConsultaSalud->Read("SELECT Nombre, URL FROM VideosDeSalud");
-
-
-        require_once 'app/views/assets/NavAgente.php';
-        require_once 'app/views/pages/subpages/VideosSalud.php';
-    }
-
-    //Controller Videos de vida 
-    public function ControllerVideosDeVida()
-    {
-        $ConsultaAnico = new crud();
-        $consultaAmeritas = new crud();
-        $ConsultaNationalLife = new crud();
-
-        $ResultadosAnico = $ConsultaAnico->Read("SELECT Nombre, URL FROM VideosAnico");
-        $ResultadosAmeritas = $consultaAmeritas->Read("SELECT Nombre, URL FROM VideosAmeritas");
-        $ResultadosNationalLife = $ConsultaNationalLife->Read("SELECT Nombre, URL FROM VideosNationalLife");
-
-        require_once 'app/views/assets/NavAgente.php';
-        require_once 'app/views/pages/subpages/VideosVida.php';
-    }
-
-    public function ControllerCotizarVida(){
-        require_once 'app/views/assets/NavAgente.php';
-        require_once 'app/views/pages/subpages/CotizarVida.php';
+        $login = new ConsultaLogin($user, $pass, $this->table);
+        if ($login->Consulta()) {
+            $_SESSION['logeado'] = 'admin';
+        } else {
+            require_once 'app/views/assets/NavPrincipal.php';
+            $mensajeError = '<center>Error al iniciar Sesion</center>';
+            require_once 'app/views/pages/ErrorLogin.php';
+            require_once 'app/views/pages/LoginBuscadorLeads.php';
+        }
     }
 }
 require_once 'app/views/assets/footer.php';

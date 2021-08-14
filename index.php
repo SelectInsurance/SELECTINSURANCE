@@ -26,6 +26,9 @@
             } elseif (isset($_POST['btnloginVida'])) {
                 $controller->ControllerLogeadoVida('admin', $_POST['password']);
                 header('Location:./VideosVida');
+            }elseif (isset($_POST['btnValidacionBuscadorLeads'])) {
+                $controller->ControllerLogeadoBuscadorLeads('admin', $_POST['password']);
+                header('Location:./BuscadorLeads');
             }
             break;
 
@@ -46,6 +49,16 @@
             } else {
                 $controller->ControllerLogeadoVida('admin', $_POST['password']);
                 header('./VideosVida');
+            }
+            break;
+
+            //Validacion de Buscador de Leads
+        case 'BuscadorLeads':
+            if (!empty($_SESSION['logeado']) || !empty($_SESSION['managment'])) {
+                $controller->ControllerBuscadorLeads();
+            } else {
+                $controller->ControllerLogeadoBuscadorLeads('admin', $_POST['password']);
+                header('./BuscadorLeads');
             }
             break;
 
@@ -262,7 +275,7 @@
         case 'ProcesoCrearPagina':
             if (!empty($_SESSION['managment'])) {
                 if (!file_exists('app/views/pages/AgentesPages/' . $_POST['NombrePagina'] . '.php')) {
-                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['whatsapp'],$_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name'], $_POST['Instagram'], $_POST['Facebook'], $_POST['urlCotizador']);
+                    $ManagmentController->ControllerManagmentProcesoCrearPagina($_POST['NombrePagina'], $_POST['Nombre'], $_POST['Email'], $_POST['whatsapp'], $_POST['Telefono'], $_FILES['ImagenAgente']['tmp_name'], $_FILES['ImagenAgente']['name'], $_POST['Instagram'], $_POST['Facebook'], $_POST['urlCotizador']);
                     $NombrePagina = $_POST['NombrePagina'];
                     header("Location:$NombrePagina");
                 } else {

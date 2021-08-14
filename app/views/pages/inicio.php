@@ -561,23 +561,34 @@
                     <div class="row">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                                <center>
+                                    <h1>Seccion Agentes</h1>
+                                </center>
+                            </div><br><br><br>
+                            <div class="row">
+                                <div class="col-md-1 col-lg-1"></div>
+                                <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center">
                                     <a href="./VideosSalud" class="btn btn-outline-success"><i class="fas fa-video fa-6x"></i></a><br><br>
-                                    <label class="text-black">Galeria de Videos de Salud</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    <label class="text-black">Galeria de Videos de Salud</label>
                                 </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                                <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center">
                                     <a href="https://crm.selectinsurance.info" target="__blank" class="btn btn-outline-success"><i class="fas fa-database fa-6x"></i></a><br><br>
-                                    <label class="text-black">CRM Select</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    <label class="text-black">CRM Select</label>
                                 </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                                <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center">
                                     <a href="" class="btn btn-outline-success"><i class="fas fa-headset fa-6x"></i></a><br><br>
-                                    <label class="text-black">Contact Center</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    <label class="text-black">Contact Center</label>
                                 </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center"><br><br><br><br><br><br><br><br>
+                                <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center">
                                     <a href="./VideosVida" class="btn btn-outline-success"><i class="fas fa-film fa-6x"></i></a><br><br>
-                                    <label class="text-black">Galeria de Videos de Vida</label><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    <label class="text-black">Galeria de Videos de Vida</label>
                                 </div>
-                            </div>
+                                <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center">
+                                    <a href="./BuscadorLeads" class="btn btn-outline-success"><i class="fas fa-search fa-6x"></i></a><br><br>
+                                    <label class="text-black">Buscador leads</label>
+                                </div>
+                                <div class="col-md-1 col-lg-1"></div>
+                            </div><br><br><br><br><br><br><br>
                         </div>
                     </div>
                 </div>
