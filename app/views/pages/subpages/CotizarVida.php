@@ -4,7 +4,7 @@
             <img class="img-fluid RadioDeBordes" src="app\views\assets\img\IMGCOTIZADORSALUD.webp">
             <center>
                 <a type="button" class="btn btn-primary" href="https://www.healthsherpa.com/?_agent_id=freedom-asistentes" target="__blank">
-                    Cotizacion Vida
+                    Cotizacion Salud
                 </a>
             </center>
         </div>
