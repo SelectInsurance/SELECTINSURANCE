@@ -551,7 +551,7 @@
                             </p>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 text-end">
-                            <img src="app/views/assets/img/LogoColorReal.png" alt="Select Insurance" title="Select Insurance" height="100px">
+                            <img src="app\views\assets\img\Logo2.webp" alt="Select Insurance" title="Select Insurance" height="70px">
                         </div>
                     </div>
                 </div>

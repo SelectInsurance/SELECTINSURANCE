@@ -84,8 +84,26 @@ class ControllerPrincipal extends Pather
 
     public function ControllerBuscadorLeads()
     {
+        if (isset($_POST['btnBuscadorLeads'])) {
+            $Nombre = $_POST['Nombre'];
+            $Apellido = $_POST['Apellido'];
+            $FechaNacimiento = $_POST['FechaNacimiento'];
+
+            $query = "
+            SELECT firstname, lastname,  birthday, smownerid FROM vtiger_crmentity 
+            INNER JOIN vtiger_contactdetails ON vtiger_crmentity.crmid = vtiger_contactdetails.contactid
+            INNER JOIN vtiger_contactsubdetails ON vtiger_contactdetails.contactid = vtiger_contactsubdetails.contactsubscriptionid 
+            WHERE firstname like '$Nombre%' AND lastname like '$Apellido%' AND birthday = '$FechaNacimiento'
+            ";
+            $CrudVtiger1 = new CrudVtiger();
+            $consulta = $CrudVtiger1->Read($query);
+    
+        }    
         require_once 'app/views/assets/NavAgente.php';
         require_once 'app/views/pages/subpages/BuscadorLeads.php';
+
+
+
     }
 
 
