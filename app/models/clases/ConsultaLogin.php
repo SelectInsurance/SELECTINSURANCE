@@ -11,10 +11,11 @@ require_once 'Pather.php';
         }
 
         public function Consulta(){
-            $user = $this->user;
-            $pass = $this->pass;
-            $table = $this->table;
             $conexion = new Conexion();
+
+            $user = mysqli_real_escape_string($conexion->EstablecerConexion(),$this->user);
+            $pass = mysqli_real_escape_string($conexion->EstablecerConexion(),$this->pass);
+            $table = $this->table;
             $consulta = mysqli_query($conexion->EstablecerConexion(), "SELECT Usuario, Password FROM $table WHERE Usuario = '$user' AND Password = '$pass'");
             $rows = mysqli_num_rows($consulta);
             return $rows;

@@ -41,12 +41,6 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                     <p>
-                        <a href="./agentes" title="Ver videos"><button class="btn btn-outline-light"><i class="fas fa-photo-video fa-6x"></i></button></a>
-                        <label class="text-white">Videos</label>
-                    </p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <p>
                         <a href="./CrearPaginas" title="Creador de Paginas"><button class="btn btn-outline-light"><i class="fas fa-broom fa-6x"></i></button></a>
                         <label class="text-white">Crear Paginas</label>
                     </p>

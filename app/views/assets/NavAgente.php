@@ -43,10 +43,6 @@
                                     <label>Agregar Eventos</label>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                    <a href="agentes" title="Ver videos"><button class="btn btn-outline-light"><i class="fas fa-photo-video fa-4x"></i></button></a><br>
-                                    <label>Ver videos</label>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-2 col-lg-2">
                                     <a href="CrearPaginas" title="Ver videos"><button class="btn btn-outline-light"><i class="fas fa-broom fa-4x"></i></button></a><br>
                                     <label>Creador de Paginas</label>
                                 </div>

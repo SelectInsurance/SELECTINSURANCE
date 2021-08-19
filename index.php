@@ -11,9 +11,9 @@
         case 'inicio':
             $controller->ControllerInicio();
             break;
-        case 'agentes':
-            $controller->ControllerAgentes();
-            break;
+        //case 'agentes':
+        //    $controller->ControllerAgentes();
+        //    break;
         case 'CotizarVida':
             $controller->ControllerCotizarVida();
             break;

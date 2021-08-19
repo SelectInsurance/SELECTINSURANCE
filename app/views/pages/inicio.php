@@ -52,7 +52,7 @@
                                             <h3 class="text text-center text-white"><b>¡Sea parte de nuestra familia!</b></h3>
                                             <h4 class="text text-center text-white">Diligencie el formulario a continuación y uno de nuestros agentes se pondrá en contacto brevemente.</h4>
                                         </div>
-                                        <form action="../SELECTINSURANCE/inicio" method="post">
+                                        <form action="./" method="post">
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                     <label for="nombre" class="text-white">Nombre: <label class="text text-danger">*</label></label>
