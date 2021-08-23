@@ -41,7 +41,7 @@ class ControllerAgentes
                     $mail->Port       = 80;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS` 3535
 
                     //Recipients
-                    $mail->setFrom('leads@selectinsurance.info', 'selectinsurance.info/'.$Valor);
+                    $mail->setFrom('leads@selectinsurance.info', 'selectinsurance.info/' . $Valor);
                     $mail->addAddress($rows['Email'], 'Web Site');     //Add a recipient
                     //$mail->addAddress('ellen@example.com');               //Name is optional
                     //$mail->addReplyTo('info@example.com', 'Information');
@@ -54,14 +54,14 @@ class ControllerAgentes
 
                     //Content
                     $mail->isHTML(true);                                  //Set email format to HTML
-                    $mail->Subject = 'Lead de la pagina selectinsurance.info/'.$Valor;
-                    $mail->Body    = 
-                    'Nombre: '.$_POST['nombre'].'<br>'.
-                    'Apellido: '.$_POST['apellido'].'<br>'.
-                    'Correo: '.$_POST['correo'].'<br>'.
-                    'Telefono: '.$_POST['telefono'].'<br>'.
-                    'Estado: '.$_POST['estado'].'<br>'.
-                    'Servicio: '.$_POST['servicio'].'<br>';
+                    $mail->Subject = 'Lead de la pagina selectinsurance.info/' . $Valor;
+                    $mail->Body    =
+                        'Nombre: ' . $_POST['nombre'] . '<br>' .
+                        'Apellido: ' . $_POST['apellido'] . '<br>' .
+                        'Correo: ' . $_POST['correo'] . '<br>' .
+                        'Telefono: ' . $_POST['telefono'] . '<br>' .
+                        'Estado: ' . $_POST['estado'] . '<br>' .
+                        'Servicio: ' . $_POST['servicio'] . '<br>';
                     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                     $mail->send();
@@ -69,6 +69,53 @@ class ControllerAgentes
                 } catch (Exception $e) {
                     echo "Hubo un error: {$mail->ErrorInfo}";
                 }
+            }
+
+            if (isset($_POST['btnQuiz'])) {
+
+                if (!empty($_POST['CompañiaSeguros'])) {
+                    $Quiz1 = $_POST['Respuesta1'] . '</br>';
+                    $Quiz2 = $_POST['Respuesta2'] . '</br>';
+                    $Quiz3 = $_POST['Respuesta3'] . '</br>';
+                    $Quiz4 = $_POST['Respuesta4'] . '</br>';
+                    $Quiz5 = $_POST['Respuesta5'] . '</br>';
+                    $Quiz6 = $_POST['Respuesta6'] . '</br>';
+                    $Quiz7 = $_POST['Respuesta7'] . '</br>';
+                    $Compañia = $_POST['CompañiaSeguros'] . '</br>';
+                    $Compañia = $_POST['InsuranceCompany'] . '</br>';
+                    $NombreCompleto = $_POST['name'] . '</br>';
+                    $Telefono = $_POST['Telefono'] . '</br>';
+                    $Email = $_POST['Email'] . '</br>';
+                } elseif (!empty($_POST['InsuranceCompany'])) {
+                    echo $Quiz1 = $_POST['Respuesta1'] . '</br>';
+                    echo $Quiz2 = $_POST['Respuesta2'] . '</br>';
+                    echo $Quiz3 = $_POST['Respuesta3'] . '</br>';
+                    echo $Quiz4 = $_POST['Respuesta4'] . '</br>';
+                    echo $Quiz5 = $_POST['Respuesta5'] . '</br>';
+                    echo $Quiz6 = $_POST['Respuesta6'] . '</br>';
+                    echo $Quiz7 = $_POST['Respuesta7'] . '</br>';
+                    echo $Compañia = $_POST['InsuranceCompany'] . '</br>';
+                    echo $Compañia = $_POST['InsuranceCompany'] . '</br>';
+                    echo $NombreCompleto = $_POST['name'] . '</br>';
+                    echo $Telefono = $_POST['Telefono'] . '</br>';
+                    echo $Email = $_POST['Email'] . '</br>';
+                }
+
+                $query = "INSERT INTO Quiz(
+                    Quiz1,
+                    Quiz2,
+                    Quiz3,
+                    Quiz4,
+                    Quiz5,
+                    Quiz6,
+                    Quiz7,
+                    Compañia,
+                    NombreCompleto,
+                    Telefono,
+                    Email
+                )   VALUES(
+
+                )";
             }
         }
     }

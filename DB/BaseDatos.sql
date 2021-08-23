@@ -84,7 +84,20 @@ CREATE TABLE ImagenAgente(
 );
 
 
-
+CREATE TABLE Quiz(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Quiz1 VARCHAR(5) NULL,
+    Quiz2 VARCHAR(5) NULL,
+    Quiz3 VARCHAR(5) NULL,
+    Quiz4 VARCHAR(5) NULL,
+    Quiz5 VARCHAR(5) NULL,
+    Quiz6 VARCHAR(5) NULL,
+    Quiz7 VARCHAR(5) NULL,
+    Compañia VARCHAR(255) NULL,
+    NombreCompleto VARCHAR(100) NOT NULL,
+    Telefono VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL
+);
 
 
 

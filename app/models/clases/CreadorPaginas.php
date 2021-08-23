@@ -189,19 +189,71 @@ class CreadorPaginas
 ?>
 <div class=\"container\" id=\"Cotizador\">
     <h2 class=\"text-center ColorTextoOscuro\">Cotiza con su agente personalizado <b>$Nombre</b></h2>
-    <hr class=\"ColorTextoOscuro\"><br>
-    <div class=\"row text-center ColorTextoOscuro\">
-    <div class=\"col-12 col-sm-6 col-md-5 col-lg-5\">
-        <a href=\"CotizarVida\" target=\"__blank\" title=\"Cotizar Vida\" class=\"btn btn-success ColorPrincipal\"><i class=\"far fa-heart fa-7x\"></i></a><br>
-        <b><label>Cotizar Vida</label></b>
+</div>
+<div class=\"container\" id=\"Servicios\">
+    <div class=\"row shadow-lg p-3 mb-5 ColorPrincipal RadioDeBordes\">
+        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
+            <img class=\"img-fluid RadioDeBordes\" src=\"app/views/assets/img/IMGCOTIZADORSALUD.webp\">
+            <center>
+                <a type=\"button\" class=\"btn btn-primary btn-lg\" href=\"$urlCotizador\" target=\"__blank\">
+                    Cotizacion Salud
+                </a>
+            </center>
+        </div>
+        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
+            <blockquote class=\"text text-white\" style=\"text-align: justify\">
+                <h4 class=\"text-center\">
+                    OBTENGA UNA COTIZACIÓN DE SEGURO DE VIDA Y SALUD
+                </h4>
+                <p class=\"fs-5\">
+                    Contamos con el mejor acompañamiento en cuanto a seguros de vida y salud,
+                    ofrecemos los mejores servicios para beneficios de nuestros clientes.
+                    Ahorre tiempo buscando la mejor cotización de seguro de vida y de salud en línea
+                    en nuestro sitio. ¡Obtenga una cotización de seguro instantánea y
+                    ahórrese tiempo y dinero! Nuestro servicio instantáneo de cotización
+                    de seguros le permite acceder directamente a pólizas de seguro de vida y de salud
+                    de bajo costo de compañías de seguros de vida de alta calificación en
+                    todo el país.
+                </p>
+            </blockquote>
+        </div>
+        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4 float-md-start\">
+            <img class=\"img-fluid RadioDeBordes\" src=\"app/views/assets/img/IMGCOTIZADORVIDA.webp\" alt=\"Select Insurance Cotizador\" title=\"Cotiza tu seguro\" /><br />
+            <link href=\"https://wq.ixn.tech/css/reset.css\" rel=\"stylesheet\" type=\"text/css\" />
+            <script type=\"text/javascript\">
+                window.IXN_QUOTER_CONFIG = {
+                    id: \"fdb29d59-520c-455c-948a-b51b7defea14\",
+                };
+            </script>
+            <!-- Button trigger modal -->
+            <center>
+                <button type=\"button\" class=\"btn btn-primary btn-lg\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\">
+                    Cotizacion Vida
+                </button>
+            </center>
+            <!-- Modal -->
+            <div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">
+                <div class=\"modal-dialog\">
+                    <div class=\"modal-content\">
+                        <div class=\"modal-header\">
+                            <h5 class=\"modal-title\">Modal title</h5>
+                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                        </div>
+                        <div class=\"modal-body\" id=\"ixn-website-quoter\">
+                            <div id=\"ixn-website-quoter\"></div>
+                        </div>
+                        <div class=\"modal-footer\">
+                            <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type=\"text/javascript\" src=\"https://wq.ixn.tech/js/website_quoter.widget.js\"></script>
+        </div>
     </div>
-    <div class=\"col-6 col-sm-6 col-md-1 col-lg-1\"></div>
-    <div class=\"col-6 col-sm-6 col-md-1 col-lg-1\"></div>
-    <div class=\"col-12 col-sm-6 col-md-5 col-lg-5\">
-        <a href=\"$urlCotizador\" title=\"Cotizar Salud\" target=\"__blank\" class=\"btn btn-success ColorPrincipal\"><i class=\"fas fa-user-nurse fa-7x\"></i></a><br>
-        <b><label>Cotizar Salud</label></b>
-    </div>
-</div><br><br>
+</div>
 </div><br><br><br>
 <div class=\"container-fluid\">
     <div class=\"row text ColorTextoOscuro text-center\">
@@ -243,345 +295,62 @@ class CreadorPaginas
         </div>
     </div><br><br><br>
 </div>
-<?php
-//Servicios 
+<?php 
+//Agente de Seguros
 ?>
-<div class=\"container-fluid ColorSecundario\" id=\"Servicios\">
-    <br><br>
-    <h2 class=\"text-center ColorTextoOscuro\">Nuestros Servicio</h2>
-    <hr class=\"ColorTextoOscuro\"><br>
-    <div class=\"row text-center\">
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#SegurosDeVida\" class=\"ColorTextoOscuro\"><span class=\"fas fa-heartbeat fa-6x\"></span></a><br><br>
-            <?php
-            //Modal Seguros de vida
-            ?>
-            <div class=\"modal fade\" id=\"SegurosDeVida\" tabindex=\"-1\" aria-labelledby=\"TituloSegurosDeVida\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloSegurosDeVida\">Seguros de Vida</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\" width=\"100\" height=\"100\">
-                            <div class=\"shadow p-3 mb-5\">
-                                <p class=\"black-dark fs-5 animate__animated animate__slideInUp\" style=\"text-align: justify;\">
-                                    El seguro de vida fue creado como un apoyo para ayudar a
-                                    garantizar la seguridad de las personas que mas amamos,
-                                    en caso de que por alguna circunstancia se presente su muerte
-                                    temprana pero ¿Se imagina que pudiera usarlo antes de morir?
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app/views/assets/img/imgmodales/Salud.jpg\" alt=\"Seguros de vida\" title=\"Seguros de vida\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Seguros de Vida</h3><br><br><br><br>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-
-            <?php
-            //Modal Seguros Familiares
-            ?>
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#SegurosFamiliares\" class=\"ColorTextoOscuro\"><span class=\"fas fa-users fa-6x\"></span></a><br><br>
-            <div class=\"modal fade\" id=\"SegurosFamiliares\" tabindex=\"-1\" aria-labelledby=\"TituloSegurosFamiliares\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloSegurosFamiliares\">Seguros Familiares</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\">
-                            <div class=\"shadow p-3 mb-5 animate__animated animate__slideInUp\">
-                                <p class=\"text-black fs-5\" style=\"text-align: justify;\">
-                                    El seguro de vida fue creado como un apoyo para ayudar a
-                                    garantizar la seguridad de las personas que mas amamos,
-                                    en caso de que por alguna circunstancia se presente su muerte
-                                    temprana… pero ¿Se imagina que pudiera usarlo antes de morir
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app\views\assets\img\imgmodales\Familia.jpg\" alt=\"Seguros Familiares\" title=\"Seguros Familiares\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Seguros Familiares</h3><br><br><br><br>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <?php
-            //Modal Seguros Compañias
-            ?>
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#SegurosCompañias\" class=\"ColorTextoOscuro\"><span class=\"fas fa-building fa-6x\"></span></a><br><br>
-            <div class=\"modal fade\" id=\"SegurosCompañias\" tabindex=\"-1\" aria-labelledby=\"TituloSegurosCompañias\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloSegurosCompañias\">Seguros para Compañias</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\">
-                            <div class=\"shadow p-3 mb-5 animate__animated animate__slideInUp\">
-                                <p class=\"text-black fs-5\" style=\"text-align: justify;\">
-                                    Aseguramos su equipo de trabajo a muy bajo costo de riesgos
-                                    profesionales y familiares.
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app\views\assets\img\imgmodales\Compañias.png\" alt=\"Seguros Compañias\" title=\"Seguros Compañias\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Seguros para compañías</h3><br><br><br><br>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <?php
-            //Modal Seguros de Salud
-            ?>
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#SegurosSalud\" class=\"ColorTextoOscuro\"><span class=\"fas fa-hand-holding-heart fa-6x\"></span></a><br><br>
-            <div class=\"modal fade\" id=\"SegurosSalud\" tabindex=\"-1\" aria-labelledby=\"TituloSegurosSalud\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloSegurosSalud\">Seguros de Salud</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\">
-                            <div class=\"shadow p-3 mb-5 animate__animated animate__slideInUp\">
-                                <p class=\"text-black fs-5\" style=\"text-align: justify;\">
-                                    Un seguro de salud es un beneficio para usted y para su familia donde puede
-                                    obtener una muy buena cobertura y recibir el subsidio del gobierno mas conocido
-                                    como el Obamacare.
-                                    ObamaCare (Ley de Cuidados de la Salud Asequibles o Affordable Care Act)
-                                    es una reforma de salud en E.E.U.U. que extiende y mejora el acceso a
-                                    los cuidados de salud y disminuye el gasto mediante regulaciones e impuestos.
-                                    El principal objetivo de la Ley de Cuidados de la Salud Asequibles
-                                    (Affordable Care Act) es dar acceso a más Americanos a cuidados de salud
-                                    asequibles mejorando la calidad de los mismos y regulando la industria de los
-                                    seguros médicos y reduciendo así el gasto en cuidados de la salud en E.E.U.U. La ley
-                                    contiene cientos de diferentes disposiciones y conjuga diferentes aspectos de
-                                    “la crisis de cuidados de la salud” en los E.E.U.U.
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app\views\assets\img\imgmodales\SeguroSalud.png\" alt=\"Seguros de Salud\" title=\"Seguros de Salud\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Seguros de Salud</h3><br><br><br><br>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <?php
-            //Modal Planes de Retiro
-            ?>
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#PlanesRetiro\" class=\"ColorTextoOscuro\"><span class=\"fas fa-blind fa-6x\"></span></a><br><br>
-            <div class=\"modal fade\" id=\"PlanesRetiro\" tabindex=\"-1\" aria-labelledby=\"TituloPlanesRetiro\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloPlanesRetiro\">Planes de Retiro</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\">
-                            <div class=\"shadow p-3 mb-5 animate__animated animate__slideInUp\">
-                                <p class=\"text-black fs-5\" style=\"text-align: justify;\">
-                                    Un plan de retiro es un plan de ahorro programado a largo
-                                    plazo que consiste en depositar periódicamente una suma de
-                                    dinero que se puede hacer a traves de debito directo o pagos
-                                    voluntarios con un plan de retiro se garantiza un rendimiento competitivo
-                                    tanto en el capital como el interés.
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app\views\assets\img\imgmodales\Planes Retiro.png\" alt=\"Planes de Retiro\" title=\"Planes de Retiro\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Planes de Retiro</h3><br><br><br><br>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <a data-bs-toggle=\"modal\" data-bs-target=\"#SolucionesFinancieras\" class=\"ColorTextoOscuro\"><span class=\"fas fa-search-dollar fa-6x\"></span></a><br><br>
-            <?php
-            //Modal Soluciones Financieras
-            ?>
-            <div class=\"modal fade\" id=\"SolucionesFinancieras\" tabindex=\"-1\" aria-labelledby=\"TituloSolucionesFinancieras\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-lg modal-dialog-scrollable\">
-                    <div class=\"modal-content\">
-                        <div class=\"modal-header ColorPrincipal text-white\">
-                            <h5 class=\"modal-title animate__animated animate__zoomIn\" id=\"TituloSolucionesFinancieras\">Planes de Retiro</h5>
-                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                        </div>
-                        <div class=\"modal-body ColorSecundario\">
-                            <div class=\"shadow p-3 mb-5 animate__animated animate__slideInUp\">
-                                <p class=\"text-black fs-5\" style=\"text-align: justify;\">
-                                    Un plan de retiro es un plan de ahorro programado a largo
-                                    plazo que consiste en depositar periódicamente una suma de
-                                    dinero que se puede hacer a traves de debito directo o pagos
-                                    voluntarios con un plan de retiro se garantiza un rendimiento competitivo
-                                    tanto en el capital como el interés.
-                                </p>
-                            </div>
-                            <img class=\"img-fluid shadow p-3 mb-5 \" src=\"app\views\assets\img\imgmodales\Soluciones Financieras.png\" alt=\"Soluciones Financieras\" title=\"Soluciones Financieras\">
-                        </div>
-                        <div class=\"modal-footer bg-light\">
-                            <button type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Cerrar</button>
-                            <a href=\"#Cotizador\" class=\"btn btn-success\">Cotizar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class=\"ColorTextoOscuro\">Soluciones Financieras</h3><br><br><br><br>
-        </div>
-    </div>
-</div><br><br><br>
-<?php //Modal con formulario nuestro Proceso de inscripcion
-?>
-<h2 class=\"text-center ColorTextoOscuro\">Nuestro Proceso de Inscripcion General</h2>
-<hr class=\"ColorTextoOscuro\"><br>
 <div class=\"container\">
-    <div class=\"row\">
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4\">
-            <button class=\"btn btn-success btn-lg text-end\" data-bs-toggle=\"modal\" data-bs-target=\"#ModalInscribase\">Comenzar</button>
-            <div class=\"modal fade\" id=\"ModalInscribase\" tabindex=\"-1\" aria-labelledby=\"TituloModalInscribase\" aria-hidden=\"true\">
-                <div class=\"modal-dialog modal-md\">
-                    <form action=\"\" method=\"post\">
-                        <div class=\"modal-content\">
-                            <div class=\"modal-header bg-light ColorTextoOscuro\">
-                                <h5 class=\"modal-title animate__animated animate__flipInX\" id=\"TituloModalInscribase\">Inscribase</h5>
-                                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
-                            </div>
-                            <div class=\"modal-body ColorPrincipal\">
-                                <div class=\"container-fluid\">
-                                    <div class=\"row\">
-                                        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6\">
-                                            <label for=\"NombreForm2\" class=\"text-white animate__animated animate__rollIn\">Nombre: <label class=\"text text-danger\">*</label></label>
-                                            <input type=\"text\" name=\"NombreForm2\" id=\"NombreForm2\" class=\"form-control animate__animated animate__lightSpeedInRight\" placeholder=\"Ingrese Nombre\">
-                                        </div>
-                                        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6\">
-                                            <label for=\"ApellidoForm2\" class=\"text-white animate__animated animate__rollIn\">Apellido: <label class=\"text text-danger\">*</label></label>
-                                            <input type=\"text\" name=\"ApellidoForm2\" id=\"ApellidoForm2\" class=\"form-control animate__animated animate__lightSpeedInRight\" placeholder=\"Ingrese Apellido\">
-                                        </div>
-                                    </div>
-                                    <div class=\"row\">
-                                        <div class=\"col-12 col-sm-12 col-md-12 col-lg-12 \">
-                                            <label for=\"CorreoForm2\" class=\"text-white animate__animated animate__rollIn\">Correo Electronico: <label class=\"text text-danger\">*</label></label>
-                                            <input type=\"email\" name=\"CorreoForm2\" id=\"CorreoForm2\" class=\"form-control animate__animated animate__lightSpeedInRight\" placeholder=\"Correo\">
-                                        </div>
-                                        <div class=\"col-12 col-sm-12 col-md-12 col-lg-12 \">
-                                            <label for=\"TelefonoForm2\" class=\"text-white animate__animated animate__rollIn\">Telefono: <label class=\"text text-danger\">*</label></label>
-                                            <input type=\"text\" name=\"TelefonoForm2\" id=\"TelefonoForm2\" class=\"form-control animate__animated animate__lightSpeedInRight\" placeholder=\"Telefono\">
-                                        </div>
-                                        <div class=\"col-12 col-sm-12 col-md-12 col-lg-12\">
-                                            <label for=\"EstadoForm2\" class=\"text-white animate__animated animate__rollIn\">Estado: <label class=\"text text-danger\">*</label></label>
-                                            <select name=\"EstadoForm2\" class=\"form-select animate__animated animate__lightSpeedInRight\" id=\"EstadoForm2\">
-                                                <option value=\"Alabama\">Alabama</option>
-                                                <option value=\"Alaska\">Alaska</option>
-                                                <option value=\"Arizona\">Arizona</option>
-                                                <option value=\"Arkansas\">Arkansas</option>
-                                                <option value=\"California\">California</option>
-                                                <option value=\"Carolina del Norte\">Carolina del Norte</option>
-                                                <option value=\"Carolina del Sur\">Carolina del Sur</option>
-                                                <option value=\"Colorado\">Colorado</option>
-                                                <option value=\"Connecticut\">Connecticut</option>
-                                                <option value=\"Dakota del Norte\">Dakota del Norte</option>
-                                                <option value=\"Dakota del Sur\">Dakota del Sur</option>
-                                                <option value=\"Delaware\">Delaware</option>
-                                                <option value=\"Florida\">Florida</option>
-                                                <option value=\"Georgia\">Georgia</option>
-                                                <option value=\"Hawái9​\">Hawái9​</option>
-                                                <option value=\"Idaho\">Idaho</option>
-                                                <option value=\"Illinois\">Illinois</option>
-                                                <option value=\"Indiana\">Indiana</option>
-                                                <option value=\"Iowa\">Iowa</option>
-                                                <option value=\"Kansas\">Kansas</option>
-                                                <option value=\"Kentucky\">Kentucky</option>
-                                                <option value=\"Luisiana10​\">Luisiana10​</option>
-                                                <option value=\"Maine\">Maine</option>
-                                                <option value=\"Maryland\">Maryland</option>
-                                                <option value=\"Massachusetts\">Massachusetts</option>
-                                                <option value=\"Míchigan13​\">Míchigan13​</option>
-                                                <option value=\"Minnesota\">Minnesota</option>
-                                                <option value=\"Misisipi14​\">Misisipi14​</option>
-                                                <option value=\"Misuri15​\">Misuri15​</option>
-                                                <option value=\"Montana\">Montana</option>
-                                                <option value=\"Nebraska\">Nebraska</option>
-                                                <option value=\"Nevada\">Nevada</option>
-                                                <option value=\"Nueva Jersey17​\">Nueva Jersey17​</option>
-                                                <option value=\"Nueva York19​\">Nueva York19​</option>
-                                                <option value=\"Nuevo Hampshire20​\">Nuevo Hampshire20​</option>
-                                                <option value=\"Nuevo México22​\">Nuevo México22​</option>
-                                                <option value=\"Ohio\">Ohio</option>
-                                                <option value=\"Oklahoma\">Oklahoma</option>
-                                                <option value=\"Oregón24​\">Oregón24​</option>
-                                                <option value=\"Pensilvania25​\">Pensilvania25​</option>
-                                                <option value=\"Rhode Island\">Rhode Island</option>
-                                                <option value=\"Tennessee\">Tennessee</option>
-                                                <option value=\"Texas27​\">Texas27​</option>
-                                                <option value=\"Utah\">Utah</option>
-                                                <option value=\"Vermont\">Vermont</option>
-                                                <option value=\"Virginia\">Virginia</option>
-                                                <option value=\"Virginia Occidental\">Virginia Occidental</option>
-                                                <option value=\"Washington\">Washington</option>
-                                                <option value=\"Wisconsin\">Wisconsin</option>
-                                                <option value=\"Wyoming\">Wyoming</option>
-                                            </select>
-                                        </div>
-                                        <div class=\"col-12 col-sm-12 col-md-12 col-lg-12\">
-                                            <label for=\"ServicioForm2\" class=\"text-white animate__animated animate__rollIn\">Servicio de su Interes: <label class=\"text text-danger\">*</label></label>
-                                            <select name=\"ServicioForm2\" id=\"ServicioForm2\" class=\"form-select animate__animated animate__lightSpeedInRight\">
-                                                <option selected>Seleccione una opcion</option>
-                                                <option value=\"vida\">Seguro de vida</option>
-                                                <option value=\"familiar\">Seguro Familiar</option>
-                                                <option value=\"salud\">Seguro de Salud</option>
-                                                <option value=\"compañias\">Seguro de Compañias</option>
-                                                <option value=\"planes de retiro\">Planes de Retiro</option>
-                                                <option value=\"soluciones financieras\">Soluciones Financieras</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=\"modal-footer bg-light\">
-                                <button type=\"button\" class=\"btn btn-danger animate__animated animate__zoomInDown\" data-bs-dismiss=\"modal\">Cerrar</button>
-                                <input type=\"submit\" class=\"btn btn-success animate__animated animate__zoomInDown\" value=\"Enviar\">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4 ColorTextoOscuro\">
-            <h5 class=\"text-center\">A SU SERVICIO</h5>
-            <p style=\"text-align: justify;\">
-                Si tiene alguna pregunta específica, estamos aquí para ayudarle.
-                Correo electrónico, chat o teléfono. Tu eliges.
+    <div class=\"row ColorPrincipal text-center RadioDeBordes\">
+        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6\">
+            <h2>Descripcion</h2>
+            <p>
+                
             </p>
         </div>
-        <div class=\"col-12 col-sm-6 col-md-4 col-lg-4 text-end\">
-            <img src=\"app/views/assets/img/LogoColorReal.png\" alt=\"Select Insurance\" title=\"Select Insurance\" height=\"100px\">
+        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6\">
+            <img src=\"$URL\" class=\"RadioDeBordes img-fluid my-4\" alt=\"$Nombre\" title=\"Agente de Seguros $Nombre\">
         </div>
     </div>
-</div><br><br><br><br><br><br>
+</div>
+<div class=\"container-fluid my-4\">
+    <div class=\"row text ColorTextoOscuro text-center\">
+        <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
+            <label><span class=\"fas fa-file-medical fa-4x\"></span></label>
+            <p>
+            <h4>Aplicación Simple</h4>
+            </p>
+            <p>
+                Aplica online y el resto lo hacemos nosotros por usted.
+            </p>
+        </div>
+        <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
+            <label><span class=\"fas fa-piggy-bank fa-4x\"></span></label>
+            <p>
+            <h4>Adaptado a su presupuesto</h4>
+            </p>
+            <p>
+                ¡Obtenga $ 250,000 de cobertura de seguro de vida a término por tan solo $ 20 por mes!
+            </p>
+        </div>
+        <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
+            <label><span class=\"far fa-clock fa-4x\"></span></label>
+            <p>
+            <h4>1 dia de activación</h4>
+            </p>
+            <p>
+                Cobertura inmediata, rapido y eficaz.
+            </p>
+        </div>
+        <div class=\"col-12 col-sm-6 col-md-3 col-lg-3\">
+            <label><span class=\"far fa-calendar-alt fa-4x\"></span></label>
+            <p>
+            <h4>Disponibilidad 24 / 7 / 365</h4>
+            </p>
+            <p>
+                Inscríbase en cualquier momento durante el año.
+            </p>
+        </div>
+    </div><br><br><br>
+</div>\
 <?php //Testimonios 
 ?>
 <div class=\"container-fluid text-center ColorTextoOscuro\"><br><br>
