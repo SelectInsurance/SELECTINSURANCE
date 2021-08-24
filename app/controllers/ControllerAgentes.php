@@ -70,52 +70,84 @@ class ControllerAgentes
                     echo "Hubo un error: {$mail->ErrorInfo}";
                 }
             }
-
             if (isset($_POST['btnQuiz'])) {
-
                 if (!empty($_POST['CompañiaSeguros'])) {
-                    $Quiz1 = $_POST['Respuesta1'] . '</br>';
-                    $Quiz2 = $_POST['Respuesta2'] . '</br>';
-                    $Quiz3 = $_POST['Respuesta3'] . '</br>';
-                    $Quiz4 = $_POST['Respuesta4'] . '</br>';
-                    $Quiz5 = $_POST['Respuesta5'] . '</br>';
-                    $Quiz6 = $_POST['Respuesta6'] . '</br>';
-                    $Quiz7 = $_POST['Respuesta7'] . '</br>';
-                    $Compañia = $_POST['CompañiaSeguros'] . '</br>';
-                    $Compañia = $_POST['InsuranceCompany'] . '</br>';
-                    $NombreCompleto = $_POST['name'] . '</br>';
-                    $Telefono = $_POST['Telefono'] . '</br>';
-                    $Email = $_POST['Email'] . '</br>';
+                    $Quiz1 = $_POST['Respuesta1'];
+                    $Quiz2 = $_POST['Respuesta2'];
+                    $Quiz3 = $_POST['Respuesta3'];
+                    $Quiz4 = $_POST['Respuesta4'];
+                    $Quiz5 = $_POST['Respuesta5'];
+                    $Quiz6 = $_POST['Respuesta6'];
+                    $Quiz7 = $_POST['Respuesta7'];
+                    $Compañia = $_POST['CompañiaSeguros'];
+                    $NombreCompleto = $_POST['name'];
+                    $Telefono = $_POST['Telefono'];
+                    $Email = $_POST['Email'];
+                    $query = "INSERT INTO Quiz(
+                        Quiz1,
+                        Quiz2,
+                        Quiz3,
+                        Quiz4,
+                        Quiz5,
+                        Quiz6,
+                        Quiz7,
+                        Compañia,
+                        NombreCompleto,
+                        Telefono,
+                        Email
+                    )   VALUES(
+                        '$Quiz1',
+                        '$Quiz2',
+                        '$Quiz3',
+                        '$Quiz4',
+                        '$Quiz5',
+                        '$Quiz6',
+                        '$Quiz7',
+                        '$Compañia',
+                        '$NombreCompleto',
+                        '$Telefono',
+                        '$Email'
+                    )";
                 } elseif (!empty($_POST['InsuranceCompany'])) {
-                    echo $Quiz1 = $_POST['Respuesta1'] . '</br>';
-                    echo $Quiz2 = $_POST['Respuesta2'] . '</br>';
-                    echo $Quiz3 = $_POST['Respuesta3'] . '</br>';
-                    echo $Quiz4 = $_POST['Respuesta4'] . '</br>';
-                    echo $Quiz5 = $_POST['Respuesta5'] . '</br>';
-                    echo $Quiz6 = $_POST['Respuesta6'] . '</br>';
-                    echo $Quiz7 = $_POST['Respuesta7'] . '</br>';
-                    echo $Compañia = $_POST['InsuranceCompany'] . '</br>';
-                    echo $Compañia = $_POST['InsuranceCompany'] . '</br>';
-                    echo $NombreCompleto = $_POST['name'] . '</br>';
-                    echo $Telefono = $_POST['Telefono'] . '</br>';
-                    echo $Email = $_POST['Email'] . '</br>';
+                    $Quiz1 = $_POST['Respuesta1'];
+                    $Quiz2 = $_POST['Respuesta2'];
+                    $Quiz3 = $_POST['Respuesta3'];
+                    $Quiz4 = $_POST['Respuesta4'];
+                    $Quiz5 = $_POST['Respuesta5'];
+                    $Quiz6 = $_POST['Respuesta6'];
+                    $Quiz7 = $_POST['Respuesta7'];
+                    $Compañia = $_POST['InsuranceCompany'];
+                    $NombreCompleto = $_POST['name'];
+                    $Telefono = $_POST['Telefono'];
+                    $Email = $_POST['Email'];
+                    $query = "INSERT INTO Quiz(
+                        Quiz1,
+                        Quiz2,
+                        Quiz3,
+                        Quiz4,
+                        Quiz5,
+                        Quiz6,
+                        Quiz7,
+                        Compañia,
+                        NombreCompleto,
+                        Telefono,
+                        Email
+                    )   VALUES(
+                        '$Quiz1',
+                        '$Quiz2',
+                        '$Quiz3',
+                        '$Quiz4',
+                        '$Quiz5',
+                        '$Quiz6',
+                        '$Quiz7',
+                        '$Compañia',
+                        '$NombreCompleto',
+                        '$Telefono',
+                        '$Email'
+                    )";
                 }
-
-                $query = "INSERT INTO Quiz(
-                    Quiz1,
-                    Quiz2,
-                    Quiz3,
-                    Quiz4,
-                    Quiz5,
-                    Quiz6,
-                    Quiz7,
-                    Compañia,
-                    NombreCompleto,
-                    Telefono,
-                    Email
-                )   VALUES(
-
-                )";
+                $crud = new crud();
+                $crud->Create($query);
             }
         }
     }

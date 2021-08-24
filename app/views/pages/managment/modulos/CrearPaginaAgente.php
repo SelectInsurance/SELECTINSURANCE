@@ -18,6 +18,8 @@
                                 <input type="text" name="NombrePagina" id="NombrePagina" class="form-control" placeholder="Ingrese URL Ejemplo: NombreApellido" required="required"><br>
                                 <label for="Nombre">Nombre el Agente:</label>
                                 <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Por favor ingrese Nombre del Agente" required="required"><br>
+                                <label for="Descripcion">Descripcion del Agente:</label>
+                                <textarea name="Descripcion" id="Descripcion" class="form-control" cols="30" rows="3" placeholder="Ingrese una Descripcion" require="required"></textarea><br>
                                 <label for="Email">Correo del Agente:</label>
                                 <input type="email" name="Email" id="Email" class="form-control" placeholder="Ingrese Correo" required="required"><br>
                                 <label for="whatsapp">Whatsapp:</label>

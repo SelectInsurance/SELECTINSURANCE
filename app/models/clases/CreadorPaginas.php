@@ -10,7 +10,7 @@ class CreadorPaginas
         return $conexion->EstablecerConexion();
     }
                                                                                                                                     /*, $id*/
-    public function CrearPagina($url, $NombreArchivo, $Nombre, $Email, $whatsapp,$Telefono, $urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina, $Instagram, $Facebook, $urlCotizador)
+    public function CrearPagina($url, $NombreArchivo, $Nombre,$Descripcion,$Email, $whatsapp,$Telefono, $urlImagen, $NombreImgTmp, $NombreImg, $NombrePagina, $Instagram, $Facebook, $urlCotizador)
     {
 
         //insertando Pagina en la Base de datos
@@ -300,10 +300,10 @@ class CreadorPaginas
 ?>
 <div class=\"container\">
     <div class=\"row ColorPrincipal text-center RadioDeBordes\">
-        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6\">
-            <h2>Descripcion</h2>
+        <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6\" style=\"text-align: justify;\">
+            <h2 class=\"text-center\">Descripcion</h2>
             <p>
-                
+            $Descripcion
             </p>
         </div>
         <div class=\"col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6\">
